@@ -1,0 +1,94 @@
+ leak id =  2854, count =     112, bytes =    3170496, from
+   Call Stack (TID 20052):
+    0x0183ED30 (File and line number not available): MSVCR120.dll!malloc
+    x:\trunk\xray\xrcore\xrmemory_align.cpp (123): xrCore.dll!xr_aligned_offset_malloc + 0x7 bytes
+    x:\trunk\xray\xrcore\xrmemory_subst_msvc.cpp (99): xrCore.dll!xrMemory::mem_alloc + 0x16 bytes
+    x:\trunk\xray\xr_3da\xrrender\detailmodel.cpp (93): (Module name unavailable)!CDetail::Load
+    x:\trunk\xray\xr_3da\xrrender_r2\r2.cpp (316): (Module name unavailable)!CRender::model_CreateDM
+    x:\trunk\xray\xr_3da\thunderbolt.cpp (68): XR_3DA.exe!SThunderboltCollection::SThunderboltCollection + 0x1E bytes
+    x:\trunk\xray\xr_3da\thunderbolt.cpp (120): XR_3DA.exe!CEffect_Thunderbolt::AppendDef + 0x1D bytes
+    x:\trunk\xray\xr_3da\environment_misc.cpp (161): XR_3DA.exe!CEnvDescriptor::load + 0x2E bytes
+    x:\trunk\xray\xr_3da\environment_misc.cpp (336): XR_3DA.exe!CEnvironment::load
+    x:\trunk\xray\xr_3da\xrgame\gamepersistent.cpp (127): (Module name unavailable)!CGamePersistent::OnAppStart
+    x:\trunk\xray\xr_3da\x_ray.cpp (308): XR_3DA.exe!Startup
+    x:\trunk\xray\xr_3da\x_ray.cpp (778): XR_3DA.exe!WinMain_impl
+    x:\trunk\xray\xr_3da\x_ray.cpp (844): XR_3DA.exe!WinMain
+    f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c (618): XR_3DA.exe!__tmainCRTStartup + 0xE bytes
+    0x7DD7338A (File and line number not available): kernel32.dll!BaseThreadInitThunk + 0x12 bytes
+    0x7DEA9F72 (File and line number not available): ntdll.dll!RtlInitializeExceptionChain + 0x63 bytes
+    0x7DEA9F45 (File and line number not available): ntdll.dll!RtlInitializeExceptionChain + 0x36 bytes
+
+ leak id =  2773, count =   37111, bytes =    3673989, from
+   Call Stack (TID 20052):
+    0x0183ED30 (File and line number not available): MSVCR120.dll!malloc
+    x:\trunk\xray\xrcore\xrmemory_align.cpp (123): xrCore.dll!xr_aligned_offset_malloc + 0x7 bytes
+    x:\trunk\xray\xrcore\xrmemory_subst_msvc.cpp (99): xrCore.dll!xrMemory::mem_alloc + 0x16 bytes
+    0x0E3E26DE (File and line number not available): (Module name unavailable)!XopOpenAdapters9 + 0xCD74 bytes
+
+ leak id =  7567, count =       1, bytes =    4194327, from
+   Call Stack (TID 20052):
+    0x0183ED30 (File and line number not available): MSVCR120.dll!malloc
+    x:\trunk\xray\xrcore\xrmemory_align.cpp (123): xrCore.dll!xr_aligned_offset_malloc + 0x7 bytes
+    x:\trunk\xray\xrcore\xrmemory_subst_msvc.cpp (99): xrCore.dll!xrMemory::mem_alloc + 0x16 bytes
+    x:\trunk\xray\xrcore\xrmemory_subst_msvc.h (75): (Module name unavailable)!xr_new<CQuadTree<CCoverPoint>::CFixedStorage<CQuadTree<CCoverPoint>::CQuadNode>,unsigned int> + 0x25 bytes
+
+ leak id =  8345, count =      17, bytes =    5849479, from
+   Call Stack (TID 20268):
+    0x0183ED30 (File and line number not available): MSVCR120.dll!malloc
+    x:\trunk\xray\xrcore\xrmemory_align.cpp (123): xrCore.dll!xr_aligned_offset_malloc + 0x7 bytes
+    x:\trunk\xray\xrcore\xrmemory_subst_msvc.cpp (99): xrCore.dll!xrMemory::mem_alloc + 0x16 bytes
+    x:\trunk\xray\xr_3da\xrrender\detailmanager_decompress.cpp (120): (Module name unavailable)!CDetailManager::cache_Decompress + 0x35 bytes
+    x:\trunk\xray\xr_3da\xrrender\detailmanager.cpp (388): (Module name unavailable)!CDetailManager::MT_CALC
+    x:\trunk\xray\xrcore\_math.cpp (335): xrCore.dll!thread_entry + 0x3 bytes
+    0x018AC9FD (File and line number not available): MSVCR120.dll!endthread + 0x81 bytes
+    0x7DD7338A (File and line number not available): kernel32.dll!BaseThreadInitThunk + 0x12 bytes
+    0x7DEA9F72 (File and line number not available): ntdll.dll!RtlInitializeExceptionChain + 0x63 bytes
+    0x7DEA9F45 (File and line number not available): ntdll.dll!RtlInitializeExceptionChain + 0x36 bytes
+
+ leak id =  8346, count =       1, bytes =    7882859, from
+   Call Stack (TID 20052):
+    0x0183ED30 (File and line number not available): MSVCR120.dll!malloc
+    x:\trunk\xray\xrcore\xrmemory_align.cpp (123): xrCore.dll!xr_aligned_offset_malloc + 0x7 bytes
+    x:\trunk\xray\xrcore\xrmemory_subst_msvc.cpp (99): xrCore.dll!xrMemory::mem_alloc + 0x16 bytes
+    x:\trunk\xray\xr_3da\xrrender\detailmanager.cpp (128): (Module name unavailable)!CDetailManager::CDetailManager
+
+ leak id =  7568, count =       3, bytes =    8390685, from
+   Call Stack (TID 20052):
+    0x0183ED30 (File and line number not available): MSVCR120.dll!malloc
+    x:\trunk\xray\xrcore\xrmemory_align.cpp (123): xrCore.dll!xr_aligned_offset_malloc + 0x7 bytes
+    x:\trunk\xray\xrcore\xrmemory_subst_msvc.cpp (99): xrCore.dll!xrMemory::mem_alloc + 0x16 bytes
+    x:\trunk\xray\xrcdb\xrcdb.cpp (99): xrCDB.dll!CDB::MODEL::build_internal
+
+ leak id =    54, count =   90601, bytes =   12651279, from
+   Call Stack (TID 20052):
+    0x0183ED30 (File and line number not available): MSVCR120.dll!malloc
+    x:\trunk\xray\xrcore\xrmemory_align.cpp (123): xrCore.dll!xr_aligned_offset_malloc + 0x7 bytes
+    x:\trunk\xray\xrcore\xrmemory_subst_msvc.cpp (99): xrCore.dll!xrMemory::mem_alloc + 0x16 bytes
+
+ leak id =  2771, count =  100648, bytes =   16405624, from
+   Call Stack (TID 20052):
+    0x0183ED30 (File and line number not available): MSVCR120.dll!malloc
+    x:\trunk\xray\xrcore\xrmemory_align.cpp (123): xrCore.dll!xr_aligned_offset_malloc + 0x7 bytes
+    x:\trunk\xray\xrcore\xrmemory_subst_msvc.cpp (99): xrCore.dll!xrMemory::mem_alloc + 0x16 bytes
+    0x0E3E62C9 (File and line number not available): (Module name unavailable)!XopOpenAdapters9 + 0x1095F bytes
+
+ leak id =  8269, count =       3, bytes =   22024437, from
+   Call Stack (TID 20052):
+    0x0183ED30 (File and line number not available): MSVCR120.dll!malloc
+    x:\trunk\xray\xrcore\xrmemory_align.cpp (123): xrCore.dll!xr_aligned_offset_malloc + 0x7 bytes
+    x:\trunk\xray\xrcore\xrmemory_subst_msvc.cpp (99): xrCore.dll!xrMemory::mem_alloc + 0x16 bytes
+    x:\trunk\xray\xrcdb\xrcdb.cpp (104): xrCDB.dll!CDB::MODEL::build_internal
+
+ leak id =  7601, count =    2365, bytes =   38830935, from
+   Call Stack (TID 20052):
+    0x0183ED30 (File and line number not available): MSVCR120.dll!malloc
+    x:\trunk\xray\xrcore\xrmemory_align.cpp (123): xrCore.dll!xr_aligned_offset_malloc + 0x7 bytes
+    x:\trunk\xray\xrcore\xrmemory_subst_msvc.cpp (99): xrCore.dll!xrMemory::mem_alloc + 0x16 bytes
+    x:\trunk\xray\xrnetserver\net_client.cpp (66): xrNetServer.dll!INetQueue::CreateGet + 0x11 bytes
+
+ leak id =  8273, count =       3, bytes =   44048709, from
+   Call Stack (TID 20052):
+    0x0183ED30 (File and line number not available): MSVCR120.dll!malloc
+    x:\trunk\xray\xrcore\xrmemory_align.cpp (123): xrCore.dll!xr_aligned_offset_malloc + 0x7 bytes
+    x:\trunk\xray\xrcore\xrmemory_subst_msvc.cpp (99): xrCore.dll!xrMemory::mem_alloc + 0x16 bytes
+    x:\trunk\xray\xrcdb\opc_optimizedtree.cpp (291): xrCDB.dll!Opcode::AABBNoLeafTree::Build + 0x10 bytes

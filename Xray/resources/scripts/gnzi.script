@@ -1,0 +1,486 @@
+
+-- GNZI
+--
+
+function add_first_spawn()
+    nlc_vars.art_semeneckyi_chance = lua_random(100)
+    sak.timer_shustr_of_wolf_pre()
+    sak_dialog.generate_wolf_super_art()
+	gnzi.sultan_weapon_is()	
+	gnzi.rand_nagrad_fixed_time()
+	gnzi.rand_nagrad_fixed()
+
+    local ts1={position={x=26.559313,y=18.571770,z=153.106735},gv=94,lv=304413}
+	local ts2={position={x=88.828514,y=20.078770,z=159.300766},gv=97,lv=386491}
+	local shape={shtype=0,radius=4.0,center={0,0.5,0}}
+	amk_anoms.spawn_anomaly("amk_zone_mosquito_bald_average", ts1.position, ts1.gv, ts1.lv, shape, "static")
+	amk_anoms.spawn_anomaly("amk_zone_mosquito_bald_average", ts2.position, ts2.gv, ts2.lv, shape, "static")
+
+	misc.release_obj(g_sim:object("esc_conserva_0003").id)
+	misc.release_obj(g_sim:object("agr_af_dummy_battery").id)
+	misc.release_obj(g_sim:object("esc_quest_case_01").id)
+end
+
+function first_hungry()
+	local obj1
+	local rnd = lua_random(0,5)
+	if rnd == 1 then obj1 = g_sim:story_object(story_ids.esc_secret_village_roof)
+	elseif rnd == 2 then obj1 = g_sim:story_object(story_ids.esc_secret_nice_place)
+	elseif rnd == 3 then obj1 = g_sim:story_object(story_ids.esc_secret_vorpal)
+	elseif rnd == 4 then obj1 = g_sim:story_object(story_ids.esc_secret_village_rucksack)
+	elseif rnd == 5 then obj1 = g_sim:story_object(story_ids.esc_secret_box_bridge) end
+
+	if rnd ~= 0 and obj1 ~= nil then
+		g_sim:create("bread",obj1.position, obj1.m_level_vertex_id, obj1.m_game_vertex_id, obj1.id)
+		if obj1.online then
+    		g_sim:set_switch_online(obj1.id, false)
+    		g_sim:set_switch_offline(obj1.id, true)
+    		amk.convert_npc[obj1.id]=1
+		end
+	end
+end
+
+function pl_pkm_timer()
+	local rnd = lua_random(2,4)
+	timers.start_timer("t_exo_on",rnd,9,29,"gnzi.pl_pkm_timer_end()")
+end
+function pl_pkm_timer_end()
+	db.actor:give_info_portion("pl_pkm_start")
+end
+
+function is_exo_hero()
+	local armor = db.actor:item_in_slot(6)
+	if armor == nil then return false end
+    local sect = armor:section()
+    if strpos(sect,"exo",1,true) and not strpos(sect,"_ikson_",1,true) then return true end
+	return false
+end
+function give_exo_on(first_speaker, second_speaker)
+	local obj = first_speaker:item_in_slot(6)
+	first_speaker:transfer_item(obj, second_speaker)
+	nlc_vars.exo_on_item = obj:id()
+	news_manager.relocate_item(db.actor, "out", obj:section())
+end
+function exo_on_timer()
+	local rnd = lua_random(1,29)
+	timers.start_timer("t_exo_on",0,2,rnd,"gnzi.exo_on_timer_end()")
+end
+function exo_on_timer_end()
+	db.actor:give_info_portion("dolgovazyi_exo_end")
+end
+function return_exo_on(first_speaker, second_speaker)
+	local id = (nlc_vars.exo_on_item or 0)
+	if id == 0 then return end
+	local obj = g_sim:object(id)
+	if obj then
+		local section = obj:section_name()
+		local item = first_speaker:object(section)
+		if item then
+			first_speaker:transfer_item(item, second_speaker)
+			sak.relocate_item(second_speaker, "in", section, 1)
+			if not strpos(section, "_ikson_",1,true) then
+				local new = string.gsub(section, "_", "_ikson_")
+				coord_params.set_obj_section(id, new)
+			end
+			local hour = lua_random(1,12)
+			timers.start_timer("t_exo_on_ikson_dead"..id,3,hour,29,"gnzi.exo_on_ikson_dead("..id..")")
+		end
+	end
+	nlc_vars.exo_on_item = nil
+end
+function exo_on_ikson_dead(id)
+	local obj = g_sim:object(id)
+	if obj then
+		local section = obj:section_name()
+		if strpos(section, "_ikson_",1,true) then
+		local new = string.gsub(section, "_ikson_", "_")
+			coord_params.set_obj_section(id, new)
+		end
+	end
+end
+
+function g_out_all_money()
+  	local sum = db.actor:money()
+	if sum > 0 then db.actor:give_money(-sum) nlc_vars.g_out_all_money = sum end
+end
+
+function trade_many_remove()
+  	local sum = db.actor:money()
+	if sum > 0 then db.actor:give_money(-sum) nlc_vars.trade_me_re = sum end
+end
+function trade_many_add()
+	if nlc_vars.trade_me_re == nil then return end
+	local sum = db.actor:money()
+	if sum > 0 then db.actor:give_money(-sum) end
+  	sum = nlc_vars.trade_me_re or 1
+	if sum > 0 then db.actor:give_money(sum) nlc_vars.trade_me_re = nil end
+end
+
+function add_ignat_monsters()
+	obj=alife():create("m_controller_normal",sak.v3f(459.236,-0.754,122.474),997139,4158)
+	if obj.online then
+		g_sim:set_switch_online(obj.id, false)
+		g_sim:set_switch_offline(obj.id, true)
+		amk.convert_npc[obj.id]=1
+	end
+	nlc_vars.ignat_kontroler = obj.id
+end
+function ignat_kontroler_is_dead()
+	local obj_id = nlc_vars.ignat_kontroler
+	local obj=g_sim:object(obj_id)
+	if obj and not obj:alive() then
+		return true
+	else
+		return false
+	end
+end
+function ignat_kontroler_bonus()
+	sak.create_items(db.actor,"mutant_burer_hand",1)
+	nlc_vars.ignat_kontroler = nil
+end
+
+local stored_ammo_num = nil
+local stored_it_id = nil
+local a1 = 0
+function gnzi.weapon_update()
+if a1 == 0 then sak.create_items(db.actor,"wpn_svd",1) sak.add_new_esc_marsh_178() sak.add_new_marsh_esc_179() a1=1 end
+	-- функцию переписать
+	local koef = params.new_coef
+	local wpn_wobble = koef^2
+	if get_actor_obj().state.crouch then
+		wpn_params.gg_tired = wpn_wobble * 0.5
+	else
+		wpn_params.gg_tired = wpn_wobble
+	end	
+	local act = db.actor
+    local aitem = act:active_item()
+	local aslot = act:active_slot()
+    if aitem and (aslot==1 or aslot==2 or aslot==0 or aslot==4) and isWeapon(aitem) then
+        local it_id = aitem:id()
+        local ammo_num = aitem:get_ammo_in_magazine()
+        if stored_it_id ~= nil and stored_ammo_num ~= nil then
+        if stored_it_id == it_id and ammo_num < stored_ammo_num then
+		
+			local ammo_tip	= system_ini():r_string(aitem:section(),"ammo_class")
+			local dd_power = 333
+			if string.find(ammo_tip,"5.45x39",1,true) 		then dd_power = 213
+			elseif string.find(ammo_tip,"5.56x45",1,true) 	then dd_power = 251
+			elseif string.find(ammo_tip,"7.62x39",1,true) 	then dd_power = 298
+			elseif string.find(ammo_tip,"7.62x54r",1,true) 	then dd_power = 206
+			elseif string.find(ammo_tip,"7.62x",1,true) 	then dd_power = 412
+			elseif string.find(ammo_tip,"9x39",1,true) 		then dd_power = 351
+			elseif string.find(ammo_tip,"9x18",1,true) 		then dd_power = 162
+			elseif string.find(ammo_tip,"9x19",1,true) 		then dd_power = 171
+			elseif string.find(ammo_tip,"11.43x23",1,true) 	then dd_power = 263
+			elseif string.find(ammo_tip,"12x",1,true) 		then dd_power = 840
+			end
+			act.power = -(dd_power * 0.0001)
+			
+			local cond = aitem:condition()
+			if cond < 0.65 and lua_random() > cond*0.1+0.905 then
+				local h = hit() h.impulse = 0 h.draftsman = act h.direction = vector():set(0,0,0) h:bone("bip01_spine") h.power = 0.5 h.type = hit.explosion act:hit(h)
+
+				play_sound([[weapons\t_f1_explosion]])
+				play_sound([[actor\pain_2]])
+				particles_object("amik\\explosion\\explosion_f1"):play_at_pos(aitem:position())
+
+				cond = cond - lua_random(150,250)/1000
+				aitem:set_condition(cond)
+				amk.drop_item(act,aitem)
+			end
+          end
+        end
+        stored_ammo_num = ammo_num
+        stored_it_id = it_id
+    else
+        stored_it_id = nil
+    end
+end
+
+function play_sound(sound,obj)
+	if obj == nil then obj = db.actor end
+	xr_sound.get_safe_sound_object(sound):play_no_feedback(obj, sound_object.s2d, 0, vector(), 1.0)
+end
+
+function gamer_monster_trol()
+ 	local lname=level.name()
+  	if const.ground_levels[lname] then
+  		local actor=db.actor
+  		local act_pos=actor:position()
+  		local lvid=actor:level_vertex_id()
+  		local gvid=actor:game_vertex_id()
+  		local radius=lua_random(50,100)
+  		local dir=vector_rotate_y(actor:direction(),(lua_random(360)))
+  		local lv=level.vertex_in_direction(lvid, dir, radius)
+    	if lv then
+      		local pos=level.vertex_position(lv)
+			local obj=alife():create("bloodsucker_strong",sak.v3f((pos.x),(pos.y+1),(pos.z)),lv,gvid)
+			if obj.online then
+				g_sim:set_switch_online(obj.id, false)
+				g_sim:set_switch_offline(obj.id, true)
+				amk.convert_npc[obj.id]=1
+			end
+		end
+	end
+
+end
+
+function timer_pleer_monster()
+	local day = sak.day_money
+	if day < 7 then return end
+	local last_day = nlc_vars.gamer_monster_day or 0
+	if day ~= last_day then
+		nlc_vars.gamer_monster_day = day
+		if (lua_random() > 0.77) then
+			local rnd_hour = lua_random(0,4)
+			local rnd_minutes = lua_random(1,59)
+  			timers.start_timer("monsters_time_trol",0,rnd_hour,rnd_minutes,"gnzi.gamer_monster_trol()")
+		end
+	end
+end
+
+function add_lys_shron()
+  	local obj1 = g_sim:story_object(story_ids.esc_inventory_box_0022)
+	g_sim:create("wpn_ak47_old",obj1.position, obj1.m_level_vertex_id, obj1.m_game_vertex_id, obj1.id)
+	g_sim:create("broken_exoskeleton",obj1.position, obj1.m_level_vertex_id, obj1.m_game_vertex_id, obj1.id)
+ 
+  	if obj1.online then
+    		g_sim:set_switch_online(obj1.id, false)
+    		g_sim:set_switch_offline(obj1.id, true)
+    		amk.convert_npc[obj1.id]=1
+  	end
+end
+
+function add_neumecha_shron()
+  	local obj1 = g_sim:story_object(story_ids.esc_inventory_box_0008)
+	g_sim:create("arc_art_box_1basic",obj1.position, obj1.m_level_vertex_id, obj1.m_game_vertex_id, obj1.id)
+ 
+  	if obj1.online then
+    		g_sim:set_switch_online(obj1.id, false)
+    		g_sim:set_switch_offline(obj1.id, true)
+    		amk.convert_npc[obj1.id]=1
+  	end
+end
+
+function add_shustryi_shron()
+  	local obj1 = g_sim:story_object(story_ids.esc_inventory_box_0010)
+	g_sim:create("outfit_novice_m1",obj1.position, obj1.m_level_vertex_id, obj1.m_game_vertex_id, obj1.id)
+	g_sim:create("wpn_pb",obj1.position, obj1.m_level_vertex_id, obj1.m_game_vertex_id, obj1.id)
+	g_sim:create("ammo_9x18_pmm",obj1.position, obj1.m_level_vertex_id, obj1.m_game_vertex_id, obj1.id)
+	g_sim:create("vodka",obj1.position, obj1.m_level_vertex_id, obj1.m_game_vertex_id, obj1.id)
+	g_sim:create("conserva",obj1.position, obj1.m_level_vertex_id, obj1.m_game_vertex_id, obj1.id)
+ 
+  	if obj1.online then
+    		g_sim:set_switch_online(obj1.id, false)
+    		g_sim:set_switch_offline(obj1.id, true)
+    		amk.convert_npc[obj1.id]=1
+  	end
+end
+
+function sultan_weapon_is()
+	local day = sak.day_money
+	local last_day = nlc_vars.sultan_weap_day or 0
+	nlc_vars.sultan_weapon_is_ok = {}
+	if (day > last_day+3) or last_day == 0 then
+		nlc_vars.sultan_weap_day = day
+		nlc_vars.sultan_weapon_is_ok = {lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3),lua_random(1,3)}
+	end
+end
+function yes_sultan_weapon(cn)
+	local tmp = nlc_vars.sultan_weapon_is_ok[cn] or 1
+	if tmp == 3 then return true end
+	return false
+end
+function no_sultan_weapon(cn)
+	local tmp = nlc_vars.sultan_weapon_is_ok[cn] or 1
+	if tmp < 3 then return true end
+	return false
+end
+
+function take_pl_soul()
+	sak.create_items(db.actor,"af_soul_dyn4d",1)
+end
+
+function pl_pkm_have_item(first_speaker, second_speaker)
+	for i,k in pairs(sak_inventory.rucksack) do
+		if strpos(i, "wpn_pkm",1,true) then
+			local obj = client_obj(k[1])
+			local ammo = obj:get_ammo_in_magazine()
+			if ammo >= 100 then return true end
+		end
+	end
+	return false
+end
+function pl_pkm_have_item_no(first_speaker, second_speaker)
+	for i,k in pairs(sak_inventory.rucksack) do
+		if strpos(i, "wpn_pkm",1,true) then
+			local obj = client_obj(k[1])
+			local ammo = obj:get_ammo_in_magazine()
+			if ammo < 100 then return true end
+		end
+	end
+	return false
+end
+function pl_pkm_give_item(first_speaker, second_speaker)
+  	local ids,cnt = registry.inv_objects(second_speaker:id(), true)
+    for n = 1,cnt do
+    	local id = ids[n]
+    	local sobj = client_obj(id)
+    	if sobj then
+			if strpos(sobj:section(), "wpn_",1,true) then
+				amk.remove_item(sobj)
+			end
+    	end
+	end
+	dialogs.relocate_item_section(second_speaker, "wpn_pkm", "out")
+	g_sim:create("ammo_7.62x54r", second_speaker:position(), second_speaker:level_vertex_id(), second_speaker:game_vertex_id(), second_speaker:id())
+end
+
+function rand_nagrad_fixed_time()
+	nlc_vars.rn_4 = lua_random(1,12) nlc_vars.rn_3 = lua_random(1,12) nlc_vars.rn_2 = lua_random(1,12) nlc_vars.rn_1 = lua_random(1,12)
+	nlc_vars.rsn_4 = lua_random(1,12) nlc_vars.rsn_3 = lua_random(1,12) nlc_vars.rsn_2 = lua_random(1,12) nlc_vars.rsn_1 = lua_random(1,12)
+	nlc_vars.rsn_k4 = lua_random(1,4) nlc_vars.rsn_l3 = lua_random(1,4) nlc_vars.rsn_m2 = lua_random(1,4) nlc_vars.rsn_n1 = lua_random(1,4)
+end
+function rand_nagrad_fixed()
+	nlc_vars.rand_nagrad_rand_4 = nlc_vars.rn_4 or 1 nlc_vars.rand_nagrad_rand_3 = nlc_vars.rn_3 or 1 nlc_vars.rand_nagrad_rand_2 = nlc_vars.rn_2 or 1 nlc_vars.rand_nagrad_rand_1 = nlc_vars.rn_1 or 1
+	nlc_vars.rand_nagrad_sidor_rand_4 = nlc_vars.rsn_4 or 1 nlc_vars.rand_nagrad_sidor_rand_3 = nlc_vars.rsn_3 or 1 nlc_vars.rand_nagrad_sidor_rand_2 = nlc_vars.rsn_2 or 1 nlc_vars.rand_nagrad_sidor_rand_1 = nlc_vars.rsn_1 or 1
+	nlc_vars.rand_nagrad_sidor_rand_k4 = nlc_vars.rsn_k4 or 1 nlc_vars.rand_nagrad_sidor_rand_l3 = nlc_vars.rsn_l3 or 1 nlc_vars.rand_nagrad_sidor_rand_m2 = nlc_vars.rsn_m2 or 1 nlc_vars.rand_nagrad_sidor_rand_n1 = nlc_vars.rsn_n1 or 1
+end
+
+function add_lys_monsters()
+	for i=1,3 do
+		local obj=alife():create("pseudodog_normal",sak.v3f(139.865463,-0.867788,312.527679),444927,237)
+		if obj.online then
+			g_sim:set_switch_online(obj.id, false)
+			g_sim:set_switch_offline(obj.id, true)
+			amk.convert_npc[obj.id]=1
+		end
+	end
+end
+function lys_monsters_timer()
+	local rnd = lua_random(6,12)
+  	timers.start_timer("t1_lys_monsters",0,0,6,"gnzi.add_lys_monsters()")
+  	timers.start_timer("t2_lys_monsters",0,0,rnd,"gnzi.add_lys_monsters()")
+  	timers.start_timer("t3_lys_monsters",0,0,rnd+6,"gnzi.add_lys_monsters()")
+end
+
+function damage_p_a(obj_id)
+	misc.release_obj(obj_id)
+	local l_name = level.name()
+	if l_name~="aver" then
+  		local actor=db.actor
+		local act_pos=actor:position()
+        actor.radiation=0.9
+        sak.snd_rand_geiger()
+		local particle=particles_object("anomaly2\\electra_entrance_big")
+		local sound=sound_object([[anomaly\emi_entrance]])
+		local pos_blast=sak.v3f(act_pos.x,act_pos.y,act_pos.z)
+		particle:play_at_pos(pos_blast)
+		sound:play_at_pos(actor,pos_blast, 0)
+		local h=hit()
+		h.draftsman=actor
+		h:bone("bip01_spine")
+		h.type=hit.shock
+		h.power=0.9
+		h.impulse=0.0
+		actor:hit(h)
+	end
+end
+
+function on_info(info_id)
+	if db.blowout_active == true then
+		if info_id == "ui_pda" then
+			level.start_stop_menu(level.main_input_receiver(), true)
+		elseif info_id == "ui_pda_hide" then
+			level.start_stop_menu(PdaNoiseWnd(), true)
+		end
+	end
+end
+class "PdaNoiseWnd" (CUIScriptWnd)
+function PdaNoiseWnd:__init() super()
+	self:Init(0,0,1024,768)
+	self.ClickBtnExit = function() level.start_stop_menu(self, true) end
+	
+	self.noise = CUIStatic()
+	self.noise:InitTexture("ui\\ui_pda_noise")
+	self.noise:SetOriginalRect(0,0,1024,768)
+	self.noise:Init(3,20,891,643)
+	self:AttachChild(self.noise)
+end
+function PdaNoiseWnd:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action == ui_events.WINDOW_KEY_PRESSED then
+		if dik == DIK_keys.DIK_ESCAPE or dik == DIK_keys.DIK_P or dik == DIK_keys.DIK_H or dik == DIK_keys.DIK_M then
+			self:ClickBtnExit()
+		end
+	end
+	return true
+end
+
+function fraer_pda_timer()
+	local rnd = lua_random(12,22)
+	timers.start_timer("t_fraer_pda",0,rnd,29,"gnzi.fraer_pda_timer_end()")
+end
+function fraer_pda_timer_end()
+	db.actor:disable_info_portion("fraer_pda_is_ok")
+end
+
+function anti_sleep_timer_end()
+	db.actor:disable_info_portion("anti_sleep_time")
+end
+
+function sherstyk_new_kill_soldier_have()
+	local obj1 = g_sim:story_object(story_ids.agr_ratcatcher)
+	local obj2 = g_sim:story_object(story_ids.sanek)
+	
+	if not obj1:alive() and not obj2:alive() and sak.have_items_count("mutant_sanek_part",2) then return true end
+	return false
+end
+function sherstyk_new_vodka_have_timer()
+	timers.start_timer("t_sherstyk_new_vodka_have",0,9,0,"gnzi.sherstyk_new_vodka_have_timer_end()")
+end
+function sherstyk_new_vodka_have_timer_end()
+	db.actor:give_info_portion("sherstyk_new_vodka_have_end")
+end
+function sherstyk_new_kill_timer()
+	timers.start_timer("t_sherstyk_new_kill",5,0,29,"gnzi.sherstyk_new_kill_timer_end()")
+	
+	local obj1 = g_sim:story_object(story_ids.agr_ratcatcher)
+	local obj2 = g_sim:story_object(story_ids.sanek)
+
+	if obj1 then g_sim:create("mutant_sanek_part", obj1.position, obj1.m_level_vertex_id, obj1.m_game_vertex_id, obj1.id) end
+	if obj2 then g_sim:create("mutant_sanek_part", obj2.position, obj2.m_level_vertex_id, obj2.m_game_vertex_id, obj2.id) end
+end
+function sherstyk_new_kill_timer_end()
+	if not db.actor:has_info("sherstyk_new_kill_end") then
+		db.actor:give_info_portion("sherstyk_new_vodka_have_failed")
+		local obj = g_sim:story_object(story_ids.sak_military_stalker)
+		if obj and obj:alive() then
+			db.actor:give_info_portion("esc_bridge_pass_fire")
+		end
+	end
+end
+function sherstyk_new_kill_end2_timer()
+	timers.start_timer("t_sherstyk_new_kill_end2",0,2,0,"gnzi.sherstyk_new_kill_end2_timer_end()")
+end
+function sherstyk_new_kill_end2_timer_end()
+	db.actor:give_info_portion("sherstyk_new_kill_end2")
+end
+
+
+
+
+function accum_on_key()
+	local accum_flag = nlc_vars.accum_flag or 0
+	if accum_flag == 0 then
+		accum_flag = 1
+		nlc_vars.accum_flag = accum_flag
+		local snd_obj = xr_sound.get_safe_sound_object([[pda\pass_ok]])
+		snd_obj:play_no_feedback(db.actor, sound_object.s2d, 0, vector(), 1.0)
+	elseif accum_flag == 1 then
+		accum_flag = 0
+		nlc_vars.accum_flag = accum_flag
+		local snd_obj = xr_sound.get_safe_sound_object([[pda\pass_on]])
+		snd_obj:play_no_feedback(db.actor, sound_object.s2d, 0, vector(), 1.0)
+	end
+end

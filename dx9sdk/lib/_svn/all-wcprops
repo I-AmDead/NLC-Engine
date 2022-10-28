@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib
+END
+d3d10.lib
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/d3d10.lib
+END
+DxErr8.lib
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/DxErr8.lib
+END
+DxErr9.lib
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/DxErr9.lib
+END
+X3DAudio.lib
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/X3DAudio.lib
+END
+dxtrans.lib
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/dxtrans.lib
+END
+dxguid.lib
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/dxguid.lib
+END
+DxErr.lib
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/DxErr.lib
+END
+XInput.lib
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/XInput.lib
+END
+d3dxof.lib
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/d3dxof.lib
+END
+dxgi.lib
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/dxgi.lib
+END
+dinput8.lib
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/dinput8.lib
+END
+d3d10_1.lib
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/d3d10_1.lib
+END
+d3dx9.lib
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/d3dx9.lib
+END
+dsound.lib
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/dsound.lib
+END
+d3d10_1d.lib
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/d3d10_1d.lib
+END
+d3dx9d.lib
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/d3dx9d.lib
+END
+ddraw.lib
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/ddraw.lib
+END
+dplayx.lib
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/dplayx.lib
+END
+d3d8.lib
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/d3d8.lib
+END
+d3dx10.lib
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/d3dx10.lib
+END
+d3d9.lib
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/d3d9.lib
+END
+dinput.lib
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/dinput.lib
+END
+dsetup.lib
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/dsetup.lib
+END
+d3dx10d.lib
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/lib/d3dx10d.lib
+END

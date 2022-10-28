@@ -1,0 +1,1 @@
+﻿X:\trunk\Xray\xr_3da\xrRenderPC_R4\xrRender_R4.vcxproj(84,5): error MSB4019: импортированный проект "X:\trunk\xray.props" не обнаружен. Проверьте правильность пути в объявлении <Import> и убедитесь в наличии файла на диске.

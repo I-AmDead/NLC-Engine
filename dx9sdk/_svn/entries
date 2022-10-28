@@ -1,0 +1,34 @@
+8
+
+dir
+279
+http://svn.assembla.com/svn/bsepdft/src/dx9sdk
+http://svn.assembla.com/svn/bsepdft
+
+
+
+2008-07-27T11:54:59.925535Z
+7
+raynorpat
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fbf1ad31-3caa-4afa-b5b4-094426959cba
+
+include
+dir
+
+lib
+dir
+

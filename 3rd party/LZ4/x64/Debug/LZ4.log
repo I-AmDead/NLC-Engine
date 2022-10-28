@@ -1,0 +1,4 @@
+﻿  lz4.c
+lz4.c(754): warning C4804: '/' : unsafe use of type 'bool' in operation
+     Creating library X:\libraries\Debug\LZ464.lib and object X:\libraries\Debug\LZ464.exp
+  LZ4.vcxproj -> X:\trunk\3rd party\LZ4\x64\Debug\LZ4.dll

@@ -1,0 +1,551 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include
+END
+d3dx9anim.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dx9anim.h
+END
+d3dx10async.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dx10async.h
+END
+ddraw.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/ddraw.h
+END
+dplay8.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dplay8.h
+END
+d3d8.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3d8.h
+END
+audiodefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/audiodefs.h
+END
+d3dvec.inl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dvec.inl
+END
+D3DX10math.inl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/D3DX10math.inl
+END
+d3dx9mesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dx9mesh.h
+END
+d3dx9xof.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dx9xof.h
+END
+rmxftmpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/rmxftmpl.h
+END
+dvoice.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dvoice.h
+END
+d3drm.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3drm.h
+END
+dplay.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dplay.h
+END
+d3d9caps.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3d9caps.h
+END
+dxerr8.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dxerr8.h
+END
+X3DAudio.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/X3DAudio.h
+END
+dxtrans.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dxtrans.h
+END
+D3DX10tex.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/D3DX10tex.h
+END
+dmusicc.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dmusicc.h
+END
+XInput.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/XInput.h
+END
+d3d10misc.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3d10misc.h
+END
+dxsdkver.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dxsdkver.h
+END
+d3dx9.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dx9.h
+END
+D3D10_1.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/D3D10_1.h
+END
+dplobby.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dplobby.h
+END
+dmusici.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dmusici.h
+END
+xact.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/xact.h
+END
+dls1.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dls1.h
+END
+d3dx9core.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dx9core.h
+END
+dsetup.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dsetup.h
+END
+multimon.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/multimon.h
+END
+comdecl.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/comdecl.h
+END
+strsafe.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/strsafe.h
+END
+dinputd.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dinputd.h
+END
+dmusics.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dmusics.h
+END
+dpnathlp.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dpnathlp.h
+END
+D3D10.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/D3D10.h
+END
+dsconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dsconf.h
+END
+d3dx9shape.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dx9shape.h
+END
+D3DX10math.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/D3DX10math.h
+END
+dmplugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dmplugin.h
+END
+d3dcaps.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dcaps.h
+END
+D3D10_1shader.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/D3D10_1shader.h
+END
+d3dx9shader.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dx9shader.h
+END
+dmksctrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dmksctrl.h
+END
+rmxfguid.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/rmxfguid.h
+END
+gameux.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/gameux.h
+END
+d3d9types.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3d9types.h
+END
+dsound.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dsound.h
+END
+DXGIType.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/DXGIType.h
+END
+d3dtypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dtypes.h
+END
+d3dx9math.inl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dx9math.inl
+END
+D3D10shader.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/D3D10shader.h
+END
+d3d9.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3d9.h
+END
+dinput.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dinput.h
+END
+dmdls.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dmdls.h
+END
+d3drmobj.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3drmobj.h
+END
+d3dx9effect.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dx9effect.h
+END
+xma2defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/xma2defs.h
+END
+d3d8caps.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3d8caps.h
+END
+xact2wb.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/xact2wb.h
+END
+dmerror.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dmerror.h
+END
+dmusbuff.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dmusbuff.h
+END
+dxfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dxfile.h
+END
+xaudio2.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/xaudio2.h
+END
+d3dx9tex.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dx9tex.h
+END
+dxerr9.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dxerr9.h
+END
+PIXPlugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/PIXPlugin.h
+END
+D3DX10mesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/D3DX10mesh.h
+END
+dplobby8.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dplobby8.h
+END
+rpcsal.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/rpcsal.h
+END
+xact3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/xact3d.h
+END
+d3d8types.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3d8types.h
+END
+D3D10effect.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/D3D10effect.h
+END
+d3drmdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3drmdef.h
+END
+dvp.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dvp.h
+END
+dx7todx8.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dx7todx8.h
+END
+dmusicf.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dmusicf.h
+END
+DXGI.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/DXGI.h
+END
+d3d10sdklayers.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3d10sdklayers.h
+END
+dpaddr.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dpaddr.h
+END
+dxdiag.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dxdiag.h
+END
+D3DX10.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/D3DX10.h
+END
+dls2.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/dls2.h
+END
+d3dx9math.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3dx9math.h
+END
+xaudio2fx.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/xaudio2fx.h
+END
+d3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3d.h
+END
+D3DX10core.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/D3DX10core.h
+END
+DxErr.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/DxErr.h
+END
+d3drmwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bsepdft/!svn/ver/7/src/dx9sdk/include/d3drmwin.h
+END

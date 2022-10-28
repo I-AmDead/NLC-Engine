@@ -1,0 +1,8 @@
+﻿  lz4.c
+lz4.c(752): warning C4804: '/' : unsafe use of type 'bool' in operation
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1193,5): warning MSB8012: TargetPath(X:\trunk\3rd party\LZ4\x64\Release\LZ4.dll) does not match the Linker's OutputFile property value (X:\trunk\3rd party\LZ4\x64\Release\LZ4_x64.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1195,5): warning MSB8012: TargetName(LZ4) does not match the Linker's OutputFile property value (LZ4_x64). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification
+     Creating library X:\libraries\Release\LZ464.lib and object X:\libraries\Release\LZ464.exp
+LZ464.exp : warning LNK4070: /OUT:LZ4.dll directive in .EXP differs from output filename 'X:\trunk\3rd party\LZ4\x64\Release\LZ4_x64.dll'; ignoring directive
+  LZ4.vcxproj -> X:\trunk\3rd party\LZ4\x64\Release\LZ4.dll

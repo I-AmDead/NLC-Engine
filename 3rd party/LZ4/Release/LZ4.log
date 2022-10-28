@@ -1,0 +1,9 @@
+﻿  lz4.c
+lz4.c(748): warning C4804: '/' : unsafe use of type 'bool' in operation
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification
+  lz4.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+     Creating library X:\libraries\Release\LZ4.lib and object X:\libraries\Release\LZ4.exp
+  Generating code
+  Finished generating code
+  LZ4.vcxproj -> X:\trunk\3rd party\LZ4\Release\LZ4.dll

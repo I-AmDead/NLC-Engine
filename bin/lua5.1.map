@@ -1,0 +1,1939 @@
+ lua5.1
+
+ Timestamp is 5ba6773f (Sat Sep 22 20:09:19 2018)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0002bd7fH .text$mn                CODE
+ 0002:00000000 00000258H .idata$5                DATA
+ 0002:00000258 00000004H .CRT$XCA                DATA
+ 0002:0000025c 00000004H .CRT$XCZ                DATA
+ 0002:00000260 00000004H .CRT$XIA                DATA
+ 0002:00000264 00000004H .CRT$XIAA               DATA
+ 0002:00000268 00000008H .CRT$XIC                DATA
+ 0002:00000270 00000004H .CRT$XIZ                DATA
+ 0002:00000280 00003e50H .rdata                  DATA
+ 0002:000040d0 00000008H .rdata$sxdata           DATA
+ 0002:000040d8 00000004H .rtc$IAA                DATA
+ 0002:000040dc 00000004H .rtc$IZZ                DATA
+ 0002:000040e0 00000004H .rtc$TAA                DATA
+ 0002:000040e4 00000004H .rtc$TZZ                DATA
+ 0002:000040e8 00000094H .xdata$x                DATA
+ 0002:00004180 00000becH .edata                  DATA
+ 0002:00004d6c 0000003cH .idata$2                DATA
+ 0002:00004da8 00000014H .idata$3                DATA
+ 0002:00004dbc 00000258H .idata$4                DATA
+ 0002:00005014 0000078cH .idata$6                DATA
+ 0003:00000000 00000014H .data                   DATA
+ 0003:00000018 0000035cH .bss                    DATA
+ 0004:00000000 00000058H .rsrc$01                DATA
+ 0004:00000060 00000180H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000000       ___guard_fids_table        00000000     <absolute>
+ 0000:00000000       ___guard_fids_count        00000000     <absolute>
+ 0000:00000000       ___guard_flags             00000000     <absolute>
+ 0000:00000002       ___safe_se_handler_count   00000002     <absolute>
+ 0000:00009876       __ldused                   00009876     <absolute>
+ 0000:00009876       __fltused                  00009876     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000090       _luaA_pushobject           10001090 f   lapi.obj
+ 0001:000000b0       _lua_checkstack            100010b0 f   lapi.obj
+ 0001:00000120       _lua_xmove                 10001120 f   lapi.obj
+ 0001:00000170       _lua_atpanic               10001170 f   lapi.obj
+ 0001:00000190       _lua_newthread             10001190 f   lapi.obj
+ 0001:000001d0       _lua_gettop                100011d0 f   lapi.obj
+ 0001:000001e0       _lua_settop                100011e0 f   lapi.obj
+ 0001:00000230       _lua_remove                10001230 f   lapi.obj
+ 0001:00000280       _lua_insert                10001280 f   lapi.obj
+ 0001:000002d0       _lua_replace               100012d0 f   lapi.obj
+ 0001:000003a0       _lua_pushvalue             100013a0 f   lapi.obj
+ 0001:000003d0       _lua_type                  100013d0 f   lapi.obj
+ 0001:000003f0       _lua_typename              100013f0 f   lapi.obj
+ 0001:00000410       _lua_iscfunction           10001410 f   lapi.obj
+ 0001:00000440       _lua_isnumber              10001440 f   lapi.obj
+ 0001:00000480       _lua_isstring              10001480 f   lapi.obj
+ 0001:000004b0       _lua_isuserdata            100014b0 f   lapi.obj
+ 0001:000004e0       _lua_rawequal              100014e0 f   lapi.obj
+ 0001:00000520       _lua_equal                 10001520 f   lapi.obj
+ 0001:00000580       _lua_lessthan              10001580 f   lapi.obj
+ 0001:000005c0       _lua_tonumber              100015c0 f   lapi.obj
+ 0001:00000610       _lua_tointeger             10001610 f   lapi.obj
+ 0001:00000680       _lua_toboolean             10001680 f   lapi.obj
+ 0001:000006b0       _lua_tolstring             100016b0 f   lapi.obj
+ 0001:00000730       _lua_objlen                10001730 f   lapi.obj
+ 0001:000007a0       _lua_tocfunction           100017a0 f   lapi.obj
+ 0001:000007d0       _lua_touserdata            100017d0 f   lapi.obj
+ 0001:00000800       _lua_tothread              10001800 f   lapi.obj
+ 0001:00000820       _lua_topointer             10001820 f   lapi.obj
+ 0001:00000890       _lua_pushnil               10001890 f   lapi.obj
+ 0001:000008b0       _lua_pushnumber            100018b0 f   lapi.obj
+ 0001:000008d0       _lua_pushinteger           100018d0 f   lapi.obj
+ 0001:00000900       _lua_pushlstring           10001900 f   lapi.obj
+ 0001:000009f0       _lua_pushstring            100019f0 f   lapi.obj
+ 0001:00000a30       _lua_pushvfstring          10001a30 f   lapi.obj
+ 0001:00000a60       _lua_pushfstring           10001a60 f   lapi.obj
+ 0001:00000a90       _lua_pushcclosure          10001a90 f   lapi.obj
+ 0001:00000b30       _lua_pushboolean           10001b30 f   lapi.obj
+ 0001:00000b50       _lua_pushlightuserdata     10001b50 f   lapi.obj
+ 0001:00000b70       _lua_pushthread            10001b70 f   lapi.obj
+ 0001:00000b90       _lua_gettable              10001b90 f   lapi.obj
+ 0001:00000bc0       _lua_getfield              10001bc0 f   lapi.obj
+ 0001:00000ca0       _lua_rawget                10001ca0 f   lapi.obj
+ 0001:00000ce0       _lua_rawgeti               10001ce0 f   lapi.obj
+ 0001:00000d20       _lua_createtable           10001d20 f   lapi.obj
+ 0001:00000d60       _lua_getmetatable          10001d60 f   lapi.obj
+ 0001:00000db0       _lua_getfenv               10001db0 f   lapi.obj
+ 0001:00000e20       _lua_settable              10001e20 f   lapi.obj
+ 0001:00000e50       _lua_setfield              10001e50 f   lapi.obj
+ 0001:00000ec0       _lua_rawset                10001ec0 f   lapi.obj
+ 0001:00000f80       _lua_rawseti               10001f80 f   lapi.obj
+ 0001:00001020       _lua_setmetatable          10002020 f   lapi.obj
+ 0001:000010d0       _lua_setfenv               100020d0 f   lapi.obj
+ 0001:00001170       _lua_call                  10002170 f   lapi.obj
+ 0001:000011d0       _lua_pcall                 100021d0 f   lapi.obj
+ 0001:000012b0       _lua_cpcall                100022b0 f   lapi.obj
+ 0001:000012f0       _lua_load                  100022f0 f   lapi.obj
+ 0001:00001390       _lua_dump                  10002390 f   lapi.obj
+ 0001:000013d0       _lua_status                100023d0 f   lapi.obj
+ 0001:000013e0       _lua_gc                    100023e0 f   lapi.obj
+ 0001:000014e0       _lua_error                 100024e0 f   lapi.obj
+ 0001:000014f0       _lua_next                  100024f0 f   lapi.obj
+ 0001:00001530       _lua_concat                10002530 f   lapi.obj
+ 0001:000015b0       _lua_getallocf             100025b0 f   lapi.obj
+ 0001:000015e0       _lua_setallocf             100025e0 f   lapi.obj
+ 0001:00001600       _lua_newuserdata           10002600 f   lapi.obj
+ 0001:00001660       _lua_getupvalue            10002660 f   lapi.obj
+ 0001:000016f0       _lua_setupvalue            100026f0 f   lapi.obj
+ 0001:000017b0       _luaL_argerror             100027b0 f   lauxlib.obj
+ 0001:00001880       _luaL_typerror             10002880 f   lauxlib.obj
+ 0001:000018d0       _luaL_where                100028d0 f   lauxlib.obj
+ 0001:00001940       _luaL_error                10002940 f   lauxlib.obj
+ 0001:00001a10       _luaL_checkoption          10002a10 f   lauxlib.obj
+ 0001:00001ac0       _luaL_newmetatable         10002ac0 f   lauxlib.obj
+ 0001:00001bb0       _luaL_checkudata           10002bb0 f   lauxlib.obj
+ 0001:00001cb0       _luaL_checkstack           10002cb0 f   lauxlib.obj
+ 0001:00001ce0       _luaL_checktype            10002ce0 f   lauxlib.obj
+ 0001:00001d60       _luaL_checkany             10002d60 f   lauxlib.obj
+ 0001:00001da0       _luaL_checklstring         10002da0 f   lauxlib.obj
+ 0001:00001e10       _luaL_optlstring           10002e10 f   lauxlib.obj
+ 0001:00001e80       _luaL_checknumber          10002e80 f   lauxlib.obj
+ 0001:00001f70       _luaL_optnumber            10002f70 f   lauxlib.obj
+ 0001:00001fc0       _luaL_checkinteger         10002fc0 f   lauxlib.obj
+ 0001:000020c0       _luaL_optinteger           100030c0 f   lauxlib.obj
+ 0001:000020f0       _luaL_getmetafield         100030f0 f   lauxlib.obj
+ 0001:000021c0       _luaL_callmeta             100031c0 f   lauxlib.obj
+ 0001:00002240       _luaL_register             10003240 f   lauxlib.obj
+ 0001:00002260       _luaL_openlib              10003260 f   lauxlib.obj
+ 0001:000024d0       _luaL_gsub                 100034d0 f   lauxlib.obj
+ 0001:00002630       _luaL_findtable            10003630 f   lauxlib.obj
+ 0001:00002930       _luaL_prepbuffer           10003930 f   lauxlib.obj
+ 0001:00002970       _luaL_addlstring           10003970 f   lauxlib.obj
+ 0001:000029e0       _luaL_addstring            100039e0 f   lauxlib.obj
+ 0001:00002a10       _luaL_pushresult           10003a10 f   lauxlib.obj
+ 0001:00002a50       _luaL_addvalue             10003a50 f   lauxlib.obj
+ 0001:00002ad0       _luaL_buffinit             10003ad0 f   lauxlib.obj
+ 0001:00002af0       _luaL_ref                  10003af0 f   lauxlib.obj
+ 0001:00002c40       _luaL_unref                10003c40 f   lauxlib.obj
+ 0001:00002de0       _luaL_loadfile             10003de0 f   lauxlib.obj
+ 0001:00003060       _luaL_loadbuffer           10004060 f   lauxlib.obj
+ 0001:00003110       _luaL_loadstring           10004110 f   lauxlib.obj
+ 0001:000031d0       _luaL_newstate             100041d0 f   lauxlib.obj
+ 0001:00005740       _luaopen_base              10006740 f   lbaselib.obj
+ 0001:000058b0       _lua_newcthread            100068b0 f   lcoco.obj
+ 0001:00005930       _luaCOCO_yield             10006930 f   lcoco.obj
+ 0001:000059a0       _luaK_nil                  100069a0 f   lcode.obj
+ 0001:00005cb0       _luaK_concat               10006cb0 f   lcode.obj
+ 0001:00005d30       _luaK_reserveregs          10006d30 f   lcode.obj
+ 0001:00005ec0       _luaK_setreturns           10006ec0 f   lcode.obj
+ 0001:00005f70       _luaK_setoneret            10006f70 f   lcode.obj
+ 0001:00005fc0       _luaK_dischargevars        10006fc0 f   lcode.obj
+ 0001:00006380       _luaK_exp2nextreg          10007380 f   lcode.obj
+ 0001:000063f0       _luaK_exp2anyreg           100073f0 f   lcode.obj
+ 0001:00006440       _luaK_exp2val              10007440 f   lcode.obj
+ 0001:000064a0       _luaK_exp2RK               100074a0 f   lcode.obj
+ 0001:000065f0       _luaK_storevar             100075f0 f   lcode.obj
+ 0001:000066d0       _luaK_self                 100076d0 f   lcode.obj
+ 0001:00006930       _luaK_goiftrue             10007930 f   lcode.obj
+ 0001:00006de0       _luaK_prefix               10007de0 f   lcode.obj
+ 0001:00006eb0       _luaK_posfix               10007eb0 f   lcode.obj
+ 0001:000071b0       _luaK_setlist              100081b0 f   lcode.obj
+ 0001:00008870       _luaopen_debug             10009870 f   ldblib.obj
+ 0001:00008950       _lua_sethook               10009950 f   ldebug.obj
+ 0001:000089a0       _lua_gethook               100099a0 f   ldebug.obj
+ 0001:000089b0       _lua_gethookmask           100099b0 f   ldebug.obj
+ 0001:000089c0       _lua_gethookcount          100099c0 f   ldebug.obj
+ 0001:000089d0       _lua_getstack              100099d0 f   ldebug.obj
+ 0001:00008b60       _lua_getlocal              10009b60 f   ldebug.obj
+ 0001:00008bb0       _lua_setlocal              10009bb0 f   ldebug.obj
+ 0001:00008fc0       _lua_getinfo               10009fc0 f   ldebug.obj
+ 0001:000091b0       _luaG_checkopenop          1000a1b0 f   ldebug.obj
+ 0001:00009940       _luaG_checkcode            1000a940 f   ldebug.obj
+ 0001:00009cd0       _luaG_typeerror            1000acd0 f   ldebug.obj
+ 0001:00009d80       _luaG_concaterror          1000ad80 f   ldebug.obj
+ 0001:00009dc0       _luaG_aritherror           1000adc0 f   ldebug.obj
+ 0001:00009e00       _luaG_ordererror           1000ae00 f   ldebug.obj
+ 0001:00009f70       _luaG_errormsg             1000af70 f   ldebug.obj
+ 0001:0000a060       _luaG_runerror             1000b060 f   ldebug.obj
+ 0001:0000a120       _luaD_seterrorobj          1000b120 f   ldo.obj
+ 0001:0000a210       _luaD_throw                1000b210 f   ldo.obj
+ 0001:0000a260       _luaD_rawrunprotected      1000b260 f   ldo.obj
+ 0001:0000a340       _luaD_reallocstack         1000b340 f   ldo.obj
+ 0001:0000a3a0       _luaD_reallocCI            1000b3a0 f   ldo.obj
+ 0001:0000a420       _luaD_growstack            1000b420 f   ldo.obj
+ 0001:0000a440       _luaD_growCI               1000b440 f   ldo.obj
+ 0001:0000a490       _luaD_callhook             1000b490 f   ldo.obj
+ 0001:0000a5d0       _luaD_tryfuncTM            1000b5d0 f   ldo.obj
+ 0001:0000a6c0       _luaD_precall              1000b6c0 f   ldo.obj
+ 0001:0000a9f0       _luaD_poscall              1000b9f0 f   ldo.obj
+ 0001:0000aa80       _luaD_call                 1000ba80 f   ldo.obj
+ 0001:0000ac30       _lua_resume                1000bc30 f   ldo.obj
+ 0001:0000ad00       _lua_yield                 1000bd00 f   ldo.obj
+ 0001:0000ad60       _luaD_pcall                1000bd60 f   ldo.obj
+ 0001:0000b540       _luaU_dump                 1000c540 f   ldump.obj
+ 0001:0000b5b0       _luaF_newCclosure          1000c5b0 f   lfunc.obj
+ 0001:0000b620       _luaF_newLclosure          1000c620 f   lfunc.obj
+ 0001:0000b6b0       _luaF_newupval             1000c6b0 f   lfunc.obj
+ 0001:0000b700       _luaF_findupval            1000c700 f   lfunc.obj
+ 0001:0000b830       _luaF_freeupval            1000c830 f   lfunc.obj
+ 0001:0000b870       _luaF_close                1000c870 f   lfunc.obj
+ 0001:0000b940       _luaF_newproto             1000c940 f   lfunc.obj
+ 0001:0000ba40       _luaF_freeproto            1000ca40 f   lfunc.obj
+ 0001:0000bb10       _luaF_freeclosure          1000cb10 f   lfunc.obj
+ 0001:0000bb70       _luaF_getlocalname         1000cb70 f   lfunc.obj
+ 0001:0000bd80       _luaC_separateudata        1000cd80 f   lgc.obj
+ 0001:0000c9c0       _luaC_callGCTM             1000d9c0 f   lgc.obj
+ 0001:0000cae0       _luaC_freeall              1000dae0 f   lgc.obj
+ 0001:0000d010       _luaC_step                 1000e010 f   lgc.obj
+ 0001:0000d190       _luaC_fullgc               1000e190 f   lgc.obj
+ 0001:0000d220       _luaC_barrierf             1000e220 f   lgc.obj
+ 0001:0000d250       _luaC_link                 1000e250 f   lgc.obj
+ 0001:0000d270       _luaC_linkupval            1000e270 f   lgc.obj
+ 0001:0000d2d0       _luaL_openlibs             1000e2d0 f   linit.obj
+ 0001:0000eef0       _luaopen_io                1000fef0 f   liolib.obj
+ 0001:00011270       _luaopen_jit               10012270 f   ljitlib.obj
+ 0001:00011920       _luaJIT_debugnotify        10012920 f   ljit_backend.obj
+ 0001:00015be0       _luaJIT_backend            10016be0 f   ljit_backend.obj
+ 0001:00015dc0       _luaJIT_initbackend        10016dc0 f   ljit_backend.obj
+ 0001:00015e60       _luaJIT_initstate          10016e60 f   ljit_core.obj
+ 0001:00015ed0       _luaJIT_freestate          10016ed0 f   ljit_core.obj
+ 0001:00015f50       _luaJIT_findpc             10016f50 f   ljit_core.obj
+ 0001:00016060       _luaJIT_findmcode          10017060 f   ljit_core.obj
+ 0001:000162c0       _luaJIT_run                100172c0 f   ljit_core.obj
+ 0001:00016410       _luaJIT_deoptimize         10017410 f   ljit_core.obj
+ 0001:00016560       _luaJIT_compile            10017560 f   ljit_core.obj
+ 0001:000165f0       _luaJIT_setmode            100175f0 f   ljit_core.obj
+ 0001:00016730       _luaJIT_version_1_1_8      10017730 f   ljit_core.obj
+ 0001:00016740       _dasm_init                 10017740 f   ljit_dasm.obj
+ 0001:00016890       _dasm_free                 10017890 f   ljit_dasm.obj
+ 0001:00016960       _dasm_setupglobal          10017960 f   ljit_dasm.obj
+ 0001:00016a30       _dasm_growpc               10017a30 f   ljit_dasm.obj
+ 0001:00016b10       _dasm_setup                10017b10 f   ljit_dasm.obj
+ 0001:00016b80       _dasm_put                  10017b80 f   ljit_dasm.obj
+ 0001:00016f90       _dasm_link                 10017f90 f   ljit_dasm.obj
+ 0001:00017220       _dasm_encode               10018220 f   ljit_dasm.obj
+ 0001:00017630       _luaJIT_freeproto          10018630 f   ljit_mem.obj
+ 0001:00017680       _luaJIT_link               10018680 f   ljit_mem.obj
+ 0001:000177c0       _luaX_init                 100187c0 f   llex.obj
+ 0001:00017900       _luaX_token2str            10018900 f   llex.obj
+ 0001:000179d0       _luaX_lexerror             100189d0 f   llex.obj
+ 0001:00017a90       _luaX_newstring            10018a90 f   llex.obj
+ 0001:00017c30       _luaX_setinput             10018c30 f   llex.obj
+ 0001:000192a0       _luaX_next                 1001a2a0 f   llex.obj
+ 0001:00019fe0       _luaopen_math              1001afe0 f   lmathlib.obj
+ 0001:0001a100       _luaM_growaux_             1001b100 f   lmem.obj
+ 0001:0001a1d0       _luaM_realloc_             1001b1d0 f   lmem.obj
+ 0001:0001b9a0       _luaopen_package           1001c9a0 f   loadlib.obj
+ 0001:0001be90       _luaO_rawequalObj          1001ce90 f   lobject.obj
+ 0001:0001bee0       _luaO_str2d                1001cee0 f   lobject.obj
+ 0001:0001bff0       _luaO_pushvfstring         1001cff0 f   lobject.obj
+ 0001:0001c410       _luaO_pushfstring          1001d410 f   lobject.obj
+ 0001:0001c430       _luaO_chunkid              1001d430 f   lobject.obj
+ 0001:0001d170       _luaopen_os                1001e170 f   loslib.obj
+ 0001:0001dea0       _luaY_parser               1001eea0 f   lparser.obj
+ 0001:00021440       _luaE_newthread            10022440 f   lstate.obj
+ 0001:000214d0       _luaE_freethread           100224d0 f   lstate.obj
+ 0001:00021540       _lua_newstate              10022540 f   lstate.obj
+ 0001:000216c0       _lua_close                 100226c0 f   lstate.obj
+ 0001:00021730       _luaS_resize               10022730 f   lstring.obj
+ 0001:000218b0       _luaS_newlstr              100228b0 f   lstring.obj
+ 0001:00021a40       _luaS_newudata             10022a40 f   lstring.obj
+ 0001:00024520       _luaopen_string            10025520 f   lstrlib.obj
+ 0001:000247d0       _luaH_next                 100257d0 f   ltable.obj
+ 0001:00024e00       _luaH_resizearray          10025e00 f   ltable.obj
+ 0001:00024f60       _luaH_new                  10025f60 f   ltable.obj
+ 0001:00024fe0       _luaH_free                 10025fe0 f   ltable.obj
+ 0001:00025040       _luaH_newkey               10026040 f   ltable.obj
+ 0001:000251a0       _luaH_getnum               100261a0 f   ltable.obj
+ 0001:00025240       _luaH_getstr               10026240 f   ltable.obj
+ 0001:00025270       _luaH_get                  10026270 f   ltable.obj
+ 0001:00025360       _luaH_setnum               10026360 f   ltable.obj
+ 0001:000253b0       _luaH_setstr               100263b0 f   ltable.obj
+ 0001:00025530       _luaH_getn                 10026530 f   ltable.obj
+ 0001:00026e50       _luaopen_table             10027e50 f   ltablib.obj
+ 0001:00026e70       _luaT_init                 10027e70 f   ltm.obj
+ 0001:00026fc0       _luaT_gettm                10027fc0 f   ltm.obj
+ 0001:00027010       _luaT_gettmbyobj           10028010 f   ltm.obj
+ 0001:000285c0       _luaU_undump               100295c0 f   lundump.obj
+ 0001:00028630       _luaV_tonumber             10029630 f   lvm.obj
+ 0001:00028680       _luaV_tostring             10029680 f   lvm.obj
+ 0001:00028850       _luaV_gettable             10029850 f   lvm.obj
+ 0001:00028990       _luaV_settable             10029990 f   lvm.obj
+ 0001:00028d80       _luaV_lessthan             10029d80 f   lvm.obj
+ 0001:00028df0       _luaV_lessequal            10029df0 f   lvm.obj
+ 0001:00028e90       _luaV_equalval             10029e90 f   lvm.obj
+ 0001:00028f60       _luaV_concat               10029f60 f   lvm.obj
+ 0001:00029310       _luaV_arith                1002a310 f   lvm.obj
+ 0001:00029550       _luaV_execute              1002a550 f   lvm.obj
+ 0001:0002ac50       _luaZ_fill                 1002bc50 f   lzio.obj
+ 0001:0002ac90       _luaZ_read                 1002bc90 f   lzio.obj
+ 0001:0002ad20       _luaZ_openspace            1002bd20 f   lzio.obj
+ 0001:0002ad7c       _log                       1002bd7c f   MSVCRT:MSVCR120.dll
+ 0001:0002ad82       _tanh                      1002bd82 f   MSVCRT:MSVCR120.dll
+ 0001:0002ad88       _sinh                      1002bd88 f   MSVCRT:MSVCR120.dll
+ 0001:0002ad8e       _cosh                      1002bd8e f   MSVCRT:MSVCR120.dll
+ 0001:0002ad94       _acos                      1002bd94 f   MSVCRT:MSVCR120.dll
+ 0001:0002ad9a       _log10                     1002bd9a f   MSVCRT:MSVCR120.dll
+ 0001:0002ada0       _atan                      1002bda0 f   MSVCRT:MSVCR120.dll
+ 0001:0002ada6       _exp                       1002bda6 f   MSVCRT:MSVCR120.dll
+ 0001:0002adac       _asin                      1002bdac f   MSVCRT:MSVCR120.dll
+ 0001:0002adfe       __CRT_INIT@12              1002bdfe f   MSVCRT:crtdll.obj
+ 0001:0002aff5       __DllMainCRTStartup@12     1002bff5 f   MSVCRT:crtdll.obj
+ 0001:0002b14c       ___CppXcptFilter           1002c14c f   MSVCRT:MSVCR120.dll
+ 0001:0002b152       __amsg_exit                1002c152 f   MSVCRT:MSVCR120.dll
+ 0001:0002b160       __FindPESection            1002c160 f   MSVCRT:pesect.obj
+ 0001:0002b1b0       __IsNonwritableInCurrentImage 1002c1b0 f   MSVCRT:pesect.obj
+ 0001:0002b270       __ValidateImageBase        1002c270 f   MSVCRT:pesect.obj
+ 0001:0002b2a1       ___atonexitinit            1002c2a1 f   MSVCRT:atonexit.obj
+ 0001:0002b2dd       __onexit                   1002c2dd f   MSVCRT:atonexit.obj
+ 0001:0002b386       _atexit                    1002c386 f   MSVCRT:atonexit.obj
+ 0001:0002b39b       ___security_init_cookie    1002c39b f   MSVCRT:gs_support.obj
+ 0001:0002b437       _DllMain@12                1002c437 f   MSVCRT:dllmain.obj
+ 0001:0002b459       __RTC_Initialize           1002c459 f   MSVCRT:initsect.obj
+ 0001:0002b479       __RTC_Terminate            1002c479 f   MSVCRT:initsect.obj
+ 0001:0002b49a       __initterm                 1002c49a f   MSVCRT:MSVCR120.dll
+ 0001:0002b4a0       __initterm_e               1002c4a0 f   MSVCRT:MSVCR120.dll
+ 0001:0002b4a6       ___clean_type_info_names   1002c4a6 f   MSVCRT:tncleanup.obj
+ 0001:0002b4c0       __SEH_prolog4              1002c4c0 f   MSVCRT:sehprolg4.obj
+ 0001:0002b505       __SEH_epilog4              1002c505 f   MSVCRT:sehprolg4.obj
+ 0001:0002b519       __except_handler4          1002c519 f   MSVCRT:chandler4gs.obj
+ 0001:0002b53c       __lock                     1002c53c f   MSVCRT:MSVCR120.dll
+ 0001:0002b542       __unlock                   1002c542 f   MSVCRT:MSVCR120.dll
+ 0001:0002b548       ___dllonexit               1002c548 f   MSVCRT:MSVCR120.dll
+ 0001:0002b54e       ___clean_type_info_names_internal 1002c54e f   MSVCRT:MSVCR120.dll
+ 0001:0002b554       @__security_check_cookie@4 1002c554 f   MSVCRT:secchk.obj
+ 0001:0002b564       __except_handler4_common   1002c564 f   MSVCRT:MSVCR120.dll
+ 0001:0002b56a       ___raise_securityfailure   1002c56a f   MSVCRT:gs_report.obj
+ 0001:0002b5a7       ___report_gsfailure        1002c5a7 f   MSVCRT:gs_report.obj
+ 0001:0002b6a2       __crt_debugger_hook        1002c6a2 f   MSVCRT:MSVCR120.dll
+ 0001:0002b6a8       ___crtUnhandledException   1002c6a8 f   MSVCRT:MSVCR120.dll
+ 0001:0002b6ae       ___crtTerminateProcess     1002c6ae f   MSVCRT:MSVCR120.dll
+ 0001:0002b6b4       _IsProcessorFeaturePresent@4 1002c6b4 f   kernel32:KERNEL32.dll
+ 0001:0002b6ba       __CIcosh                   1002c6ba f   MSVCRT:MSVCR120.dll
+ 0001:0002b6c0       __CIfmod                   1002c6c0 f   MSVCRT:MSVCR120.dll
+ 0001:0002b6c6       __CIsinh                   1002c6c6 f   MSVCRT:MSVCR120.dll
+ 0001:0002b6cc       __CItanh                   1002c6cc f   MSVCRT:MSVCR120.dll
+ 0001:0002b6d2       ___libm_sse2_acos          1002c6d2 f   MSVCRT:MSVCR120.dll
+ 0001:0002b6d8       ___libm_sse2_asin          1002c6d8 f   MSVCRT:MSVCR120.dll
+ 0001:0002b6de       ___libm_sse2_atan          1002c6de f   MSVCRT:MSVCR120.dll
+ 0001:0002b6e4       ___libm_sse2_atan2         1002c6e4 f   MSVCRT:MSVCR120.dll
+ 0001:0002b6ea       ___libm_sse2_cos           1002c6ea f   MSVCRT:MSVCR120.dll
+ 0001:0002b6f0       ___libm_sse2_exp           1002c6f0 f   MSVCRT:MSVCR120.dll
+ 0001:0002b6f6       ___libm_sse2_log           1002c6f6 f   MSVCRT:MSVCR120.dll
+ 0001:0002b6fc       ___libm_sse2_log10         1002c6fc f   MSVCRT:MSVCR120.dll
+ 0001:0002b702       ___libm_sse2_pow           1002c702 f   MSVCRT:MSVCR120.dll
+ 0001:0002b708       ___libm_sse2_sin           1002c708 f   MSVCRT:MSVCR120.dll
+ 0001:0002b70e       ___libm_sse2_tan           1002c70e f   MSVCRT:MSVCR120.dll
+ 0001:0002b720       __alloca_probe             1002c720 f   MSVCRT:chkstk.obj
+ 0001:0002b720       __chkstk                   1002c720 f   MSVCRT:chkstk.obj
+ 0001:0002b750       __ftoui3                   1002c750 f   MSVCRT:ftol3.obj
+ 0001:0002b75f       __ftoul3                   1002c75f f   MSVCRT:ftol3.obj
+ 0001:0002b76e       __ftol3                    1002c76e f   MSVCRT:ftol3.obj
+ 0001:0002b77b       __ftol3_NaN                1002c77b f   MSVCRT:ftol3.obj
+ 0001:0002b793       __ftol3_work               1002c793 f   MSVCRT:ftol3.obj
+ 0001:0002b819       __ftol3_common             1002c819 f   MSVCRT:ftol3.obj
+ 0001:0002b8db       __ftol3_arg_error          1002c8db f   MSVCRT:ftol3.obj
+ 0001:0002b8ed       __ftol3_except             1002c8ed f   MSVCRT:ftol3.obj
+ 0001:0002b931       __dtoui3                   1002c931 f   MSVCRT:ftol3.obj
+ 0001:0002b940       __dtoul3                   1002c940 f   MSVCRT:ftol3.obj
+ 0001:0002b94f       __dtol3                    1002c94f f   MSVCRT:ftol3.obj
+ 0001:0002b95c       __dtol3_NaN                1002c95c f   MSVCRT:ftol3.obj
+ 0001:0002b979       __dtol3_work               1002c979 f   MSVCRT:ftol3.obj
+ 0001:0002ba5e       __ultod3                   1002ca5e f   MSVCRT:ftol3.obj
+ 0001:0002baef       __ltod3                    1002caef f   MSVCRT:ftol3.obj
+ 0001:0002bb1e       __except_handler3          1002cb1e f   MSVCRT:MSVCR120.dll
+ 0001:0002bb30       __ftol2_sse                1002cb30 f   MSVCRT:ftol2.obj
+ 0001:0002bb39       __ftol2_pentium4           1002cb39 f   MSVCRT:ftol2.obj
+ 0001:0002bb4c       __ftol2_sse_excpt          1002cb4c f   MSVCRT:ftol2.obj
+ 0001:0002bb66       __ftol2                    1002cb66 f   MSVCRT:ftol2.obj
+ 0001:0002bbdc       __setjmp3                  1002cbdc f   MSVCRT:MSVCR120.dll
+ 0001:0002bbe2       _ceil                      1002cbe2 f   MSVCRT:MSVCR120.dll
+ 0001:0002bbe8       _memcpy                    1002cbe8 f   MSVCRT:MSVCR120.dll
+ 0001:0002bbee       _memset                    1002cbee f   MSVCRT:MSVCR120.dll
+ 0001:0002bc00       __except1                  1002cc00 f   MSVCRT:MSVCR120.dll
+ 0001:0002bc06       ___isa_available_init      1002cc06 f   MSVCRT:cpu_disp.obj
+ 0002:00000000       __imp__IsProcessorFeaturePresent@4 1002d000     kernel32:KERNEL32.dll
+ 0002:00000004       __imp__DisableThreadLibraryCalls@4 1002d004     kernel32:KERNEL32.dll
+ 0002:00000008       __imp__GetSystemTimeAsFileTime@4 1002d008     kernel32:KERNEL32.dll
+ 0002:0000000c       __imp__CreateFiber@12      1002d00c     kernel32:KERNEL32.dll
+ 0002:00000010       __imp__ConvertThreadToFiber@4 1002d010     kernel32:KERNEL32.dll
+ 0002:00000014       __imp__SwitchToFiber@4     1002d014     kernel32:KERNEL32.dll
+ 0002:00000018       __imp__DeleteFiber@4       1002d018     kernel32:KERNEL32.dll
+ 0002:0000001c       __imp__HeapAlloc@12        1002d01c     kernel32:KERNEL32.dll
+ 0002:00000020       __imp__HeapFree@12         1002d020     kernel32:KERNEL32.dll
+ 0002:00000024       __imp__HeapDestroy@4       1002d024     kernel32:KERNEL32.dll
+ 0002:00000028       __imp__HeapCreate@12       1002d028     kernel32:KERNEL32.dll
+ 0002:0000002c       __imp__FreeLibrary@4       1002d02c     kernel32:KERNEL32.dll
+ 0002:00000030       __imp__FormatMessageA@28   1002d030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp__GetLastError@0      1002d034     kernel32:KERNEL32.dll
+ 0002:00000038       __imp__GetProcAddress@8    1002d038     kernel32:KERNEL32.dll
+ 0002:0000003c       __imp__LoadLibraryA@4      1002d03c     kernel32:KERNEL32.dll
+ 0002:00000040       __imp__GetModuleFileNameA@12 1002d040     kernel32:KERNEL32.dll
+ 0002:00000044       __imp__GetCurrentThreadId@0 1002d044     kernel32:KERNEL32.dll
+ 0002:00000048       __imp__GetCurrentProcessId@0 1002d048     kernel32:KERNEL32.dll
+ 0002:0000004c       __imp__QueryPerformanceCounter@4 1002d04c     kernel32:KERNEL32.dll
+ 0002:00000050       __imp__DecodePointer@4     1002d050     kernel32:KERNEL32.dll
+ 0002:00000054       __imp__EncodePointer@4     1002d054     kernel32:KERNEL32.dll
+ 0002:00000058       __imp__IsDebuggerPresent@0 1002d058     kernel32:KERNEL32.dll
+ 0002:0000005c       \177KERNEL32_NULL_THUNK_DATA 1002d05c     kernel32:KERNEL32.dll
+ 0002:00000060       __imp__strstr              1002d060     MSVCRT:MSVCR120.dll
+ 0002:00000064       __imp____iob_func          1002d064     MSVCRT:MSVCR120.dll
+ 0002:00000068       __imp__strchr              1002d068     MSVCRT:MSVCR120.dll
+ 0002:0000006c       __imp___errno              1002d06c     MSVCRT:MSVCR120.dll
+ 0002:00000070       __imp__fopen               1002d070     MSVCRT:MSVCR120.dll
+ 0002:00000074       __imp__fread               1002d074     MSVCRT:MSVCR120.dll
+ 0002:00000078       __imp__fprintf             1002d078     MSVCRT:MSVCR120.dll
+ 0002:0000007c       __imp__ferror              1002d07c     MSVCRT:MSVCR120.dll
+ 0002:00000080       __imp__freopen             1002d080     MSVCRT:MSVCR120.dll
+ 0002:00000084       __imp__realloc             1002d084     MSVCRT:MSVCR120.dll
+ 0002:00000088       __imp__fclose              1002d088     MSVCRT:MSVCR120.dll
+ 0002:0000008c       __imp__getc                1002d08c     MSVCRT:MSVCR120.dll
+ 0002:00000090       __imp__isspace             1002d090     MSVCRT:MSVCR120.dll
+ 0002:00000094       __imp__fputs               1002d094     MSVCRT:MSVCR120.dll
+ 0002:00000098       __imp__strtoul             1002d098     MSVCRT:MSVCR120.dll
+ 0002:0000009c       __imp__fgets               1002d09c     MSVCRT:MSVCR120.dll
+ 0002:000000a0       __imp__abort               1002d0a0     MSVCRT:MSVCR120.dll
+ 0002:000000a4       __imp__longjmp             1002d0a4     MSVCRT:MSVCR120.dll
+ 0002:000000a8       __imp__fscanf              1002d0a8     MSVCRT:MSVCR120.dll
+ 0002:000000ac       __imp__tmpfile             1002d0ac     MSVCRT:MSVCR120.dll
+ 0002:000000b0       __imp___pclose             1002d0b0     MSVCRT:MSVCR120.dll
+ 0002:000000b4       __imp__fflush              1002d0b4     MSVCRT:MSVCR120.dll
+ 0002:000000b8       __imp___popen              1002d0b8     MSVCRT:MSVCR120.dll
+ 0002:000000bc       __imp__setvbuf             1002d0bc     MSVCRT:MSVCR120.dll
+ 0002:000000c0       __imp__fwrite              1002d0c0     MSVCRT:MSVCR120.dll
+ 0002:000000c4       __imp__ftell               1002d0c4     MSVCRT:MSVCR120.dll
+ 0002:000000c8       __imp__fseek               1002d0c8     MSVCRT:MSVCR120.dll
+ 0002:000000cc       __imp__clearerr            1002d0cc     MSVCRT:MSVCR120.dll
+ 0002:000000d0       __imp__pow                 1002d0d0     MSVCRT:MSVCR120.dll
+ 0002:000000d4       __imp__log                 1002d0d4     MSVCRT:MSVCR120.dll
+ 0002:000000d8       __imp__tanh                1002d0d8     MSVCRT:MSVCR120.dll
+ 0002:000000dc       __imp__sinh                1002d0dc     MSVCRT:MSVCR120.dll
+ 0002:000000e0       __imp__cosh                1002d0e0     MSVCRT:MSVCR120.dll
+ 0002:000000e4       __imp__acos                1002d0e4     MSVCRT:MSVCR120.dll
+ 0002:000000e8       __imp__log10               1002d0e8     MSVCRT:MSVCR120.dll
+ 0002:000000ec       __imp__atan                1002d0ec     MSVCRT:MSVCR120.dll
+ 0002:000000f0       __imp__exp                 1002d0f0     MSVCRT:MSVCR120.dll
+ 0002:000000f4       __imp__asin                1002d0f4     MSVCRT:MSVCR120.dll
+ 0002:000000f8       __imp__localeconv          1002d0f8     MSVCRT:MSVCR120.dll
+ 0002:000000fc       __imp__isalnum             1002d0fc     MSVCRT:MSVCR120.dll
+ 0002:00000100       __imp__isalpha             1002d100     MSVCRT:MSVCR120.dll
+ 0002:00000104       __imp__isdigit             1002d104     MSVCRT:MSVCR120.dll
+ 0002:00000108       __imp__ungetc              1002d108     MSVCRT:MSVCR120.dll
+ 0002:0000010c       __imp__modf                1002d10c     MSVCRT:MSVCR120.dll
+ 0002:00000110       __imp__ldexp               1002d110     MSVCRT:MSVCR120.dll
+ 0002:00000114       __imp__rand                1002d114     MSVCRT:MSVCR120.dll
+ 0002:00000118       __imp__srand               1002d118     MSVCRT:MSVCR120.dll
+ 0002:0000011c       __imp__frexp               1002d11c     MSVCRT:MSVCR120.dll
+ 0002:00000120       __imp___HUGE               1002d120     MSVCRT:MSVCR120.dll
+ 0002:00000124       __imp__strrchr             1002d124     MSVCRT:MSVCR120.dll
+ 0002:00000128       __imp__getenv              1002d128     MSVCRT:MSVCR120.dll
+ 0002:0000012c       __imp__strtod              1002d12c     MSVCRT:MSVCR120.dll
+ 0002:00000130       __imp__sprintf             1002d130     MSVCRT:MSVCR120.dll
+ 0002:00000134       __imp___except1            1002d134     MSVCRT:MSVCR120.dll
+ 0002:00000138       __imp__strncpy             1002d138     MSVCRT:MSVCR120.dll
+ 0002:0000013c       __imp__strcspn             1002d13c     MSVCRT:MSVCR120.dll
+ 0002:00000140       __imp__rename              1002d140     MSVCRT:MSVCR120.dll
+ 0002:00000144       __imp___mktime64           1002d144     MSVCRT:MSVCR120.dll
+ 0002:00000148       __imp___gmtime64           1002d148     MSVCRT:MSVCR120.dll
+ 0002:0000014c       __imp__tmpnam              1002d14c     MSVCRT:MSVCR120.dll
+ 0002:00000150       __imp__system              1002d150     MSVCRT:MSVCR120.dll
+ 0002:00000154       __imp__remove              1002d154     MSVCRT:MSVCR120.dll
+ 0002:00000158       __imp__clock               1002d158     MSVCRT:MSVCR120.dll
+ 0002:0000015c       __imp__strftime            1002d15c     MSVCRT:MSVCR120.dll
+ 0002:00000160       __imp__setlocale           1002d160     MSVCRT:MSVCR120.dll
+ 0002:00000164       __imp___localtime64        1002d164     MSVCRT:MSVCR120.dll
+ 0002:00000168       __imp___difftime64         1002d168     MSVCRT:MSVCR120.dll
+ 0002:0000016c       __imp___time64             1002d16c     MSVCRT:MSVCR120.dll
+ 0002:00000170       __imp__exit                1002d170     MSVCRT:MSVCR120.dll
+ 0002:00000174       __imp___create_locale      1002d174     MSVCRT:MSVCR120.dll
+ 0002:00000178       __imp__memchr              1002d178     MSVCRT:MSVCR120.dll
+ 0002:0000017c       __imp__ispunct             1002d17c     MSVCRT:MSVCR120.dll
+ 0002:00000180       __imp__tolower             1002d180     MSVCRT:MSVCR120.dll
+ 0002:00000184       __imp___tolower_l          1002d184     MSVCRT:MSVCR120.dll
+ 0002:00000188       __imp__isupper             1002d188     MSVCRT:MSVCR120.dll
+ 0002:0000018c       __imp__islower             1002d18c     MSVCRT:MSVCR120.dll
+ 0002:00000190       __imp__strpbrk             1002d190     MSVCRT:MSVCR120.dll
+ 0002:00000194       __imp___toupper_l          1002d194     MSVCRT:MSVCR120.dll
+ 0002:00000198       __imp__isxdigit            1002d198     MSVCRT:MSVCR120.dll
+ 0002:0000019c       __imp__strcoll             1002d19c     MSVCRT:MSVCR120.dll
+ 0002:000001a0       __imp____CppXcptFilter     1002d1a0     MSVCRT:MSVCR120.dll
+ 0002:000001a4       __imp___amsg_exit          1002d1a4     MSVCRT:MSVCR120.dll
+ 0002:000001a8       __imp___malloc_crt         1002d1a8     MSVCRT:MSVCR120.dll
+ 0002:000001ac       __imp___initterm           1002d1ac     MSVCRT:MSVCR120.dll
+ 0002:000001b0       __imp___initterm_e         1002d1b0     MSVCRT:MSVCR120.dll
+ 0002:000001b4       __imp___lock               1002d1b4     MSVCRT:MSVCR120.dll
+ 0002:000001b8       __imp___unlock             1002d1b8     MSVCRT:MSVCR120.dll
+ 0002:000001bc       __imp___calloc_crt         1002d1bc     MSVCRT:MSVCR120.dll
+ 0002:000001c0       __imp____dllonexit         1002d1c0     MSVCRT:MSVCR120.dll
+ 0002:000001c4       __imp___onexit             1002d1c4     MSVCRT:MSVCR120.dll
+ 0002:000001c8       __imp____clean_type_info_names_internal 1002d1c8     MSVCRT:MSVCR120.dll
+ 0002:000001cc       __imp___except_handler4_common 1002d1cc     MSVCRT:MSVCR120.dll
+ 0002:000001d0       __imp___crt_debugger_hook  1002d1d0     MSVCRT:MSVCR120.dll
+ 0002:000001d4       __imp____crtUnhandledException 1002d1d4     MSVCRT:MSVCR120.dll
+ 0002:000001d8       __imp____crtTerminateProcess 1002d1d8     MSVCRT:MSVCR120.dll
+ 0002:000001dc       __imp__strerror            1002d1dc     MSVCRT:MSVCR120.dll
+ 0002:000001e0       __imp__free                1002d1e0     MSVCRT:MSVCR120.dll
+ 0002:000001e4       __imp__feof                1002d1e4     MSVCRT:MSVCR120.dll
+ 0002:000001e8       __imp__sprintf_s           1002d1e8     MSVCRT:MSVCR120.dll
+ 0002:000001ec       __imp__perror              1002d1ec     MSVCRT:MSVCR120.dll
+ 0002:000001f0       __imp__memcpy              1002d1f0     MSVCRT:MSVCR120.dll
+ 0002:000001f4       __imp__memset              1002d1f4     MSVCRT:MSVCR120.dll
+ 0002:000001f8       __imp__iscntrl             1002d1f8     MSVCRT:MSVCR120.dll
+ 0002:000001fc       __imp__strncat             1002d1fc     MSVCRT:MSVCR120.dll
+ 0002:00000200       __imp___CIcosh             1002d200     MSVCRT:MSVCR120.dll
+ 0002:00000204       __imp___CIfmod             1002d204     MSVCRT:MSVCR120.dll
+ 0002:00000208       __imp___CIsinh             1002d208     MSVCRT:MSVCR120.dll
+ 0002:0000020c       __imp___CItanh             1002d20c     MSVCRT:MSVCR120.dll
+ 0002:00000210       __imp____libm_sse2_acos    1002d210     MSVCRT:MSVCR120.dll
+ 0002:00000214       __imp____libm_sse2_asin    1002d214     MSVCRT:MSVCR120.dll
+ 0002:00000218       __imp____libm_sse2_atan    1002d218     MSVCRT:MSVCR120.dll
+ 0002:0000021c       __imp____libm_sse2_atan2   1002d21c     MSVCRT:MSVCR120.dll
+ 0002:00000220       __imp____libm_sse2_cos     1002d220     MSVCRT:MSVCR120.dll
+ 0002:00000224       __imp____libm_sse2_exp     1002d224     MSVCRT:MSVCR120.dll
+ 0002:00000228       __imp____libm_sse2_log     1002d228     MSVCRT:MSVCR120.dll
+ 0002:0000022c       __imp____libm_sse2_log10   1002d22c     MSVCRT:MSVCR120.dll
+ 0002:00000230       __imp____libm_sse2_pow     1002d230     MSVCRT:MSVCR120.dll
+ 0002:00000234       __imp____libm_sse2_sin     1002d234     MSVCRT:MSVCR120.dll
+ 0002:00000238       __imp____libm_sse2_tan     1002d238     MSVCRT:MSVCR120.dll
+ 0002:0000023c       __imp___except_handler3    1002d23c     MSVCRT:MSVCR120.dll
+ 0002:00000240       __imp___setjmp3            1002d240     MSVCRT:MSVCR120.dll
+ 0002:00000244       __imp__ceil                1002d244     MSVCRT:MSVCR120.dll
+ 0002:00000248       \177MSVCR120_NULL_THUNK_DATA 1002d248     MSVCRT:MSVCR120.dll
+ 0002:0000024c       __imp__xr_MsgCB            1002d24c     xrCore:xrCore.dll
+ 0002:00000250       __imp__GetFunctionInfo@4   1002d250     xrCore:xrCore.dll
+ 0002:00000254       \177xrCore_NULL_THUNK_DATA 1002d254     xrCore:xrCore.dll
+ 0002:00000258       ___xc_a                    1002d258     MSVCRT:cinitexe.obj
+ 0002:0000025c       ___xc_z                    1002d25c     MSVCRT:cinitexe.obj
+ 0002:00000260       ___xi_a                    1002d260     MSVCRT:cinitexe.obj
+ 0002:00000270       ___xi_z                    1002d270     MSVCRT:cinitexe.obj
+ 0002:00000280       __pDefaultRawDllMain       1002d280     MSVCRT:crtdll.obj
+ 0002:00000280       __pRawDllMain              1002d280     MSVCRT:crtdll.obj
+ 0002:0000028c       ??_C@_0BH@CCGEKEGO@no?5calling?5environment?$AA@ 1002d28c     lapi.obj
+ 0002:000002a4       ??_C@_08JEIPHCP@no?5value?$AA@ 1002d2a4     lapi.obj
+ 0002:000002b0       ??_C@_0CH@DHDHOEKM@?$CDEXCEPTION?3?5lua_pushlstring?$CI?8?$CFs?8@ 1002d2b0     lapi.obj
+ 0002:000002d8       ??_C@_0CC@GEFIJLGL@?$CDEXCEPTION?3?5lua_getfield?$CI?$CFd?0?5?$CFs?$CJ@ 1002d2d8     lapi.obj
+ 0002:000002fc       ??_C@_01OGPIMHDM@?$DP?$AA@ 1002d2fc     lapi.obj
+ 0002:000002fe       ??_C@_00CNPNBAHC@?$AA@     1002d2fe     lapi.obj
+ 0002:00000300       ??_C@_0BG@CHJGEHJL@bad?5argument?5?$CD?$CFd?5?$CI?$CFs?$CJ?$AA@ 1002d300     lauxlib.obj
+ 0002:00000318       ??_C@_01EFFIKLCJ@n?$AA@    1002d318     lauxlib.obj
+ 0002:0000031c       ??_C@_06GABBCIBA@method?$AA@ 1002d31c     lauxlib.obj
+ 0002:00000324       ??_C@_0BO@LENGMNDF@calling?5?8?$CFs?8?5on?5bad?5self?5?$CI?$CFs?$CJ?$AA@ 1002d324     lauxlib.obj
+ 0002:00000344       ??_C@_0BO@GOMKJOAH@bad?5argument?5?$CD?$CFd?5to?5?8?$CFs?8?5?$CI?$CFs?$CJ?$AA@ 1002d344     lauxlib.obj
+ 0002:00000364       ??_C@_0BE@LDJANOJE@?$CFs?5expected?0?5got?5?$CFs?$AA@ 1002d364     lauxlib.obj
+ 0002:00000378       ??_C@_02KHAMJCKP@Sl?$AA@   1002d378     lauxlib.obj
+ 0002:0000037c       ??_C@_07FCDHCGBN@?$CFs?3?$CFd?3?5?$AA@ 1002d37c     lauxlib.obj
+ 0002:00000384       ??_C@_0BE@HBADPNMP@invalid?5option?5?8?$CFs?8?$AA@ 1002d384     lauxlib.obj
+ 0002:00000398       ??_C@_0BE@CBBDHBEP@stack?5overflow?5?$CI?$CFs?$CJ?$AA@ 1002d398     lauxlib.obj
+ 0002:000003ac       ??_C@_0P@PDHEKNMA@value?5expected?$AA@ 1002d3ac     lauxlib.obj
+ 0002:000003bc       ??_C@_07PINPBNPB@_LOADED?$AA@ 1002d3bc     lauxlib.obj
+ 0002:000003c4       ??_C@_0BO@CBJIAGLF@name?5conflict?5for?5module?5?8?$CFs?8?$AA@ 1002d3c4     lauxlib.obj
+ 0002:000003e4       ??_C@_01EEMJAFIK@?6?$AA@   1002d3e4     lauxlib.obj
+ 0002:000003e8       ??_C@_0BB@BJDGDOHH@cannot?5?$CFs?5?$CFs?3?5?$CFs?$AA@ 1002d3e8     lauxlib.obj
+ 0002:000003fc       ??_C@_06CCPPALKB@?$DNstdin?$AA@ 1002d3fc     lauxlib.obj
+ 0002:00000404       ??_C@_03HPDLNGOA@?$EA?$CFs?$AA@ 1002d404     lauxlib.obj
+ 0002:00000408       ??_C@_01KDCPPGHE@r?$AA@    1002d408     lauxlib.obj
+ 0002:0000040c       ??_C@_04PMOCAHAA@open?$AA@ 1002d40c     lauxlib.obj
+ 0002:00000414       ??_C@_02JDPG@rb?$AA@       1002d414     lauxlib.obj
+ 0002:00000418       ??_C@_06IEGCHAII@reopen?$AA@ 1002d418     lauxlib.obj
+ 0002:00000420       ??_C@_04POLDLDMI@read?$AA@ 1002d420     lauxlib.obj
+ 0002:00000428       ??_C@_0DC@EFOPIIKP@PANIC?3?5unprotected?5error?5in?5call@ 1002d428     lauxlib.obj
+ 0002:0000045c       ??_C@_08FNIIFOJC@tostring?$AA@ 1002d45c     lbaselib.obj
+ 0002:00000468       ??_C@_0CL@KMHHCBJA@?8tostring?8?5must?5return?5a?5string?5@ 1002d468     lbaselib.obj
+ 0002:00000494       ??_C@_01GPOEFGEJ@?7?$AA@   1002d494     lbaselib.obj
+ 0002:00000498       ??_C@_0BC@GGLHLOMM@base?5out?5of?5range?$AA@ 1002d498     lbaselib.obj
+ 0002:000004ac       ??_C@_0M@OKDMMFBL@__metatable?$AA@ 1002d4ac     lbaselib.obj
+ 0002:000004b8       ??_C@_0BG@HDIIKINN@nil?5or?5table?5expected?$AA@ 1002d4b8     lbaselib.obj
+ 0002:000004d0       ??_C@_0CE@LJKICCEL@cannot?5change?5a?5protected?5metata@ 1002d4d0     lbaselib.obj
+ 0002:000004f4       ??_C@_0BL@NGAFCBHD@level?5must?5be?5non?9negative?$AA@ 1002d4f4     lbaselib.obj
+ 0002:00000510       ??_C@_0O@OFBEOMLD@invalid?5level?$AA@ 1002d510     lbaselib.obj
+ 0002:00000520       ??_C@_01INIBCBCB@f?$AA@    1002d520     lbaselib.obj
+ 0002:00000524       ??_C@_0DC@LPPOGBD@no?5function?5environment?5for?5tail@ 1002d524     lbaselib.obj
+ 0002:00000558       ??_C@_0DE@PIGGMBA@?8setfenv?8?5cannot?5change?5environm@ 1002d558     lbaselib.obj
+ 0002:0000058c       ??_C@_04PEGFANN@stop?$AA@  1002d58c     lbaselib.obj
+ 0002:00000594       ??_C@_07LDHOHMPD@restart?$AA@ 1002d594     lbaselib.obj
+ 0002:0000059c       ??_C@_07JHIJCABF@collect?$AA@ 1002d59c     lbaselib.obj
+ 0002:000005a4       ??_C@_05IOMEMJEC@count?$AA@ 1002d5a4     lbaselib.obj
+ 0002:000005ac       ??_C@_04CNBNFAL@step?$AA@  1002d5ac     lbaselib.obj
+ 0002:000005b4       ??_C@_08ONFIAENP@setpause?$AA@ 1002d5b4     lbaselib.obj
+ 0002:000005c0       ??_C@_0L@KABEJKKP@setstepmul?$AA@ 1002d5c0     lbaselib.obj
+ 0002:000005cc       ??_C@_0BK@NJPFPDBN@too?5many?5nested?5functions?$AA@ 1002d5cc     lbaselib.obj
+ 0002:000005e8       ??_C@_0CF@IPNALDCD@reader?5function?5must?5return?5a?5st@ 1002d5e8     lbaselib.obj
+ 0002:00000610       ??_C@_07JEBBFCAN@?$DN?$CIload?$CJ?$AA@ 1002d610     lbaselib.obj
+ 0002:00000618       ??_C@_0BC@ONMFJPBH@assertion?5failed?$CB?$AA@ 1002d618     lbaselib.obj
+ 0002:0000062c       ??_C@_02DKCKIIND@?$CFs?$AA@ 1002d62c     lbaselib.obj
+ 0002:00000630       ??_C@_0BL@EDBCOFHM@too?5many?5results?5to?5unpack?$AA@ 1002d630     lbaselib.obj
+ 0002:0000064c       ??_C@_0BD@ILOGJALA@index?5out?5of?5range?$AA@ 1002d64c     lbaselib.obj
+ 0002:00000660       ??_C@_0L@HDFPAPPH@__tostring?$AA@ 1002d660     lbaselib.obj
+ 0002:0000066c       ??_C@_04LOAJBDKD@true?$AA@ 1002d66c     lbaselib.obj
+ 0002:00000674       ??_C@_05LAPONLG@false?$AA@ 1002d674     lbaselib.obj
+ 0002:0000067c       ??_C@_03ILAMHENH@nil?$AA@  1002d67c     lbaselib.obj
+ 0002:00000680       ??_C@_06CILKLLDB@?$CFs?3?5?$CFp?$AA@ 1002d680     lbaselib.obj
+ 0002:00000688       ??_C@_0BK@OMPDBBEM@boolean?5or?5proxy?5expected?$AA@ 1002d688     lbaselib.obj
+ 0002:000006a4       ??_C@_06GMEIIFFN@assert?$AA@ 1002d6a4     lbaselib.obj
+ 0002:000006ac       ??_C@_0P@CKFEAJJE@collectgarbage?$AA@ 1002d6ac     lbaselib.obj
+ 0002:000006bc       ??_C@_06ONNDGCDK@dofile?$AA@ 1002d6bc     lbaselib.obj
+ 0002:000006c4       ??_C@_05KKCIMGE@error?$AA@ 1002d6c4     lbaselib.obj
+ 0002:000006cc       ??_C@_06EDAGHKOI@gcinfo?$AA@ 1002d6cc     lbaselib.obj
+ 0002:000006d4       ??_C@_07CIGIBICH@getfenv?$AA@ 1002d6d4     lbaselib.obj
+ 0002:000006dc       ??_C@_0N@LGLOEPAG@getmetatable?$AA@ 1002d6dc     lbaselib.obj
+ 0002:000006ec       ??_C@_08BNNFLGCJ@loadfile?$AA@ 1002d6ec     lbaselib.obj
+ 0002:000006f8       ??_C@_04EONOHKEP@load?$AA@ 1002d6f8     lbaselib.obj
+ 0002:00000700       ??_C@_0L@BBBJLLLK@loadstring?$AA@ 1002d700     lbaselib.obj
+ 0002:0000070c       ??_C@_04CJGEDOF@next?$AA@  1002d70c     lbaselib.obj
+ 0002:00000714       ??_C@_05JAJCNIIJ@pcall?$AA@ 1002d714     lbaselib.obj
+ 0002:0000071c       ??_C@_05IJDJACGD@print?$AA@ 1002d71c     lbaselib.obj
+ 0002:00000724       ??_C@_08LCBKMMAG@rawequal?$AA@ 1002d724     lbaselib.obj
+ 0002:00000730       ??_C@_06DCIAHLCA@rawget?$AA@ 1002d730     lbaselib.obj
+ 0002:00000738       ??_C@_06ONPLLLOI@rawset?$AA@ 1002d738     lbaselib.obj
+ 0002:00000740       ??_C@_06LGNCCACI@select?$AA@ 1002d740     lbaselib.obj
+ 0002:00000748       ??_C@_07NAJJCHPG@setfenv?$AA@ 1002d748     lbaselib.obj
+ 0002:00000750       ??_C@_0N@MCAAIDEK@setmetatable?$AA@ 1002d750     lbaselib.obj
+ 0002:00000760       ??_C@_08JOIMPOJO@tonumber?$AA@ 1002d760     lbaselib.obj
+ 0002:0000076c       ??_C@_04GPMDFGEJ@type?$AA@ 1002d76c     lbaselib.obj
+ 0002:00000774       ??_C@_06FIONAGJL@unpack?$AA@ 1002d774     lbaselib.obj
+ 0002:0000077c       ??_C@_06GDLLDIBI@xpcall?$AA@ 1002d77c     lbaselib.obj
+ 0002:00000784       ??_C@_07PANPENDC@running?$AA@ 1002d784     lbaselib.obj
+ 0002:0000078c       ??_C@_09PAHKPJCJ@suspended?$AA@ 1002d78c     lbaselib.obj
+ 0002:00000798       ??_C@_06IKLLLDHL@normal?$AA@ 1002d798     lbaselib.obj
+ 0002:000007a0       ??_C@_04BBBDNBOK@dead?$AA@ 1002d7a0     lbaselib.obj
+ 0002:000007a8       ??_C@_0BD@LDCLGBHF@coroutine?5expected?$AA@ 1002d7a8     lbaselib.obj
+ 0002:000007bc       ??_C@_0BN@CLPLGDGN@too?5many?5arguments?5to?5resume?$AA@ 1002d7bc     lbaselib.obj
+ 0002:000007dc       ??_C@_0BL@DGCALGPK@cannot?5resume?5?$CFs?5coroutine?$AA@ 1002d7dc     lbaselib.obj
+ 0002:000007f8       ??_C@_0BL@OALEJBKN@too?5many?5results?5to?5resume?$AA@ 1002d7f8     lbaselib.obj
+ 0002:00000814       ??_C@_0BG@EHJAKGKG@Lua?5function?5expected?$AA@ 1002d814     lbaselib.obj
+ 0002:0000082c       ??_C@_06HBNONAG@create?$AA@ 1002d82c     lbaselib.obj
+ 0002:00000834       ??_C@_06PLELHCEK@resume?$AA@ 1002d834     lbaselib.obj
+ 0002:0000083c       ??_C@_06DJIHEMFI@status?$AA@ 1002d83c     lbaselib.obj
+ 0002:00000844       ??_C@_04NFDDIEML@wrap?$AA@ 1002d844     lbaselib.obj
+ 0002:0000084c       ??_C@_05LKJGIMLP@yield?$AA@ 1002d84c     lbaselib.obj
+ 0002:00000854       ??_C@_0L@JAODELFO@cstacksize?$AA@ 1002d854     lbaselib.obj
+ 0002:00000860       ??_C@_02NIGGJGKC@_G?$AA@   1002d860     lbaselib.obj
+ 0002:00000864       ??_C@_07GLKNJPII@Lua?55?41?$AA@ 1002d864     lbaselib.obj
+ 0002:0000086c       ??_C@_08PMLCGGEP@_VERSION?$AA@ 1002d86c     lbaselib.obj
+ 0002:00000878       ??_C@_06MGIEFEAJ@ipairs?$AA@ 1002d878     lbaselib.obj
+ 0002:00000880       ??_C@_05PEAECDOC@pairs?$AA@ 1002d880     lbaselib.obj
+ 0002:00000888       ??_C@_02DNFJNMFM@kv?$AA@   1002d888     lbaselib.obj
+ 0002:0000088c       ??_C@_06BPGFKLEK@__mode?$AA@ 1002d88c     lbaselib.obj
+ 0002:00000894       ??_C@_08HDPJFDHB@newproxy?$AA@ 1002d894     lbaselib.obj
+ 0002:000008a0       ??_C@_09HNKENHFC@coroutine?$AA@ 1002d8a0     lbaselib.obj
+ 0002:000008ac       ??_C@_04CMPOOADL@coco?$AA@ 1002d8ac     lbaselib.obj
+ 0002:00000cb0       _luaJIT_arch               1002dcb0     ljit_backend.obj
+ 0002:000020b0       _luaX_tokens               1002f0b0     llex.obj
+ 0002:00002260       _luaO_nilobject_           1002f260     lobject.obj
+ 0002:00002370       _luaP_opmodes              1002f370     lopcodes.obj
+ 0002:00002398       _luaP_opnames              1002f398     lopcodes.obj
+ 0002:000025e0       _luaT_typenames            1002f5e0     ltm.obj
+ 0002:00002654       ??_C@_0BL@BDOLDOFI@control?5structure?5too?5long?$AA@ 1002f654     lcode.obj
+ 0002:00002670       ??_C@_0CD@HGHHKJGL@function?5or?5expression?5too?5compl@ 1002f670     lcode.obj
+ 0002:00002694       ??_C@_0BI@DGLMJHJB@constant?5table?5overflow?$AA@ 1002f694     lcode.obj
+ 0002:000026ac       ??_C@_0BD@LKJEPOHE@code?5size?5overflow?$AA@ 1002f6ac     lcode.obj
+ 0002:000026c0       ??_C@_05CLBJLFDN@flnSu?$AA@ 1002f6c0     ldblib.obj
+ 0002:000026c8       ??_C@_03PENLABEP@?$DO?$CFs?$AA@ 1002f6c8     ldblib.obj
+ 0002:000026cc       ??_C@_0BL@NMONLLHA@function?5or?5level?5expected?$AA@ 1002f6cc     ldblib.obj
+ 0002:000026e8       ??_C@_0P@PJFAGLMH@invalid?5option?$AA@ 1002f6e8     ldblib.obj
+ 0002:000026f8       ??_C@_06OEKOLKIL@source?$AA@ 1002f6f8     ldblib.obj
+ 0002:00002700       ??_C@_09NOFDGFFO@short_src?$AA@ 1002f700     ldblib.obj
+ 0002:0000270c       ??_C@_0M@IOFFDKM@linedefined?$AA@ 1002f70c     ldblib.obj
+ 0002:00002718       ??_C@_0BA@BGGOJOFO@lastlinedefined?$AA@ 1002f718     ldblib.obj
+ 0002:00002728       ??_C@_04IOPLPGDE@what?$AA@ 1002f728     ldblib.obj
+ 0002:00002730       ??_C@_0M@OLGEEKJC@currentline?$AA@ 1002f730     ldblib.obj
+ 0002:0000273c       ??_C@_04BDNNNDAF@nups?$AA@ 1002f73c     ldblib.obj
+ 0002:00002744       ??_C@_04MEMAJGDJ@name?$AA@ 1002f744     ldblib.obj
+ 0002:0000274c       ??_C@_08JEGIFMFI@namewhat?$AA@ 1002f74c     ldblib.obj
+ 0002:00002758       ??_C@_0M@DINLHJFF@activelines?$AA@ 1002f758     ldblib.obj
+ 0002:00002764       ??_C@_04HPNHAEOP@func?$AA@ 1002f764     ldblib.obj
+ 0002:0000276c       ??_C@_0BD@EFMIJNPC@level?5out?5of?5range?$AA@ 1002f76c     ldblib.obj
+ 0002:00002780       ??_C@_04OMFAIDPG@call?$AA@ 1002f780     ldblib.obj
+ 0002:00002788       ??_C@_06LNOFJDNM@return?$AA@ 1002f788     ldblib.obj
+ 0002:00002790       ??_C@_04HJPCFDOP@line?$AA@ 1002f790     ldblib.obj
+ 0002:00002798       ??_C@_0M@IDJJEGOC@tail?5return?$AA@ 1002f798     ldblib.obj
+ 0002:000027a4       ??_C@_0O@POGBCBNN@external?5hook?$AA@ 1002f7a4     ldblib.obj
+ 0002:000027b4       ??_C@_0M@FBGICICO@lua_debug?$DO?5?$AA@ 1002f7b4     ldblib.obj
+ 0002:000027c0       ??_C@_05KJNBGLAC@cont?6?$AA@ 1002f7c0     ldblib.obj
+ 0002:000027c8       ??_C@_0BB@BLKFCGLG@?$DN?$CIdebug?5command?$CJ?$AA@ 1002f7c8     ldblib.obj
+ 0002:000027dc       ??_C@_0BB@CJHIJJAH@stack?5traceback?3?$AA@ 1002f7dc     ldblib.obj
+ 0002:000027f0       ??_C@_05JLIPKFIA@?6?7?4?4?4?$AA@ 1002f7f0     ldblib.obj
+ 0002:000027f8       ??_C@_02NMOLBIHC@?6?7?$AA@ 1002f7f8     ldblib.obj
+ 0002:000027fc       ??_C@_03IMACECCO@Snl?$AA@  1002f7fc     ldblib.obj
+ 0002:00002800       ??_C@_03DKEJHHJP@?$CFs?3?$AA@ 1002f800     ldblib.obj
+ 0002:00002804       ??_C@_03CDCAMCGK@?$CFd?3?$AA@ 1002f804     ldblib.obj
+ 0002:00002808       ??_C@_0BC@CPJFAADE@?5in?5function?5?8?$CFs?8?$AA@ 1002f808     ldblib.obj
+ 0002:0000281c       ??_C@_0P@IOLMPCPC@?5in?5main?5chunk?$AA@ 1002f81c     ldblib.obj
+ 0002:0000282c       ??_C@_02GACNEKDB@?5?$DP?$AA@ 1002f82c     ldblib.obj
+ 0002:00002830       ??_C@_0BF@IDFBHDGL@?5in?5function?5?$DM?$CFs?3?$CFd?$DO?$AA@ 1002f830     ldblib.obj
+ 0002:00002848       ??_C@_05GFCDIDHO@debug?$AA@ 1002f848     ldblib.obj
+ 0002:00002850       ??_C@_07GELEAAJ@gethook?$AA@ 1002f850     ldblib.obj
+ 0002:00002858       ??_C@_07OICKPAFH@getinfo?$AA@ 1002f858     ldblib.obj
+ 0002:00002860       ??_C@_08GMECKPDH@getlocal?$AA@ 1002f860     ldblib.obj
+ 0002:0000286c       ??_C@_0M@NCNCBJKP@getregistry?$AA@ 1002f86c     ldblib.obj
+ 0002:00002878       ??_C@_0L@DNKHBCFJ@getupvalue?$AA@ 1002f878     ldblib.obj
+ 0002:00002884       ??_C@_07POLKHPNI@sethook?$AA@ 1002f884     ldblib.obj
+ 0002:0000288c       ??_C@_08JNGOLMEK@setlocal?$AA@ 1002f88c     ldblib.obj
+ 0002:00002898       ??_C@_0L@CDIIKFBA@setupvalue?$AA@ 1002f898     ldblib.obj
+ 0002:000028a4       ??_C@_09GPFEECNC@traceback?$AA@ 1002f8a4     ldblib.obj
+ 0002:000028b0       ??_C@_0N@NCKPGBEC@?$CI?$CKtemporary?$CJ?$AA@ 1002f8b0     ldebug.obj
+ 0002:000028c0       ??_C@_04BKJOMPG@?$DN?$FLC?$FN?$AA@ 1002f8c0     ldebug.obj
+ 0002:000028c8       ??_C@_01GFHCPBMG@C?$AA@    1002f8c8     ldebug.obj
+ 0002:000028cc       ??_C@_04GHJNJNPO@main?$AA@ 1002f8cc     ldebug.obj
+ 0002:000028d4       ??_C@_03CBKFDHDL@Lua?$AA@  1002f8d4     ldebug.obj
+ 0002:000028d8       ??_C@_04DIFLAKIP@tail?$AA@ 1002f8d8     ldebug.obj
+ 0002:000028e0       ??_C@_0N@DIENKKJP@?$DN?$CItail?5call?$CJ?$AA@ 1002f8e0     ldebug.obj
+ 0002:000028f0       ??_C@_05IDKHKMLA@local?$AA@ 1002f8f0     ldebug.obj
+ 0002:000028f8       ??_C@_06FJKEMHGD@global?$AA@ 1002f8f8     ldebug.obj
+ 0002:00002900       ??_C@_05EIBGDMPB@field?$AA@ 1002f900     ldebug.obj
+ 0002:00002908       ??_C@_07NAGMKCIK@upvalue?$AA@ 1002f908     ldebug.obj
+ 0002:00002910       ??_C@_0CD@HAGFMPIP@attempt?5to?5?$CFs?5?$CFs?5?8?$CFs?8?5?$CIa?5?$CFs?5valu@ 1002f910     ldebug.obj
+ 0002:00002934       ??_C@_0BJ@HGCMIDJD@attempt?5to?5?$CFs?5a?5?$CFs?5value?$AA@ 1002f934     ldebug.obj
+ 0002:00002950       ??_C@_0M@LPKAOE@concatenate?$AA@ 1002f950     ldebug.obj
+ 0002:0000295c       ??_C@_0BG@IOLALLOM@perform?5arithmetic?5on?$AA@ 1002f95c     ldebug.obj
+ 0002:00002974       ??_C@_0CB@DEJMKNMB@attempt?5to?5compare?5two?5?$CFs?5values@ 1002f974     ldebug.obj
+ 0002:00002998       ??_C@_0BO@DNBGDDFP@attempt?5to?5compare?5?$CFs?5with?5?$CFs?$AA@ 1002f998     ldebug.obj
+ 0002:000029b8       ??_C@_09BHPFBFOI@?$CFs?3?$CFd?3?5?$CFs?$AA@ 1002f9b8     ldebug.obj
+ 0002:000029c4       ??_C@_0CC@HNCFHJON@?$CB?5?$CDaddinfo?4isLua?$CIL?$DN0x?$CFp?$CJ?3?5?$CFs?3?$CFd?3@ 1002f9c4     ldebug.obj
+ 0002:000029e8       ??_C@_0N@CCGMKFJO@ci?9?$DOfunc?3?5?$CFs?$AA@ 1002f9e8     ldebug.obj
+ 0002:000029f8       ??_C@_0BO@DIJKOGCA@?$CB?5?$CDaddinfo?4?$CBisLua?$CIL?$DN0x?$CFp?$CJ?3?5?$CFs?$AA@ 1002f9f8     ldebug.obj
+ 0002:00002a18       ??_C@_06OJHGLDPL@?$CInull?$CJ?$AA@ 1002fa18     ldebug.obj
+ 0002:00002a20       ??_C@_0BM@NHBMLFLI@?$CB?5?$CDERROR?$CIluaG_runerror?$CJ?3?5?$CFs?$AA@ 1002fa20     ldebug.obj
+ 0002:00002a3c       ??_C@_0CL@GGPPLJAP@?$CB?5?$CDEXCEPTION?3?5in?5luaG_runerror?0?5@ 1002fa3c     ldebug.obj
+ 0002:00002a68       ??_C@_0BC@ENOOLCNF@not?5enough?5memory?$AA@ 1002fa68     ldo.obj
+ 0002:00002a7c       ??_C@_0BI@KGOCJOGJ@error?5in?5error?5handling?$AA@ 1002fa7c     ldo.obj
+ 0002:00002a94       ??_C@_0CD@IINNLDON@?$CB?5?$CDTHROW?$CIluaD_thow?$CJ?3?5errcode?5?$DN?5?$CF@ 1002fa94     ldo.obj
+ 0002:00002ab8       ??_C@_0P@EODJGPIM@stack?5overflow?$AA@ 1002fab8     ldo.obj
+ 0002:00002ac8       ??_C@_0DP@EFNABDPO@?$CB?5?$CDERROR?3?5to?5many?5nested?5calls?5f@ 1002fac8     ldo.obj
+ 0002:00002b08       ??_C@_0P@LGHNPNBO@$?$CDDUMP_CONTEXT?$AA@ 1002fb08     ldo.obj
+ 0002:00002b18       ??_C@_0CG@NAAHDPPN@cannot?5resume?5non?9suspended?5coro@ 1002fb18     ldo.obj
+ 0002:00002b40       ??_C@_0DD@CPKEKIFA@attempt?5to?5yield?5across?5metameth@ 1002fb40     ldo.obj
+ 0002:00002b74       ??_C@_07KNEGBPNO@package?$AA@ 1002fb74     linit.obj
+ 0002:00002b7c       ??_C@_05LCLENNFI@table?$AA@ 1002fb7c     linit.obj
+ 0002:00002b84       ??_C@_02KFNNKBCK@io?$AA@   1002fb84     linit.obj
+ 0002:00002b88       ??_C@_02EHCHIAMF@os?$AA@   1002fb88     linit.obj
+ 0002:00002b8c       ??_C@_06ICGJLFIM@string?$AA@ 1002fb8c     linit.obj
+ 0002:00002b94       ??_C@_04CFDJAKFL@math?$AA@ 1002fb94     linit.obj
+ 0002:00002b9c       ??_C@_03IGHFHLNJ@jit?$AA@  1002fb9c     linit.obj
+ 0002:00002ba0       ??_C@_05DFJCHPDH@input?$AA@ 1002fba0     liolib.obj
+ 0002:00002ba8       ??_C@_06DKIGHACF@output?$AA@ 1002fba8     liolib.obj
+ 0002:00002bb0       ??_C@_06DJHOIPC@?$CFs?3?5?$CFs?$AA@ 1002fbb0     liolib.obj
+ 0002:00002bb8       ??_C@_05KCHOJJD@FILE?$CK?$AA@ 1002fbb8     liolib.obj
+ 0002:00002bc0       ??_C@_0M@IBKPHHKH@closed?5file?$AA@ 1002fbc0     liolib.obj
+ 0002:00002bcc       ??_C@_04DAMGJPCA@file?$AA@ 1002fbcc     liolib.obj
+ 0002:00002bd4       ??_C@_0BN@LPOOHAOM@attempt?5to?5use?5a?5closed?5file?$AA@ 1002fbd4     liolib.obj
+ 0002:00002bf4       ??_C@_0BL@PEFGCPAG@cannot?5close?5standard?5file?$AA@ 1002fbf4     liolib.obj
+ 0002:00002c10       ??_C@_07DMJMBBKE@__close?$AA@ 1002fc10     liolib.obj
+ 0002:00002c18       ??_C@_0O@PLFAPHPG@file?5?$CIclosed?$CJ?$AA@ 1002fc18     liolib.obj
+ 0002:00002c28       ??_C@_09BPMAMLLD@file?5?$CI?$CFp?$CJ?$AA@ 1002fc28     liolib.obj
+ 0002:00002c34       ??_C@_0BL@JMNLNGCA@standard?5?$CFs?5file?5is?5closed?$AA@ 1002fc34     liolib.obj
+ 0002:00002c50       ??_C@_01NOFIACDB@w?$AA@    1002fc50     liolib.obj
+ 0002:00002c54       ??_C@_03DLDNIBIK@?$CFlf?$AA@ 1002fc54     liolib.obj
+ 0002:00002c58       ??_C@_0BD@IOJAAODF@too?5many?5arguments?$AA@ 1002fc58     liolib.obj
+ 0002:00002c6c       ??_C@_0P@CENJCLHM@invalid?5format?$AA@ 1002fc6c     liolib.obj
+ 0002:00002c7c       ??_C@_0BH@PBGIDLEF@file?5is?5already?5closed?$AA@ 1002fc7c     liolib.obj
+ 0002:00002c94       ??_C@_05CGOEHEFE@?$CF?414g?$AA@ 1002fc94     liolib.obj
+ 0002:00002c9c       ??_C@_03KCHOJKKI@set?$AA@  1002fc9c     liolib.obj
+ 0002:00002ca0       ??_C@_03LIBLMJMB@cur?$AA@  1002fca0     liolib.obj
+ 0002:00002ca4       ??_C@_03JBJLGPFL@end?$AA@  1002fca4     liolib.obj
+ 0002:00002ca8       ??_C@_02KAJCLHKP@no?$AA@   1002fca8     liolib.obj
+ 0002:00002cac       ??_C@_04PLMLMMEO@full?$AA@ 1002fcac     liolib.obj
+ 0002:00002cb4       ??_C@_05LBOHBHFK@close?$AA@ 1002fcb4     liolib.obj
+ 0002:00002cbc       ??_C@_05GLCAEPFP@flush?$AA@ 1002fcbc     liolib.obj
+ 0002:00002cc4       ??_C@_05DENOCHIP@lines?$AA@ 1002fcc4     liolib.obj
+ 0002:00002ccc       ??_C@_05IACAFMHP@popen?$AA@ 1002fccc     liolib.obj
+ 0002:00002cd4       ??_C@_07FKJPAINK@tmpfile?$AA@ 1002fcd4     liolib.obj
+ 0002:00002cdc       ??_C@_05NGFEDHGN@write?$AA@ 1002fcdc     liolib.obj
+ 0002:00002ce4       ??_C@_04EDECCOGL@seek?$AA@ 1002fce4     liolib.obj
+ 0002:00002cec       ??_C@_07HHBPNGAN@setvbuf?$AA@ 1002fcec     liolib.obj
+ 0002:00002cf4       ??_C@_04BDLIKKMN@__gc?$AA@ 1002fcf4     liolib.obj
+ 0002:00002cfc       ??_C@_07NHABFFHN@__index?$AA@ 1002fcfc     liolib.obj
+ 0002:00002d04       ??_C@_05MHOFLBOO@stdin?$AA@ 1002fd04     liolib.obj
+ 0002:00002d0c       ??_C@_06DJDOIFHB@stdout?$AA@ 1002fd0c     liolib.obj
+ 0002:00002d14       ??_C@_06FJGNEBG@stderr?$AA@ 1002fd14     liolib.obj
+ 0002:00002d1c       ??_C@_07CAMFFLJB@NOCLOSE?$AA@ 1002fd1c     ljitlib.obj
+ 0002:00002d24       ??_C@_07PGPPOKO@COMBINE?$AA@ 1002fd24     ljitlib.obj
+ 0002:00002d2c       ??_C@_0L@LPMHNHBL@FOR_STEP_K?$AA@ 1002fd2c     ljitlib.obj
+ 0002:00002d38       ??_C@_04KDPJLEDB@TYPE?$AA@ 1002fd38     ljitlib.obj
+ 0002:00002d40       ??_C@_07DAFMNIAK@TYPEKEY?$AA@ 1002fd40     ljitlib.obj
+ 0002:00002d48       ??_C@_06KEHMCEC@INLINE?$AA@ 1002fd48     ljitlib.obj
+ 0002:00002d50       ??_C@_0BC@CDGHCIOF@too?5many?5upvalues?$AA@ 1002fd50     ljitlib.obj
+ 0002:00002d64       ??_C@_02LIELOMNJ@on?$AA@   1002fd64     ljitlib.obj
+ 0002:00002d68       ??_C@_03MCADLMAF@off?$AA@  1002fd68     ljitlib.obj
+ 0002:00002d6c       ??_C@_07OLJGFCKG@compile?$AA@ 1002fd6c     ljitlib.obj
+ 0002:00002d74       ??_C@_0L@DAGPIEHC@compilesub?$AA@ 1002fd74     ljitlib.obj
+ 0002:00002d80       ??_C@_0BA@PLMCEICF@?$CIunknown?5error?$CJ?$AA@ 1002fd80     ljitlib.obj
+ 0002:00002d90       ??_C@_0BO@IEDNLMLO@?$FLLuaJIT?5frontend?5failed?3?5?$CFs?$FN?6?$AA@ 1002fd90     ljitlib.obj
+ 0002:00002db0       ??_C@_06LHJMGKLI@attach?$AA@ 1002fdb0     ljitlib.obj
+ 0002:00002db8       ??_C@_0L@HFAMJNGM@stackslots?$AA@ 1002fdb8     ljitlib.obj
+ 0002:00002dc4       ??_C@_06JMGHNNK@params?$AA@ 1002fdc4     ljitlib.obj
+ 0002:00002dcc       ??_C@_09PLLBEKA@bytecodes?$AA@ 1002fdcc     ljitlib.obj
+ 0002:00002dd8       ??_C@_06CJANOHJB@consts?$AA@ 1002fdd8     ljitlib.obj
+ 0002:00002de0       ??_C@_08JKPCMKJ@upvalues?$AA@ 1002fde0     ljitlib.obj
+ 0002:00002dec       ??_C@_04JEAPPHCI@subs?$AA@ 1002fdec     ljitlib.obj
+ 0002:00002df4       ??_C@_08PKLIBBKE@isvararg?$AA@ 1002fdf4     ljitlib.obj
+ 0002:00002e00       ??_C@_03OJGPBPII@env?$AA@  1002fe00     ljitlib.obj
+ 0002:00002e04       ??_C@_09MKDJLBNC@mcodesize?$AA@ 1002fe04     ljitlib.obj
+ 0002:00002e10       ??_C@_09DBEIKHAB@mcodeaddr?$AA@ 1002fe10     ljitlib.obj
+ 0002:00002e1c       ??_C@_04NNCJDDJC@DEAD?$AA@ 1002fe1c     ljitlib.obj
+ 0002:00002e24       ??_C@_05BLKJBNOD@stats?$AA@ 1002fe24     ljitlib.obj
+ 0002:00002e2c       ??_C@_08HCOBLEMP@bytecode?$AA@ 1002fe2c     ljitlib.obj
+ 0002:00002e38       ??_C@_05BNCCCJPP@const?$AA@ 1002fe38     ljitlib.obj
+ 0002:00002e40       ??_C@_0L@DIAEHKNE@closurenup?$AA@ 1002fe40     ljitlib.obj
+ 0002:00002e4c       ??_C@_05BANEFEAO@mcode?$AA@ 1002fe4c     ljitlib.obj
+ 0002:00002e54       ??_C@_09LFOODEEK@jsubmcode?$AA@ 1002fe54     ljitlib.obj
+ 0002:00002e60       ??_C@_08JAEPIMLG@stackptr?$AA@ 1002fe60     ljitlib.obj
+ 0002:00002e6c       ??_C@_02GIPFHKNO@OK?$AA@   1002fe6c     ljitlib.obj
+ 0002:00002e70       ??_C@_04OKGDLNCL@NONE?$AA@ 1002fe70     ljitlib.obj
+ 0002:00002e78       ??_C@_03MPPIHBHJ@OFF?$AA@  1002fe78     ljitlib.obj
+ 0002:00002e7c       ??_C@_0L@NPJEOHNO@ENGINE_OFF?$AA@ 1002fe7c     ljitlib.obj
+ 0002:00002e88       ??_C@_07GIHBIILD@DELAYED?$AA@ 1002fe88     ljitlib.obj
+ 0002:00002e90       ??_C@_08PAGAHCDI@TOOLARGE?$AA@ 1002fe90     ljitlib.obj
+ 0002:00002e9c       ??_C@_0P@NCEMNLFN@COMPILER_ERROR?$AA@ 1002fe9c     ljitlib.obj
+ 0002:00002eac       ??_C@_0L@CAECEOEH@DASM_ERROR?$AA@ 1002feac     ljitlib.obj
+ 0002:00002eb8       ??_C@_0N@MDHLMFBM@LuaJIT?51?41?48?$AA@ 1002feb8     ljitlib.obj
+ 0002:00002ec8       ??_C@_07CPCPJPKL@version?$AA@ 1002fec8     ljitlib.obj
+ 0002:00002ed0       ??_C@_0M@DGDLADIG@version_num?$AA@ 1002fed0     ljitlib.obj
+ 0002:00002edc       ??_C@_04LLAMKKNO@arch?$AA@ 1002fedc     ljitlib.obj
+ 0002:00002ee4       ??_C@_08GBLPEHPF@jit?4util?$AA@ 1002fee4     ljitlib.obj
+ 0002:00002ef0       ??_C@_05LCKLKMNO@hints?$AA@ 1002fef0     ljitlib.obj
+ 0002:00002ef8       ??_C@_06HGGDKLNM@fhints?$AA@ 1002fef8     ljitlib.obj
+ 0002:00002f00       ??_C@_0BM@MPABKJAK@JIT?5engine?5init?5failed?5?$CI?$CFd?$CJ?$AA@ 1002ff00     ljitlib.obj
+ 0002:00002f1c       ??_C@_0BN@JJDDBCCB@cannot?5resume?5dead?5coroutine?$AA@ 1002ff1c     ljit_backend.obj
+ 0002:00002f3c       ??_C@_0O@MKOIIDGO@get?5length?5of?$AA@ 1002ff3c     ljit_backend.obj
+ 0002:00002f4c       ??_C@_0CF@JJFDEONC@?8for?8?5initial?5value?5must?5be?5a?5nu@ 1002ff4c     ljit_backend.obj
+ 0002:00002f74       ??_C@_0BN@GHPMJMPH@?8for?8?5limit?5must?5be?5a?5number?$AA@ 1002ff74     ljit_backend.obj
+ 0002:00002f94       ??_C@_0BM@EGCFKNIJ@?8for?8?5step?5must?5be?5a?5number?$AA@ 1002ff94     ljit_backend.obj
+ 0002:00002fb0       ??_C@_05PAGNNINK@deopt?$AA@ 1002ffb0     ljit_backend.obj
+ 0002:00002fb8       ??_C@_07IGOGEKNF@dasm_pc?$AA@ 1002ffb8     ljit_backend.obj
+ 0002:00002fc0       ??_C@_08JBBFLFIP@dasm_err?$AA@ 1002ffc0     ljit_backend.obj
+ 0002:00002fcc       ??_C@_0BG@HDGPOPLD@deoptimization?5failed?$AA@ 1002ffcc     ljit_core.obj
+ 0002:00002fe4       ??_C@_03BOPJPIAM@and?$AA@  1002ffe4     llex.obj
+ 0002:00002fe8       ??_C@_05ELPHFHOI@break?$AA@ 1002ffe8     llex.obj
+ 0002:00002ff0       ??_C@_02KNAFDCHJ@do?$AA@   1002fff0     llex.obj
+ 0002:00002ff4       ??_C@_04FHMCPBIP@else?$AA@ 1002fff4     llex.obj
+ 0002:00002ffc       ??_C@_06CAACNEC@elseif?$AA@ 1002fffc     llex.obj
+ 0002:00003004       ??_C@_03JOHEBPFF@for?$AA@  10030004     llex.obj
+ 0002:00003008       ??_C@_08HFFPPCHF@function?$AA@ 10030008     llex.obj
+ 0002:00003014       ??_C@_02HEBPBKGD@if?$AA@   10030014     llex.obj
+ 0002:00003018       ??_C@_02LMMGJAGL@in?$AA@   10030018     llex.obj
+ 0002:0000301c       ??_C@_03NJKJADM@not?$AA@   1003001c     llex.obj
+ 0002:00003020       ??_C@_02FODMLBIE@or?$AA@   10030020     llex.obj
+ 0002:00003024       ??_C@_06LGDBIFHB@repeat?$AA@ 10030024     llex.obj
+ 0002:0000302c       ??_C@_04HOHPNOOD@then?$AA@ 1003002c     llex.obj
+ 0002:00003034       ??_C@_05FJMDOIMN@until?$AA@ 10030034     llex.obj
+ 0002:0000303c       ??_C@_05OODBEKIG@while?$AA@ 1003003c     llex.obj
+ 0002:00003044       ??_C@_02DJGKEECL@?4?4?$AA@ 10030044     llex.obj
+ 0002:00003048       ??_C@_03KHICJKCI@?4?4?4?$AA@ 10030048     llex.obj
+ 0002:0000304c       ??_C@_02EGOFBIJA@?$DN?$DN?$AA@ 1003004c     llex.obj
+ 0002:00003050       ??_C@_02EEKDKGMJ@?$DO?$DN?$AA@ 10030050     llex.obj
+ 0002:00003054       ??_C@_02EHCHHCKH@?$DM?$DN?$AA@ 10030054     llex.obj
+ 0002:00003058       ??_C@_02DEDJCLAJ@?$HO?$DN?$AA@ 10030058     llex.obj
+ 0002:0000305c       ??_C@_08OHBCANEJ@?$DMnumber?$DO?$AA@ 1003005c     llex.obj
+ 0002:00003068       ??_C@_06FNGJOCBI@?$DMname?$DO?$AA@ 10030068     llex.obj
+ 0002:00003070       ??_C@_08OOGHEFMC@?$DMstring?$DO?$AA@ 10030070     llex.obj
+ 0002:0000307c       ??_C@_05CINCKAN@?$DMeof?$DO?$AA@ 1003007c     llex.obj
+ 0002:00003084       ??_C@_0BJ@JNKOFINI@lexical?5element?5too?5long?$AA@ 10030084     llex.obj
+ 0002:000030a0       ??_C@_08HJPIMBHL@char?$CI?$CFd?$CJ?$AA@ 100300a0     llex.obj
+ 0002:000030ac       ??_C@_02HAOIJKIC@?$CFc?$AA@ 100300ac     llex.obj
+ 0002:000030b0       ??_C@_0N@FKCNMBAF@?$CFs?5near?5?8?$CFs?8?$AA@ 100300b0     llex.obj
+ 0002:000030c0       ??_C@_0BJ@LAKGPFF@chunk?5has?5too?5many?5lines?$AA@ 100300c0     llex.obj
+ 0002:000030dc       ??_C@_0BB@CFMNENCE@malformed?5number?$AA@ 100300dc     llex.obj
+ 0002:000030f0       ??_C@_02GOGFPGCE@Ee?$AA@   100300f0     llex.obj
+ 0002:000030f4       ??_C@_02BEIMNFAD@?$CL?9?$AA@ 100300f4     llex.obj
+ 0002:000030f8       ??_C@_0BH@BBMFLJJP@unfinished?5long?5string?$AA@ 100300f8     llex.obj
+ 0002:00003110       ??_C@_0BI@ONEAKEIB@unfinished?5long?5comment?$AA@ 10030110     llex.obj
+ 0002:00003128       ??_C@_0CB@BALFDNPK@nesting?5of?5?$FL?$FL?4?4?4?$FN?$FN?5is?5deprecated@ 10030128     llex.obj
+ 0002:0000314c       ??_C@_0BC@IBAFBKML@unfinished?5string?$AA@ 1003014c     llex.obj
+ 0002:00003160       ??_C@_0BK@GLJFEJMO@escape?5sequence?5too?5large?$AA@ 10030160     llex.obj
+ 0002:0000317c       ??_C@_0BO@DBNLNIBP@invalid?5long?5string?5delimiter?$AA@ 1003017c     llex.obj
+ 0002:0000319c       ??_C@_01LFCBOECM@?4?$AA@   1003019c     llex.obj
+ 0002:000031a0       ??_C@_0BC@JKHEKPDC@interval?5is?5empty?$AA@ 100301a0     lmathlib.obj
+ 0002:000031b4       ??_C@_0BK@KNAOOCNO@wrong?5number?5of?5arguments?$AA@ 100301b4     lmathlib.obj
+ 0002:000031d0       ??_C@_03BCGAIFPO@abs?$AA@  100301d0     lmathlib.obj
+ 0002:000031d4       ??_C@_04PDIFKINK@acos?$AA@ 100301d4     lmathlib.obj
+ 0002:000031dc       ??_C@_04FIHNOPOL@asin?$AA@ 100301dc     lmathlib.obj
+ 0002:000031e4       ??_C@_05KNGEOGJB@atan2?$AA@ 100301e4     lmathlib.obj
+ 0002:000031ec       ??_C@_04MLLJIGOK@atan?$AA@ 100301ec     lmathlib.obj
+ 0002:000031f4       ??_C@_04GFPJNGEK@ceil?$AA@ 100301f4     lmathlib.obj
+ 0002:000031fc       ??_C@_04HPJJNFIM@cosh?$AA@ 100301fc     lmathlib.obj
+ 0002:00003204       ??_C@_03LALBNOCG@cos?$AA@  10030204     lmathlib.obj
+ 0002:00003208       ??_C@_03OFPLEBM@deg?$AA@   10030208     lmathlib.obj
+ 0002:0000320c       ??_C@_03KHJOGHMM@exp?$AA@  1003020c     lmathlib.obj
+ 0002:00003210       ??_C@_05PBJFFIGL@floor?$AA@ 10030210     lmathlib.obj
+ 0002:00003218       ??_C@_04KEPJIHGP@fmod?$AA@ 10030218     lmathlib.obj
+ 0002:00003220       ??_C@_05GKKHEGJL@frexp?$AA@ 10030220     lmathlib.obj
+ 0002:00003228       ??_C@_05CEJMAHNP@ldexp?$AA@ 10030228     lmathlib.obj
+ 0002:00003230       ??_C@_05HGHHAHAP@log10?$AA@ 10030230     lmathlib.obj
+ 0002:00003238       ??_C@_03MGHMBJCF@log?$AA@  10030238     lmathlib.obj
+ 0002:0000323c       ??_C@_03LJAEFNNE@max?$AA@  1003023c     lmathlib.obj
+ 0002:00003240       ??_C@_03KLIPLJLL@min?$AA@  10030240     lmathlib.obj
+ 0002:00003244       ??_C@_04EHEDPDJG@modf?$AA@ 10030244     lmathlib.obj
+ 0002:0000324c       ??_C@_03JGHBODFD@pow?$AA@  1003024c     lmathlib.obj
+ 0002:00003250       ??_C@_03FHAJEHEA@rad?$AA@  10030250     lmathlib.obj
+ 0002:00003254       ??_C@_06NLFCANPD@random?$AA@ 10030254     lmathlib.obj
+ 0002:0000325c       ??_C@_0L@PIIACENG@randomseed?$AA@ 1003025c     lmathlib.obj
+ 0002:00003268       ??_C@_04COOMCNPB@sinh?$AA@ 10030268     lmathlib.obj
+ 0002:00003270       ??_C@_03BLEJJJBH@sin?$AA@  10030270     lmathlib.obj
+ 0002:00003274       ??_C@_04EIAKFFMI@sqrt?$AA@ 10030274     lmathlib.obj
+ 0002:0000327c       ??_C@_04FJHINJAO@tanh?$AA@ 1003027c     lmathlib.obj
+ 0002:00003284       ??_C@_03IIINPABG@tan?$AA@  10030284     lmathlib.obj
+ 0002:00003288       ??_C@_02OAHAJOFD@pi?$AA@   10030288     lmathlib.obj
+ 0002:0000328c       ??_C@_04JJGMCGIH@huge?$AA@ 1003028c     lmathlib.obj
+ 0002:00003294       ??_C@_03FFONCNID@mod?$AA@  10030294     lmathlib.obj
+ 0002:00003298       ??_C@_0CH@LBFPMMCP@memory?5allocation?5error?3?5block?5t@ 10030298     lmem.obj
+ 0002:000032c0       ??_C@_0BN@GMPFCLAN@unable?5to?5get?5ModuleFileName?$AA@ 100302c0     loadlib.obj
+ 0002:000032e0       ??_C@_01DCLJPIOD@?$CB?$AA@ 100302e0     loadlib.obj
+ 0002:000032e4       ??_C@_0BB@BLJKPILH@system?5error?5?$CFd?6?$AA@ 100302e4     loadlib.obj
+ 0002:000032f8       ??_C@_09GMLHALBF@LOADLIB?3?5?$AA@ 100302f8     loadlib.obj
+ 0002:00003304       ??_C@_04HDOCAJNK@?$CFs?$CFs?$AA@ 10030304     loadlib.obj
+ 0002:0000330c       ??_C@_08HNNNOMMJ@_LOADLIB?$AA@ 1003030c     loadlib.obj
+ 0002:00003318       ??_C@_04HKFDNBLD@init?$AA@ 10030318     loadlib.obj
+ 0002:00003320       ??_C@_01KICIPPFI@?2?$AA@   10030320     loadlib.obj
+ 0002:00003324       ??_C@_0BO@COFCKCAL@?8package?4?$CFs?8?5must?5be?5a?5string?$AA@ 10030324     loadlib.obj
+ 0002:00003344       ??_C@_0P@NEBKIMDC@?6?7no?5file?5?8?$CFs?8?$AA@ 10030344     loadlib.obj
+ 0002:00003354       ??_C@_0CO@KHMIPLKM@error?5loading?5module?5?8?$CFs?8?5from?5f@ 10030354     loadlib.obj
+ 0002:00003384       ??_C@_04LNEJFJGI@path?$AA@ 10030384     loadlib.obj
+ 0002:0000338c       ??_C@_01IDAFKMJL@_?$AA@    1003038c     loadlib.obj
+ 0002:00003390       ??_C@_0L@KHKMBFOE@luaopen_?$CFs?$AA@ 10030390     loadlib.obj
+ 0002:0000339c       ??_C@_05EEMJHCCC@cpath?$AA@ 1003039c     loadlib.obj
+ 0002:000033a4       ??_C@_0BO@KOILFIGK@?6?7no?5module?5?8?$CFs?8?5in?5file?5?8?$CFs?8?$AA@ 100303a4     loadlib.obj
+ 0002:000033c4       ??_C@_07GCEAJMEA@preload?$AA@ 100303c4     loadlib.obj
+ 0002:000033cc       ??_C@_0CC@CCJHFBLH@?8package?4preload?8?5must?5be?5a?5tabl@ 100303cc     loadlib.obj
+ 0002:000033f0       ??_C@_0CB@NPNABMBF@?6?7no?5field?5package?4preload?$FL?8?$CFs?8?$FN@ 100303f0     loadlib.obj
+ 0002:00003414       ??_C@_0CL@DIEJCPFH@loop?5or?5previous?5error?5loading?5m@ 10030414     loadlib.obj
+ 0002:00003440       ??_C@_07JAOCDFCG@loaders?$AA@ 10030440     loadlib.obj
+ 0002:00003448       ??_C@_0CC@IGEJMOFI@?8package?4loaders?8?5must?5be?5a?5tabl@ 10030448     loadlib.obj
+ 0002:0000346c       ??_C@_0BJ@HFHHABH@module?5?8?$CFs?8?5not?5found?3?$CFs?$AA@ 1003046c     loadlib.obj
+ 0002:00003488       ??_C@_0CI@GKOMOAFD@?8module?8?5not?5called?5from?5a?5Lua?5f@ 10030488     loadlib.obj
+ 0002:000034b0       ??_C@_02CCIJHOCI@_M?$AA@   100304b0     loadlib.obj
+ 0002:000034b4       ??_C@_05ICMCJINN@_NAME?$AA@ 100304b4     loadlib.obj
+ 0002:000034bc       ??_C@_08HONLOGDK@_PACKAGE?$AA@ 100304bc     loadlib.obj
+ 0002:000034c8       ??_C@_03MEOBNKEM@?$DL?$AB?$DL?$AA@ 100304c8     loadlib.obj
+ 0002:000034cc       ??_C@_02BEDCMDKE@?$DL?$DL?$AA@ 100304cc     loadlib.obj
+ 0002:000034d0       ??_C@_01KHDNNMEB@?$AB?$AA@ 100304d0     loadlib.obj
+ 0002:000034d4       ??_C@_07KOEABFCN@loadlib?$AA@ 100304d4     loadlib.obj
+ 0002:000034dc       ??_C@_06LNOHAKGK@seeall?$AA@ 100304dc     loadlib.obj
+ 0002:000034e4       ??_C@_06BIEEJMKO@module?$AA@ 100304e4     loadlib.obj
+ 0002:000034ec       ??_C@_07FFLLPPLH@require?$AA@ 100304ec     loadlib.obj
+ 0002:000034f4       ??_C@_0DK@FOBKGJIE@?4?2?$DP?4lua?$DL?$CB?2lua?2?$DP?4lua?$DL?$CB?2lua?2?$DP?2init@ 100304f4     loadlib.obj
+ 0002:00003530       ??_C@_08GLJMJBPN@LUA_PATH?$AA@ 10030530     loadlib.obj
+ 0002:0000353c       ??_C@_0BO@DBNDCFPP@?4?2?$DP?4dll?$DL?$CB?2?$DP?4dll?$DL?$CB?2loadall?4dll?$AA@ 1003053c     loadlib.obj
+ 0002:0000355c       ??_C@_09FBPOOEID@LUA_CPATH?$AA@ 1003055c     loadlib.obj
+ 0002:00003568       ??_C@_09NMALNBAP@?2?6?$DL?6?$DP?6?$CB?6?9?$AA@ 10030568     loadlib.obj
+ 0002:00003574       ??_C@_06HEJKKHEK@config?$AA@ 10030574     loadlib.obj
+ 0002:0000357c       ??_C@_06IILMCCFO@loaded?$AA@ 1003057c     loadlib.obj
+ 0002:00003584       ??_C@_02BBAHNLBA@?$CFp?$AA@ 10030584     lobject.obj
+ 0002:00003588       ??_C@_01FGNFDNOH@?$CF?$AA@ 10030588     lobject.obj
+ 0002:0000358c       ??_C@_02LIIHNNHG@?6?$AN?$AA@ 1003058c     lobject.obj
+ 0002:00003590       ??_C@_09PHLFBDIK@?$FLstring?5?$CC?$AA@ 10030590     lobject.obj
+ 0002:0000359c       ??_C@_02DEGCJHHK@?$CC?$FN?$AA@ 1003059c     lobject.obj
+ 0002:000035a0       ??_C@_04LPPGDFDD@MOVE?$AA@ 100305a0     lopcodes.obj
+ 0002:000035a8       ??_C@_05KLLCNHFJ@LOADK?$AA@ 100305a8     lopcodes.obj
+ 0002:000035b0       ??_C@_08GBBGHEAC@LOADBOOL?$AA@ 100305b0     lopcodes.obj
+ 0002:000035bc       ??_C@_07GHJHEMKM@LOADNIL?$AA@ 100305bc     lopcodes.obj
+ 0002:000035c4       ??_C@_08LCEAGFLN@GETUPVAL?$AA@ 100305c4     lopcodes.obj
+ 0002:000035d0       ??_C@_09BKGGAJBE@GETGLOBAL?$AA@ 100305d0     lopcodes.obj
+ 0002:000035dc       ??_C@_08CCPNOAPI@GETTABLE?$AA@ 100305dc     lopcodes.obj
+ 0002:000035e8       ??_C@_09DECDCIIG@SETGLOBAL?$AA@ 100305e8     lopcodes.obj
+ 0002:000035f4       ??_C@_08EDGMHGMA@SETUPVAL?$AA@ 100305f4     lopcodes.obj
+ 0002:00003600       ??_C@_08NDNBPDIF@SETTABLE?$AA@ 10030600     lopcodes.obj
+ 0002:0000360c       ??_C@_08LPLGEMDO@NEWTABLE?$AA@ 1003060c     lopcodes.obj
+ 0002:00003618       ??_C@_04DFAHIJNB@SELF?$AA@ 10030618     lopcodes.obj
+ 0002:00003620       ??_C@_03BOJFLAKG@ADD?$AA@  10030620     lopcodes.obj
+ 0002:00003624       ??_C@_03KPDLEBHD@SUB?$AA@  10030624     lopcodes.obj
+ 0002:00003628       ??_C@_03IBHOEMFB@MUL?$AA@  10030628     lopcodes.obj
+ 0002:0000362c       ??_C@_03FJGHKDBE@DIV?$AA@  1003062c     lopcodes.obj
+ 0002:00003630       ??_C@_03FIBGOAPP@MOD?$AA@  10030630     lopcodes.obj
+ 0002:00003634       ??_C@_03JLIKCOCP@POW?$AA@  10030634     lopcodes.obj
+ 0002:00003638       ??_C@_03BNLLEOPB@UNM?$AA@  10030638     lopcodes.obj
+ 0002:0000363c       ??_C@_03GBFNEA@NOT?$AA@    1003063c     lopcodes.obj
+ 0002:00003640       ??_C@_03BHNCOKMG@LEN?$AA@  10030640     lopcodes.obj
+ 0002:00003644       ??_C@_06CIJDJJIA@CONCAT?$AA@ 10030644     lopcodes.obj
+ 0002:0000364c       ??_C@_03OIOLNLHN@JMP?$AA@  1003064c     lopcodes.obj
+ 0002:00003650       ??_C@_02NFEPAFND@EQ?$AA@   10030650     lopcodes.obj
+ 0002:00003654       ??_C@_02KHOJMKBJ@LT?$AA@   10030654     lopcodes.obj
+ 0002:00003658       ??_C@_02PEDAOJAJ@LE?$AA@   10030658     lopcodes.obj
+ 0002:0000365c       ??_C@_04OIKJMBFP@TEST?$AA@ 1003065c     lopcodes.obj
+ 0002:00003664       ??_C@_07GLDFODBB@TESTSET?$AA@ 10030664     lopcodes.obj
+ 0002:0000366c       ??_C@_04CAGKGBIO@CALL?$AA@ 1003066c     lopcodes.obj
+ 0002:00003674       ??_C@_08GDMBKKIJ@TAILCALL?$AA@ 10030674     lopcodes.obj
+ 0002:00003680       ??_C@_06LJMOENAO@RETURN?$AA@ 10030680     lopcodes.obj
+ 0002:00003688       ??_C@_07BJCDCNBK@FORLOOP?$AA@ 10030688     lopcodes.obj
+ 0002:00003690       ??_C@_07BDNHFNAN@FORPREP?$AA@ 10030690     lopcodes.obj
+ 0002:00003698       ??_C@_08LFLGPGKH@TFORLOOP?$AA@ 10030698     lopcodes.obj
+ 0002:000036a4       ??_C@_07LGKGOMK@SETLIST?$AA@ 100306a4     lopcodes.obj
+ 0002:000036ac       ??_C@_05HKHBPABE@CLOSE?$AA@ 100306ac     lopcodes.obj
+ 0002:000036b4       ??_C@_07CBDMEJDJ@CLOSURE?$AA@ 100306b4     lopcodes.obj
+ 0002:000036bc       ??_C@_06FHOJKFCK@VARARG?$AA@ 100306bc     lopcodes.obj
+ 0002:000036c4       ??_C@_0CF@CFMGMNIN@unable?5to?5generate?5a?5unique?5file@ 100306c4     loslib.obj
+ 0002:000036ec       ??_C@_0CB@DJMEIEGF@field?5?8?$CFs?8?5missing?5in?5date?5table@ 100306ec     loslib.obj
+ 0002:00003710       ??_C@_02HODHFJCJ@?$CKt?$AA@ 10030710     loslib.obj
+ 0002:00003714       ??_C@_03KHPNBODO@sec?$AA@  10030714     loslib.obj
+ 0002:00003718       ??_C@_04LMOJGCPE@hour?$AA@ 10030718     loslib.obj
+ 0002:00003720       ??_C@_03NNBHCDBP@day?$AA@  10030720     loslib.obj
+ 0002:00003724       ??_C@_05MEBAADFH@month?$AA@ 10030724     loslib.obj
+ 0002:0000372c       ??_C@_04JFPLDHAO@year?$AA@ 1003072c     loslib.obj
+ 0002:00003734       ??_C@_04HBIDDHMB@wday?$AA@ 10030734     loslib.obj
+ 0002:0000373c       ??_C@_04MOLDIJKA@yday?$AA@ 1003073c     loslib.obj
+ 0002:00003744       ??_C@_05HGBEJAHO@isdst?$AA@ 10030744     loslib.obj
+ 0002:0000374c       ??_C@_03NFKEKGGK@all?$AA@  1003074c     loslib.obj
+ 0002:00003750       ??_C@_07FCFLCBKH@collate?$AA@ 10030750     loslib.obj
+ 0002:00003758       ??_C@_05JGEDHNAD@ctype?$AA@ 10030758     loslib.obj
+ 0002:00003760       ??_C@_08BIOBDOAM@monetary?$AA@ 10030760     loslib.obj
+ 0002:0000376c       ??_C@_07MMLECJPG@numeric?$AA@ 1003076c     loslib.obj
+ 0002:00003774       ??_C@_04CLCEDBPF@time?$AA@ 10030774     loslib.obj
+ 0002:0000377c       ??_C@_05DDECJJKE@clock?$AA@ 1003077c     loslib.obj
+ 0002:00003784       ??_C@_04JNIHBGGH@date?$AA@ 10030784     loslib.obj
+ 0002:0000378c       ??_C@_08PDOPCMOG@difftime?$AA@ 1003078c     loslib.obj
+ 0002:00003798       ??_C@_07EMGJIMLB@execute?$AA@ 10030798     loslib.obj
+ 0002:000037a0       ??_C@_04MKNBDEPB@exit?$AA@ 100307a0     loslib.obj
+ 0002:000037a8       ??_C@_06EPDNLFGH@getenv?$AA@ 100307a8     loslib.obj
+ 0002:000037b0       ??_C@_06LEMKAMD@remove?$AA@ 100307b0     loslib.obj
+ 0002:000037b8       ??_C@_06LMEAOBLB@rename?$AA@ 100307b8     loslib.obj
+ 0002:000037c0       ??_C@_09IOBOFJNA@setlocale?$AA@ 100307c0     loslib.obj
+ 0002:000037cc       ??_C@_07KOJJABMD@tmpname?$AA@ 100307cc     loslib.obj
+ 0002:000037d4       ??_C@_0O@DDMAPLHE@?8?$CFs?8?5expected?$AA@ 100307d4     lparser.obj
+ 0002:000037e4       ??_C@_0CC@OKOPEFGK@main?5function?5has?5more?5than?5?$CFd?5?$CF@ 100307e4     lparser.obj
+ 0002:00003808       ??_C@_0CI@FLAOKACM@function?5at?5line?5?$CFd?5has?5more?5tha@ 10030808     lparser.obj
+ 0002:00003830       ??_C@_0CJ@IJEGBPEP@?8?$CFs?8?5expected?5?$CIto?5close?5?8?$CFs?8?5at?5@ 10030830     lparser.obj
+ 0002:0000385c       ??_C@_0BJ@EGOMLGMD@too?5many?5local?5variables?$AA@ 1003085c     lparser.obj
+ 0002:00003878       ??_C@_0BA@EIDMAHJI@local?5variables?$AA@ 10030878     lparser.obj
+ 0002:00003888       ??_C@_0CB@OHOGAGIL@chunk?5has?5too?5many?5syntax?5levels@ 10030888     lparser.obj
+ 0002:000038ac       ??_C@_0BH@IAOKECIM@items?5in?5a?5constructor?$AA@ 100308ac     lparser.obj
+ 0002:000038c4       ??_C@_0BJ@MHIGIDHO@?$DMname?$DO?5or?5?8?4?4?4?8?5expected?$AA@ 100308c4     lparser.obj
+ 0002:000038e0       ??_C@_04PJDNGLKJ@self?$AA@ 100308e0     lparser.obj
+ 0002:000038e8       ??_C@_0DB@LGGKFLCP@ambiguous?5syntax?5?$CIfunction?5call?5@ 100308e8     lparser.obj
+ 0002:0000391c       ??_C@_0BM@HEIHHEKF@function?5arguments?5expected?$AA@ 1003091c     lparser.obj
+ 0002:00003938       ??_C@_0BC@KBCKKGAJ@unexpected?5symbol?$AA@ 10030938     lparser.obj
+ 0002:0000394c       ??_C@_0CL@EJFFCAJP@cannot?5use?5?8?4?4?4?8?5outside?5a?5varar@ 1003094c     lparser.obj
+ 0002:00003978       ??_C@_0N@MNJHOOI@syntax?5error?$AA@ 10030978     lparser.obj
+ 0002:00003988       ??_C@_0BI@MAKOOLPG@variables?5in?5assignment?$AA@ 10030988     lparser.obj
+ 0002:000039a0       ??_C@_0BB@DBFONGCK@no?5loop?5to?5break?$AA@ 100309a0     lparser.obj
+ 0002:000039b4       ??_C@_0M@HHIHAJLG@?$CIfor?5index?$CJ?$AA@ 100309b4     lparser.obj
+ 0002:000039c0       ??_C@_0M@HGGGDCAE@?$CIfor?5limit?$CJ?$AA@ 100309c0     lparser.obj
+ 0002:000039cc       ??_C@_0L@ELGHHMFI@?$CIfor?5step?$CJ?$AA@ 100309cc     lparser.obj
+ 0002:000039d8       ??_C@_0BA@IJIMMPHF@?$CIfor?5generator?$CJ?$AA@ 100309d8     lparser.obj
+ 0002:000039e8       ??_C@_0M@CCNPGEGC@?$CIfor?5state?$CJ?$AA@ 100309e8     lparser.obj
+ 0002:000039f4       ??_C@_0O@PHJHAIC@?$CIfor?5control?$CJ?$AA@ 100309f4     lparser.obj
+ 0002:00003a04       ??_C@_0BF@PACDFECJ@?8?$DN?8?5or?5?8in?8?5expected?$AA@ 10030a04     lparser.obj
+ 0002:00003a1c       ??_C@_0BG@DFAIEAEC@string?5slice?5too?5long?$AA@ 10030a1c     lstrlib.obj
+ 0002:00003a34       ??_C@_0O@EAJJMEEM@invalid?5value?$AA@ 10030a34     lstrlib.obj
+ 0002:00003a44       ??_C@_0BO@BNLBHKJN@unable?5to?5dump?5given?5function?$AA@ 10030a44     lstrlib.obj
+ 0002:00003a64       ??_C@_0BG@LEHNKOGD@invalid?5capture?5index?$AA@ 10030a64     lstrlib.obj
+ 0002:00003a7c       ??_C@_0BI@ECNPHIBF@invalid?5pattern?5capture?$AA@ 10030a7c     lstrlib.obj
+ 0002:00003a94       ??_C@_0CD@PLJBIEHA@malformed?5pattern?5?$CIends?5with?5?8?$CF?$CF@ 10030a94     lstrlib.obj
+ 0002:00003ab8       ??_C@_0CA@CFGACOGB@malformed?5pattern?5?$CImissing?5?8?$FN?8?$CJ?$AA@ 10030ab8     lstrlib.obj
+ 0002:00003ad8       ??_C@_0BD@NGJIMPLI@unbalanced?5pattern?$AA@ 10030ad8     lstrlib.obj
+ 0002:00003aec       ??_C@_0BC@IMEAEJPD@too?5many?5captures?$AA@ 10030aec     lstrlib.obj
+ 0002:00003b00       ??_C@_0CD@LOJJMDBH@missing?5?8?$FL?8?5after?5?8?$CF?$CFf?8?5in?5patte@ 10030b00     lstrlib.obj
+ 0002:00003b24       ??_C@_0BD@BFKNEALP@unfinished?5capture?$AA@ 10030b24     lstrlib.obj
+ 0002:00003b38       ??_C@_0L@NLFJOONJ@?$FO$?$CK?$CL?$DP?4?$CI?$FL?$CF?9?$AA@ 10030b38     lstrlib.obj
+ 0002:00003b44       ??_C@_0CO@MAGJPEI@?8string?4gfind?8?5was?5renamed?5to?5?8s@ 10030b44     lstrlib.obj
+ 0002:00003b74       ??_C@_0CB@LPDIHGGA@invalid?5replacement?5value?5?$CIa?5?$CFs?$CJ@ 10030b74     lstrlib.obj
+ 0002:00003b98       ??_C@_0BP@PPPOBACA@string?1function?1table?5expected?$AA@ 10030b98     lstrlib.obj
+ 0002:00003bb8       ??_C@_02HIBBOKEN@?2r?$AA@  10030bb8     lstrlib.obj
+ 0002:00003bbc       ??_C@_04MPDIABOK@?2000?$AA@ 10030bbc     lstrlib.obj
+ 0002:00003bc4       ??_C@_05GGBDHNF@?9?$CL?5?$CD0?$AA@ 10030bc4     lstrlib.obj
+ 0002:00003bcc       ??_C@_0CA@COOMGCAO@invalid?5format?5?$CIrepeated?5flags?$CJ?$AA@ 10030bcc     lstrlib.obj
+ 0002:00003bec       ??_C@_0CN@KALFEKPN@invalid?5format?5?$CIwidth?5or?5precisi@ 10030bec     lstrlib.obj
+ 0002:00003c1c       ??_C@_0CC@KIPBEOBI@invalid?5option?5?8?$CF?$CF?$CFc?8?5to?5?8format@ 10030c1c     lstrlib.obj
+ 0002:00003c40       ??_C@_04IHGKJMLH@byte?$AA@ 10030c40     lstrlib.obj
+ 0002:00003c48       ??_C@_04ENMBGAPA@char?$AA@ 10030c48     lstrlib.obj
+ 0002:00003c50       ??_C@_04GGLOKIEE@dump?$AA@ 10030c50     lstrlib.obj
+ 0002:00003c58       ??_C@_04CKFJHKAP@find?$AA@ 10030c58     lstrlib.obj
+ 0002:00003c60       ??_C@_06DLEPGFEF@format?$AA@ 10030c60     lstrlib.obj
+ 0002:00003c68       ??_C@_05EIEIBDFD@gfind?$AA@ 10030c68     lstrlib.obj
+ 0002:00003c70       ??_C@_06DPFCLDIO@gmatch?$AA@ 10030c70     lstrlib.obj
+ 0002:00003c78       ??_C@_04GOLEAPFD@gsub?$AA@ 10030c78     lstrlib.obj
+ 0002:00003c80       ??_C@_03BKCJCHLK@len?$AA@  10030c80     lstrlib.obj
+ 0002:00003c84       ??_C@_05IPJEPLHL@lower?$AA@ 10030c84     lstrlib.obj
+ 0002:00003c8c       ??_C@_05FNONLPDI@match?$AA@ 10030c8c     lstrlib.obj
+ 0002:00003c94       ??_C@_03HOKODIMJ@rep?$AA@  10030c94     lstrlib.obj
+ 0002:00003c98       ??_C@_07KOIEOCCE@reverse?$AA@ 10030c98     lstrlib.obj
+ 0002:00003ca0       ??_C@_03KCMAIMAP@sub?$AA@  10030ca0     lstrlib.obj
+ 0002:00003ca4       ??_C@_05NECKJAMC@upper?$AA@ 10030ca4     lstrlib.obj
+ 0002:00003cac       ??_C@_05FBAFLLMP@?41251?$AA@ 10030cac     lstrlib.obj
+ 0002:00003cb4       ??_C@_0BG@FEBJBDLJ@invalid?5key?5to?5?8next?8?$AA@ 10030cb4     ltable.obj
+ 0002:00003ccc       ??_C@_0BH@PLPOPOEC@?5?$CFs?5?$DN?5after?5?$FLtype?$DN?$CFd?$FN?5?$AA@ 10030ccc     ltable.obj
+ 0002:00003ce4       ??_C@_0P@KKABOKCO@table?5overflow?$AA@ 10030ce4     ltable.obj
+ 0002:00003cf4       ??_C@_0BD@BDIKLFBP@table?5index?5is?5nil?$AA@ 10030cf4     ltable.obj
+ 0002:00003d08       ??_C@_0BD@BKBJANLJ@table?5index?5is?5NaN?$AA@ 10030d08     ltable.obj
+ 0002:00003d1c       ??_C@_0BD@OBDNDPKA@?8setn?8?5is?5obsolete?$AA@ 10030d1c     ltablib.obj
+ 0002:00003d30       ??_C@_0CG@LPGHMHCC@wrong?5number?5of?5arguments?5to?5?8in@ 10030d30     ltablib.obj
+ 0002:00003d58       ??_C@_0DF@OJJECDJJ@invalid?5value?5?$CI?$CFs?$CJ?5at?5index?5?$CFd?5i@ 10030d58     ltablib.obj
+ 0002:00003d90       ??_C@_0CD@OFHMGIPD@invalid?5order?5function?5for?5sorti@ 10030d90     ltablib.obj
+ 0002:00003db4       ??_C@_06CMLIEHFC@concat?$AA@ 10030db4     ltablib.obj
+ 0002:00003dbc       ??_C@_07ICLAOFOB@foreach?$AA@ 10030dbc     ltablib.obj
+ 0002:00003dc4       ??_C@_08GDLALCOF@foreachi?$AA@ 10030dc4     ltablib.obj
+ 0002:00003dd0       ??_C@_04LGLBCCCL@getn?$AA@ 10030dd0     ltablib.obj
+ 0002:00003dd8       ??_C@_04HKHJFELJ@maxn?$AA@ 10030dd8     ltablib.obj
+ 0002:00003de0       ??_C@_06OAOPNKHP@insert?$AA@ 10030de0     ltablib.obj
+ 0002:00003de8       ??_C@_04CDNBBDGJ@setn?$AA@ 10030de8     ltablib.obj
+ 0002:00003df0       ??_C@_04PIMMHFGE@sort?$AA@ 10030df0     ltablib.obj
+ 0002:00003df8       ??_C@_07GOBOHMJA@boolean?$AA@ 10030df8     ltm.obj
+ 0002:00003e00       ??_C@_08NOEPOPLB@userdata?$AA@ 10030e00     ltm.obj
+ 0002:00003e0c       ??_C@_06EBGNBFIA@number?$AA@ 10030e0c     ltm.obj
+ 0002:00003e14       ??_C@_06FJHNOCKE@thread?$AA@ 10030e14     ltm.obj
+ 0002:00003e1c       ??_C@_05BENFLAID@proto?$AA@ 10030e1c     ltm.obj
+ 0002:00003e24       ??_C@_05CCAJFIBN@upval?$AA@ 10030e24     ltm.obj
+ 0002:00003e2c       ??_C@_0L@GADKNKH@__newindex?$AA@ 10030e2c     ltm.obj
+ 0002:00003e38       ??_C@_04GIMIAOHA@__eq?$AA@ 10030e38     ltm.obj
+ 0002:00003e40       ??_C@_05MEHDOBFN@__add?$AA@ 10030e40     ltm.obj
+ 0002:00003e48       ??_C@_05HFNNBAII@__sub?$AA@ 10030e48     ltm.obj
+ 0002:00003e50       ??_C@_05FLJIBNKK@__mul?$AA@ 10030e50     ltm.obj
+ 0002:00003e58       ??_C@_05IDIBPCOP@__div?$AA@ 10030e58     ltm.obj
+ 0002:00003e60       ??_C@_05ICPALBAE@__mod?$AA@ 10030e60     ltm.obj
+ 0002:00003e68       ??_C@_05EBGMHPNE@__pow?$AA@ 10030e68     ltm.obj
+ 0002:00003e70       ??_C@_05MHFNBPAK@__unm?$AA@ 10030e70     ltm.obj
+ 0002:00003e78       ??_C@_05MNDELLDN@__len?$AA@ 10030e78     ltm.obj
+ 0002:00003e80       ??_C@_04BKGOMBLK@__lt?$AA@ 10030e80     ltm.obj
+ 0002:00003e88       ??_C@_04EJLHOCKK@__le?$AA@ 10030e88     ltm.obj
+ 0002:00003e90       ??_C@_08HGDAODEP@__concat?$AA@ 10030e90     ltm.obj
+ 0002:00003e9c       ??_C@_06JPFLIIOJ@__call?$AA@ 10030e9c     ltm.obj
+ 0002:00003ea4       ??_C@_06IJPGJPKF@luajit?$AA@ 10030ea4     lua.obj
+ 0002:00003eac       ??_C@_0BM@EDNHGHJO@?$CFs?3?5?$CFs?5in?5precompiled?5chunk?$AA@ 10030eac     lundump.obj
+ 0002:00003ec8       ??_C@_0P@CLDJCNKP@unexpected?5end?$AA@ 10030ec8     lundump.obj
+ 0002:00003ed8       ??_C@_0M@KLEMECJB@bad?5integer?$AA@ 10030ed8     lundump.obj
+ 0002:00003ee4       ??_C@_0N@DOELNLHF@bad?5constant?$AA@ 10030ee4     lundump.obj
+ 0002:00003ef4       ??_C@_0O@GNEOPCAJ@code?5too?5deep?$AA@ 10030ef4     lundump.obj
+ 0002:00003f04       ??_C@_08OFPEJJEA@bad?5code?$AA@ 10030f04     lundump.obj
+ 0002:00003f10       ??_C@_0L@PJHPAMCH@bad?5header?$AA@ 10030f10     lundump.obj
+ 0002:00003f1c       ??_C@_0O@CNJIDMJE@binary?5string?$AA@ 10030f1c     lundump.obj
+ 0002:00003f2c       ??_C@_02HENDHKBC@?$DN?$DP?$AA@ 10030f2c     lundump.obj
+ 0002:00003f30       ??_C@_05FKHKFDID@index?$AA@ 10030f30     lvm.obj
+ 0002:00003f38       ??_C@_0BB@JEECHIJH@loop?5in?5gettable?$AA@ 10030f38     lvm.obj
+ 0002:00003f4c       ??_C@_0BB@GFGOGLOK@loop?5in?5settable?$AA@ 10030f4c     lvm.obj
+ 0002:00003f60       ??_C@_0BH@ONIKNOCM@string?5length?5overflow?$AA@ 10030f60     lvm.obj
+ 0002:00003f78       __real@0000000000000000    10030f78     ltable.obj
+ 0002:00003f80       __real@3f00002000400080    10030f80     lmathlib.obj
+ 0002:00003f88       __real@3f50000000000000    10030f88     lbaselib.obj
+ 0002:00003f90       __real@3f50624dd2f1a9fc    10030f90     loslib.obj
+ 0002:00003f98       __real@3f91df46a2529d39    10030f98     lmathlib.obj
+ 0002:00003fa0       __real@3ff0000000000000    10030fa0     lcode.obj
+ 0002:00003fa8       __real@400921fb54442d18    10030fa8     lmathlib.obj
+ 0002:00003fb0       __real@404ca5dc1a63c1f8    10030fb0     lmathlib.obj
+ 0002:00003fb8       __real@40c3be0000000000    10030fb8     ljitlib.obj
+ 0002:00003fc0       __real@4330000000000000    10030fc0     lcode.obj
+ 0002:00003fc8       __real@8000000000000000    10030fc8     lcode.obj
+ 0002:00003fd0       __xmm@41f00000000000000000000000000000 10030fd0     lobject.obj
+ 0002:00003fe0       __xmm@7fffffffffffffff7fffffffffffffff 10030fe0     lmathlib.obj
+ 0002:00003ff0       __xmm@80000000000000008000000000000000 10030ff0     lcode.obj
+ 0002:00004088       __load_config_used         10031088     MSVCRT:loadcfg.obj
+ 0002:000040d0       ___safe_se_handler_table   100310d0     <linker-defined>
+ 0002:000040d8       ___rtc_iaa                 100310d8     MSVCRT:initsect.obj
+ 0002:000040dc       ___rtc_izz                 100310dc     MSVCRT:initsect.obj
+ 0002:000040e0       ___rtc_taa                 100310e0     MSVCRT:initsect.obj
+ 0002:000040e4       ___rtc_tzz                 100310e4     MSVCRT:initsect.obj
+ 0002:00004d6c       __IMPORT_DESCRIPTOR_xrCore 10031d6c     xrCore:xrCore.dll
+ 0002:00004d80       __IMPORT_DESCRIPTOR_KERNEL32 10031d80     kernel32:KERNEL32.dll
+ 0002:00004d94       __IMPORT_DESCRIPTOR_MSVCR120 10031d94     MSVCRT:MSVCR120.dll
+ 0002:00004da8       __NULL_IMPORT_DESCRIPTOR   10031da8     xrCore:xrCore.dll
+ 0003:00000000       ___native_dllmain_reason   10033000     MSVCRT:natstart.obj
+ 0003:00000004       ___security_cookie         10033004     MSVCRT:gs_cookie.obj
+ 0003:00000008       ___security_cookie_complement 10033008     MSVCRT:gs_cookie.obj
+ 0003:00000010       ___isa_enabled             10033010     MSVCRT:cpu_disp.obj
+ 0003:0000001c       ?__type_info_root_node@@3U__type_info_node@@A 1003301c     MSVCRT:tncleanup.obj
+ 0003:00000350       _ru_1251                   10033350     lstrlib.obj
+ 0003:00000358       ___isa_available           10033358     MSVCRT:cpu_disp.obj
+ 0003:0000035c       ___favor                   1003335c     MSVCRT:cpu_disp.obj
+ 0003:00000360       ___native_startup_lock     10033360     <common>
+ 0003:00000364       ___native_startup_state    10033364     <common>
+ 0003:00000368       ___onexitend               10033368     <common>
+ 0003:0000036c       ___onexitbegin             1003336c     <common>
+ 0003:00000370       ___dyn_tls_init_callback   10033370     <common>
+
+ entry point at        0001:0002aff5
+
+ Static symbols
+
+ 0001:00000000       _index2adr                 10001000 f   lapi.obj
+ 0001:00000780       $LN13                      10001780     lapi.obj
+ 0001:00000868       $LN18                      10001868     lapi.obj
+ 0001:000011b0       _f_call                    100021b0 f   lapi.obj
+ 0001:00001240       _f_Ccall                   10002240 f   lapi.obj
+ 0001:000014b4       $LN24                      100024b4     lapi.obj
+ 0001:00002850       _adjuststack               10003850 f   lauxlib.obj
+ 0001:00002918       $LN25                      10003918     lauxlib.obj
+ 0001:00002cd0       _getF                      10003cd0 f   lauxlib.obj
+ 0001:00002d30       _errfile                   10003d30 f   lauxlib.obj
+ 0001:00003040       _getS                      10004040 f   lauxlib.obj
+ 0001:00003140       _l_alloc                   10004140 f   lauxlib.obj
+ 0001:00003170       _panic                     10004170 f   lauxlib.obj
+ 0001:000031f0       _luaB_print                100041f0 f   lbaselib.obj
+ 0001:00003370       _luaB_tonumber             10004370 f   lbaselib.obj
+ 0001:00003530       _luaB_error                10004530 f   lbaselib.obj
+ 0001:00003620       _luaB_getmetatable         10004620 f   lbaselib.obj
+ 0001:000036c0       _luaB_setmetatable         100046c0 f   lbaselib.obj
+ 0001:000037c0       _getfunc                   100047c0 f   lbaselib.obj
+ 0001:000038a0       _luaB_getfenv              100048a0 f   lbaselib.obj
+ 0001:00003900       _luaB_setfenv              10004900 f   lbaselib.obj
+ 0001:00003a80       _luaB_rawequal             10004a80 f   lbaselib.obj
+ 0001:00003b30       _luaB_rawget               10004b30 f   lbaselib.obj
+ 0001:00003c20       _luaB_rawset               10004c20 f   lbaselib.obj
+ 0001:00003d20       _luaB_gcinfo               10004d20 f   lbaselib.obj
+ 0001:00003d50       _luaB_collectgarbage       10004d50 f   lbaselib.obj
+ 0001:00003e40       _luaB_type                 10004e40 f   lbaselib.obj
+ 0001:00003ed0       _luaB_next                 10004ed0 f   lbaselib.obj
+ 0001:00003fb0       _luaB_pairs                10004fb0 f   lbaselib.obj
+ 0001:00004080       _ipairsaux                 10005080 f   lbaselib.obj
+ 0001:00004170       _luaB_ipairs               10005170 f   lbaselib.obj
+ 0001:00004240       _luaB_loadstring           10005240 f   lbaselib.obj
+ 0001:00004310       _luaB_loadfile             10005310 f   lbaselib.obj
+ 0001:00004370       _generic_reader            10005370 f   lbaselib.obj
+ 0001:00004480       _luaB_load                 10005480 f   lbaselib.obj
+ 0001:00004600       _luaB_dofile               10005600 f   lbaselib.obj
+ 0001:00004680       _luaB_assert               10005680 f   lbaselib.obj
+ 0001:00004720       _luaB_unpack               10005720 f   lbaselib.obj
+ 0001:000048a0       _luaB_select               100058a0 f   lbaselib.obj
+ 0001:00004970       _luaB_pcall                10005970 f   lbaselib.obj
+ 0001:00004a50       _luaB_xpcall               10005a50 f   lbaselib.obj
+ 0001:00004b80       _luaB_tostring             10005b80 f   lbaselib.obj
+ 0001:00004ce8       $LN123                     10005ce8     lbaselib.obj
+ 0001:00004d00       _luaB_newproxy             10005d00 f   lbaselib.obj
+ 0001:00004f20       _luaB_costatus             10005f20 f   lbaselib.obj
+ 0001:00004ff0       _auxresume                 10005ff0 f   lbaselib.obj
+ 0001:00005140       _luaB_coresume             10006140 f   lbaselib.obj
+ 0001:000051e0       _luaB_auxwrap              100061e0 f   lbaselib.obj
+ 0001:00005290       _luaB_cstacksize           10006290 f   lbaselib.obj
+ 0001:00005310       _luaB_cocreate             10006310 f   lbaselib.obj
+ 0001:00005400       _luaB_cowrap               10006400 f   lbaselib.obj
+ 0001:00005430       _luaB_yield                10006430 f   lbaselib.obj
+ 0001:00005490       _luaB_corunning            10006490 f   lbaselib.obj
+ 0001:000054c0       _auxopen                   100064c0 f   lbaselib.obj
+ 0001:00005570       _base_open                 10006570 f   lbaselib.obj
+ 0001:000057c0       _coco_start                100067c0 f   lcoco.obj
+ 0001:00005800       _coco_main@4               10006800 f   lcoco.obj
+ 0001:0000589c       $LN17                      1000689c     lcoco.obj
+ 0001:00005a40       _condjump                  10006a40 f   lcode.obj
+ 0001:00005ab0       _need_value                10006ab0 f   lcode.obj
+ 0001:00005b10       _removevalues              10006b10 f   lcode.obj
+ 0001:00005b90       _patchlistaux              10006b90 f   lcode.obj
+ 0001:00005d70       _freeexp                   10006d70 f   lcode.obj
+ 0001:00005d90       _addk                      10006d90 f   lcode.obj
+ 0001:0000604c       $LN28                      1000704c     lcode.obj
+ 0001:00006070       _discharge2reg             10007070 f   lcode.obj
+ 0001:00006184       $LN27                      10007184     lcode.obj
+ 0001:000061c0       _discharge2anyreg          100071c0 f   lcode.obj
+ 0001:00006220       _exp2reg                   10007220 f   lcode.obj
+ 0001:000065dc       $LN41                      100075dc     lcode.obj
+ 0001:000066bc       $LN30                      100076bc     lcode.obj
+ 0001:000067c0       _invertjump                100077c0 f   lcode.obj
+ 0001:00006810       _jumponcond                10007810 f   lcode.obj
+ 0001:000069a8       $LN14                      100079a8     lcode.obj
+ 0001:000069b4       $LN12                      100079b4     lcode.obj
+ 0001:000069c0       _codenot                   100079c0 f   lcode.obj
+ 0001:00006a68       $LN20                      10007a68     lcode.obj
+ 0001:00006a7c       $LN18                      10007a7c     lcode.obj
+ 0001:00006a90       _constfolding              10007a90 f   lcode.obj
+ 0001:00006be4       $LN30                      10007be4     lcode.obj
+ 0001:00006c10       _codearith                 10007c10 f   lcode.obj
+ 0001:00006cf0       _codecomp                  10007cf0 f   lcode.obj
+ 0001:000070c8       $LN27                      100080c8     lcode.obj
+ 0001:00007110       _luaK_code                 10008110 f   lcode.obj
+ 0001:00007240       _db_getregistry            10008240 f   ldblib.obj
+ 0001:00007270       _db_getmetatable           10008270 f   ldblib.obj
+ 0001:00007300       _db_setmetatable           10008300 f   ldblib.obj
+ 0001:00007390       _db_getfenv                10008390 f   ldblib.obj
+ 0001:00007420       _db_setfenv                10008420 f   ldblib.obj
+ 0001:000074e0       _settabss                  100084e0 f   ldblib.obj
+ 0001:00007570       _settabsi                  10008570 f   ldblib.obj
+ 0001:00007570       _setfield                  10008570 f   loslib.obj
+ 0001:000075f0       _treatstackoption          100085f0 f   ldblib.obj
+ 0001:000076c0       _db_getinfo                100086c0 f   ldblib.obj
+ 0001:00007a30       _db_getlocal               10008a30 f   ldblib.obj
+ 0001:00007b40       _db_setlocal               10008b40 f   ldblib.obj
+ 0001:00007c80       _auxupvalue                10008c80 f   ldblib.obj
+ 0001:00007d60       _db_getupvalue             10008d60 f   ldblib.obj
+ 0001:00007d70       _db_setupvalue             10008d70 f   ldblib.obj
+ 0001:00007db0       _hookf                     10008db0 f   ldblib.obj
+ 0001:00007eb0       _gethooktable              10008eb0 f   ldblib.obj
+ 0001:00007f80       _db_sethook                10008f80 f   ldblib.obj
+ 0001:00008160       _db_gethook                10009160 f   ldblib.obj
+ 0001:000082b0       _db_debug                  100092b0 f   ldblib.obj
+ 0001:00008530       _db_errorfb                10009530 f   ldblib.obj
+ 0001:00008890       _currentpc                 10009890 f   ldebug.obj
+ 0001:000088f0       _currentline               100098f0 f   ldebug.obj
+ 0001:00008a80       _getluaproto               10009a80 f   ldebug.obj
+ 0001:00008ac0       _findlocal                 10009ac0 f   ldebug.obj
+ 0001:00008c40       _funcinfo                  10009c40 f   ldebug.obj
+ 0001:00008cf0       _info_tailcall             10009cf0 f   ldebug.obj
+ 0001:00008d60       _collectvalidlines         10009d60 f   ldebug.obj
+ 0001:00008e50       _auxgetinfo                10009e50 f   ldebug.obj
+ 0001:00008f74       $LN21                      10009f74     ldebug.obj
+ 0001:00008f8c       $LN20                      10009f8c     ldebug.obj
+ 0001:000090f0       _precheck                  1000a0f0 f   ldebug.obj
+ 0001:000091f0       _checkArgMode              1000a1f0 f   ldebug.obj
+ 0001:000092a0       _symbexec                  1000a2a0 f   ldebug.obj
+ 0001:000098d4       $LN91                      1000a8d4     ldebug.obj
+ 0001:00009910       $LN90                      1000a910     ldebug.obj
+ 0001:00009980       _kname                     1000a980 f   ldebug.obj
+ 0001:000099d0       _getobjname                1000a9d0 f   ldebug.obj
+ 0001:00009b98       $LN17                      1000ab98     ldebug.obj
+ 0001:00009bb0       $LN16                      1000abb0     ldebug.obj
+ 0001:00009bc0       _getfuncname               1000abc0 f   ldebug.obj
+ 0001:00009c90       _isinstack                 1000ac90 f   ldebug.obj
+ 0001:00009e80       _addinfo                   1000ae80 f   ldebug.obj
+ 0001:0000a180       $LN10                      1000b180     ldo.obj
+ 0001:0000a190       _resetstack                1000b190 f   ldo.obj
+ 0001:0000a2c0       _correctstack              1000b2c0 f   ldo.obj
+ 0001:0000a560       _adjust_varargs            1000b560 f   ldo.obj
+ 0001:0000a8f0       _callrethooks              1000b8f0 f   ldo.obj
+ 0001:0000ab50       _resume                    1000bb50 f   ldo.obj
+ 0001:0000abd0       _resume_error              1000bbd0 f   ldo.obj
+ 0001:0000ae20       _f_parser                  1000be20 f   ldo.obj
+ 0001:0000b010       _DumpString                1000c010 f   ldump.obj
+ 0001:0000b090       _DumpConstants             1000c090 f   ldump.obj
+ 0001:0000b1b0       _DumpDebug                 1000c1b0 f   ldump.obj
+ 0001:0000b3d0       _DumpFunction              1000c3d0 f   ldump.obj
+ 0001:0000b800       _unlinkupval               1000c800 f   lfunc.obj
+ 0001:0000bbe0       _reallymarkobject          1000cbe0 f   lgc.obj
+ 0001:0000bc94       $LN25                      1000cc94     lgc.obj
+ 0001:0000bcb0       _marktmu                   1000ccb0 f   lgc.obj
+ 0001:0000bd5c       $LN29                      1000cd5c     lgc.obj
+ 0001:0000be60       _traversetable             1000ce60 f   lgc.obj
+ 0001:0000c030       _traverseproto             1000d030 f   lgc.obj
+ 0001:0000c0f0       _traverseclosure           1000d0f0 f   lgc.obj
+ 0001:0000c238       $LN42                      1000d238     lgc.obj
+ 0001:0000c260       _traversestack             1000d260 f   lgc.obj
+ 0001:0000c430       _propagatemark             1000d430 f   lgc.obj
+ 0001:0000c504       $LN14                      1000d504     lgc.obj
+ 0001:0000c520       _propagateall              1000d520 f   lgc.obj
+ 0001:0000c620       $LN23                      1000d620     lgc.obj
+ 0001:0000c640       _cleartable                1000d640 f   lgc.obj
+ 0001:0000c730       _sweeplist                 1000d730 f   lgc.obj
+ 0001:0000c838       $LN87                      1000d838     lgc.obj
+ 0001:0000c860       _checkSizes                1000d860 f   lgc.obj
+ 0001:0000c8e0       _GCTM                      1000d8e0 f   lgc.obj
+ 0001:0000ccc0       $LN85                      1000dcc0     lgc.obj
+ 0001:0000cce0       _markmt                    1000dce0 f   lgc.obj
+ 0001:0000cda4       $LN31                      1000dda4     lgc.obj
+ 0001:0000cdc0       _markroot                  1000ddc0 f   lgc.obj
+ 0001:0000ce30       _remarkupvals              1000de30 f   lgc.obj
+ 0001:0000ce70       _atomic                    1000de70 f   lgc.obj
+ 0001:0000cf10       _singlestep                1000df10 f   lgc.obj
+ 0001:0000cff4       $LN21                      1000dff4     lgc.obj
+ 0001:0000d178       $LN35                      1000e178     lgc.obj
+ 0001:0000d390       _fileerror                 1000e390 f   liolib.obj
+ 0001:0000d410       _io_type                   1000e410 f   liolib.obj
+ 0001:0000d530       _newfile                   1000e530 f   liolib.obj
+ 0001:0000d600       _io_noclose                1000e600 f   liolib.obj
+ 0001:0000d630       _io_pclose                 1000e630 f   liolib.obj
+ 0001:0000d6d0       _io_fclose                 1000e6d0 f   liolib.obj
+ 0001:0000d770       _aux_close                 1000e770 f   liolib.obj
+ 0001:0000d800       _io_close                  1000e800 f   liolib.obj
+ 0001:0000d880       _io_gc                     1000e880 f   liolib.obj
+ 0001:0000d8b0       _io_tostring               1000e8b0 f   liolib.obj
+ 0001:0000d900       _io_open                   1000e900 f   liolib.obj
+ 0001:0000da50       _io_popen                  1000ea50 f   liolib.obj
+ 0001:0000dba0       _io_tmpfile                1000eba0 f   liolib.obj
+ 0001:0000dc20       _getiofile                 1000ec20 f   liolib.obj
+ 0001:0000dca0       _g_iofile                  1000eca0 f   liolib.obj
+ 0001:0000ddd0       _io_input                  1000edd0 f   liolib.obj
+ 0001:0000ddf0       _io_output                 1000edf0 f   liolib.obj
+ 0001:0000de10       _f_lines                   1000ee10 f   liolib.obj
+ 0001:0000de90       _io_lines                  1000ee90 f   liolib.obj
+ 0001:0000df80       _read_line                 1000ef80 f   liolib.obj
+ 0001:0000e0e0       _read_chars                1000f0e0 f   liolib.obj
+ 0001:0000e200       _g_read                    1000f200 f   liolib.obj
+ 0001:0000e4e0       _io_read                   1000f4e0 f   liolib.obj
+ 0001:0000e500       _f_read                    1000f500 f   liolib.obj
+ 0001:0000e540       _io_readline               1000f540 f   liolib.obj
+ 0001:0000e670       _g_write                   1000f670 f   liolib.obj
+ 0001:0000e8f0       _io_write                  1000f8f0 f   liolib.obj
+ 0001:0000e910       _f_write                   1000f910 f   liolib.obj
+ 0001:0000e950       _f_seek                    1000f950 f   liolib.obj
+ 0001:0000ea50       _f_setvbuf                 1000fa50 f   liolib.obj
+ 0001:0000eba0       _io_flush                  1000fba0 f   liolib.obj
+ 0001:0000ec30       _f_flush                   1000fc30 f   liolib.obj
+ 0001:0000ece0       _createmeta                1000fce0 f   liolib.obj
+ 0001:0000ed60       _createstdfile             1000fd60 f   liolib.obj
+ 0001:0000ee20       _newfenv                   1000fe20 f   liolib.obj
+ 0001:0000f060       _push_LCL                  10010060 f   ljitlib.obj
+ 0001:0000f150       _setmode                   10010150 f   ljitlib.obj
+ 0001:0000f20c       $LN79                      1001020c     ljitlib.obj
+ 0001:0000f230       _j_on                      10010230 f   ljitlib.obj
+ 0001:0000f240       _j_off                     10010240 f   ljitlib.obj
+ 0001:0000f250       _j_debug                   10010250 f   ljitlib.obj
+ 0001:0000f2a0       _j_compile                 100102a0 f   ljitlib.obj
+ 0001:0000f330       _rec_compile               10010330 f   ljitlib.obj
+ 0001:0000f4c0       _j_compilesub              100104c0 f   ljitlib.obj
+ 0001:0000f5c0       _j_attach                  100105c0 f   ljitlib.obj
+ 0001:0000fce0       $LN512                     10010ce0     ljitlib.obj
+ 0001:0000fcf4       $LN513                     10010cf4     ljitlib.obj
+ 0001:0000fd10       _j_frontend                10010d10 f   ljitlib.obj
+ 0001:0000ff40       _frontwrap                 10010f40 f   ljitlib.obj
+ 0001:000101b0       _makepipeline              100111b0 f   ljitlib.obj
+ 0001:00010320       _mcodesize                 10011320 f   ljitlib.obj
+ 0001:00010370       _ju_stats                  10011370 f   ljitlib.obj
+ 0001:00010780       _ju_bytecode               10011780 f   ljitlib.obj
+ 0001:000109c0       $LN73                      100119c0     ljitlib.obj
+ 0001:000109d0       $LN74                      100119d0     ljitlib.obj
+ 0001:000109e0       _ju_const                  100119e0 f   ljitlib.obj
+ 0001:00010ab0       _ju_upvalue                10011ab0 f   ljitlib.obj
+ 0001:00010b80       _ju_closurenup             10011b80 f   ljitlib.obj
+ 0001:00010c20       _ju_mfmiter                10011c20 f   ljitlib.obj
+ 0001:00010d50       _ju_mcode                  10011d50 f   ljitlib.obj
+ 0001:00010ec0       _ju_jsubmcode              10011ec0 f   ljitlib.obj
+ 0001:00010f80       _ju_stackptr               10011f80 f   ljitlib.obj
+ 0001:00010fd0       _makehints                 10011fd0 f   ljitlib.obj
+ 0001:000110f0       _makestatus                100120f0 f   ljitlib.obj
+ 0001:00011400       _jit_cpudetect             10012400 f   ljit_backend.obj
+ 0001:00011460       _jit_compile_jsub          10012460 f   ljit_backend.obj
+ 0001:00011970       _jit_hookins               10012970 f   ljit_backend.obj
+ 0001:00011a20       _jit_deopt_target          10012a20 f   ljit_backend.obj
+ 0001:00011a70       _jit_inline_base           10012a70 f   ljit_backend.obj
+ 0001:00011ac0       _jit_coroutine_resume      10012ac0 f   ljit_backend.obj
+ 0001:00011cb0       _jit_inline_coroutine      10012cb0 f   ljit_backend.obj
+ 0001:00011e50       _jit_inline_string         10012e50 f   ljit_backend.obj
+ 0001:00011ef0       _jit_table_insert          10012ef0 f   ljit_backend.obj
+ 0001:00011f90       _jit_table_remove          10012f90 f   ljit_backend.obj
+ 0001:00012020       _jit_inline_table          10013020 f   ljit_backend.obj
+ 0001:000120d0       _jit_inline_math           100130d0 f   ljit_backend.obj
+ 0001:000121dc       $LN19                      100131dc     ljit_backend.obj
+ 0001:00012200       _jit_inline_call           10013200 f   ljit_backend.obj
+ 0001:0001248c       $LN69                      1001348c     ljit_backend.obj
+ 0001:000124a0       $LN70                      100134a0     ljit_backend.obj
+ 0001:000124c0       _jit_table_next            100134c0 f   ljit_backend.obj
+ 0001:000125b0       _jit_inline_tforloop       100135b0 f   ljit_backend.obj
+ 0001:00012660       _jit_prologue              10013660 f   ljit_backend.obj
+ 0001:00012820       _jit_return_k              10013820 f   ljit_backend.obj
+ 0001:000128a0       _jit_op_return             100138a0 f   ljit_backend.obj
+ 0001:00012ab0       _jit_op_call               10013ab0 f   ljit_backend.obj
+ 0001:00012c10       _jit_op_tailcall           10013c10 f   ljit_backend.obj
+ 0001:00012e50       _jit_op_move               10013e50 f   ljit_backend.obj
+ 0001:00012eb0       _jit_op_loadk              10013eb0 f   ljit_backend.obj
+ 0001:00012fc4       $LN19                      10013fc4     ljit_backend.obj
+ 0001:00012fe0       _jit_op_loadnil            10013fe0 f   ljit_backend.obj
+ 0001:00013070       _jit_op_loadbool           10014070 f   ljit_backend.obj
+ 0001:00013100       _jit_op_getupval           10014100 f   ljit_backend.obj
+ 0001:000131a0       _jit_op_setupval           100141a0 f   ljit_backend.obj
+ 0001:00013220       _jit_gettable_fb           10014220 f   ljit_backend.obj
+ 0001:00013330       _jit_settable_fb           10014330 f   ljit_backend.obj
+ 0001:00013490       _jit_op_newtable           10014490 f   ljit_backend.obj
+ 0001:00013500       _jit_op_getglobal          10014500 f   ljit_backend.obj
+ 0001:00013550       _jit_op_setglobal          10014550 f   ljit_backend.obj
+ 0001:000135a0       _jit_keylookup             100145a0 f   ljit_backend.obj
+ 0001:00013750       _jit_op_gettable           10014750 f   ljit_backend.obj
+ 0001:00013900       _jit_op_settable           10014900 f   ljit_backend.obj
+ 0001:00013c0c       $LN46                      10014c0c     ljit_backend.obj
+ 0001:00013c20       _jit_op_self               10014c20 f   ljit_backend.obj
+ 0001:00013ca0       _jit_op_setlist            10014ca0 f   ljit_backend.obj
+ 0001:00013db0       _jit_op_arith              10014db0 f   ljit_backend.obj
+ 0001:000144e0       $LN128                     100154e0     ljit_backend.obj
+ 0001:00014518       $LN129                     10015518     ljit_backend.obj
+ 0001:00014530       _jit_fallback_len          10015530 f   ljit_backend.obj
+ 0001:00014660       _jit_op_len                10015660 f   ljit_backend.obj
+ 0001:00014770       _jit_op_concat             10015770 f   ljit_backend.obj
+ 0001:00014860       _jit_op_eq                 10015860 f   ljit_backend.obj
+ 0001:00014ab0       $LN45                      10015ab0     ljit_backend.obj
+ 0001:00014ad0       _jit_op_test               10015ad0 f   ljit_backend.obj
+ 0001:00014b90       _jit_for_coerce            10015b90 f   ljit_backend.obj
+ 0001:00014ca0       _jit_op_forprep            10015ca0 f   ljit_backend.obj
+ 0001:00014e10       _jit_op_forloop            10015e10 f   ljit_backend.obj
+ 0001:00014f00       _jit_op_tforloop           10015f00 f   ljit_backend.obj
+ 0001:00015030       _jit_op_close              10016030 f   ljit_backend.obj
+ 0001:00015070       _jit_op_closure            10016070 f   ljit_backend.obj
+ 0001:000151f0       _jit_op_vararg             100161f0 f   ljit_backend.obj
+ 0001:00015270       _jit_compile_irange        10016270 f   ljit_backend.obj
+ 0001:000156b4       $LN81                      100166b4     ljit_backend.obj
+ 0001:00015750       _jit_mfm_merge             10016750 f   ljit_backend.obj
+ 0001:00015830       _jit_compile_proto         10016830 f   ljit_backend.obj
+ 0001:00016000       _jit_mfmlookup             10017000 f   ljit_core.obj
+ 0001:00016150       _jit_compile               10017150 f   ljit_core.obj
+ 0001:00016230       _jit_createstate           10017230 f   ljit_core.obj
+ 0001:00016330       _deopthints                10017330 f   ljit_core.obj
+ 0001:000165b0       _rec_setmode               100175b0 f   ljit_core.obj
+ 0001:00016718       $LN31                      10017718     ljit_core.obj
+ 0001:00016f3c       $LN83                      10017f3c     ljit_dasm.obj
+ 0001:00016f64       $LN84                      10017f64     ljit_dasm.obj
+ 0001:000171d4       $LN72                      100181d4     ljit_dasm.obj
+ 0001:000171fc       $LN66                      100181fc     ljit_dasm.obj
+ 0001:0001753c       $LN95                      1001853c     ljit_dasm.obj
+ 0001:00017590       _mcode_alloc               10018590 f   ljit_mem.obj
+ 0001:00017700       _save                      10018700 f   llex.obj
+ 0001:00017960       _txtToken                  10018960 f   llex.obj
+ 0001:00017b40       _inclinenumber             10018b40 f   llex.obj
+ 0001:00017d20       _check_next                10018d20 f   llex.obj
+ 0001:00017da0       _trydecpoint               10018da0 f   llex.obj
+ 0001:00017e30       _read_numeral              10018e30 f   llex.obj
+ 0001:00017fc0       _skip_sep                  10018fc0 f   llex.obj
+ 0001:000180b0       _read_long_string          100190b0 f   llex.obj
+ 0001:00018378       $LN66                      10019378     llex.obj
+ 0001:0001838c       $LN61                      1001938c     llex.obj
+ 0001:000183f0       _read_string               100193f0 f   llex.obj
+ 0001:0001876c       $LN83                      1001976c     llex.obj
+ 0001:0001877c       $LN77                      1001977c     llex.obj
+ 0001:000187dc       $LN84                      100197dc     llex.obj
+ 0001:00018804       $LN78                      10019804     llex.obj
+ 0001:00018880       _llex                      10019880 f   llex.obj
+ 0001:000191f0       $LN215                     1001a1f0     llex.obj
+ 0001:00019220       $LN212                     1001a220     llex.obj
+ 0001:000192e0       _math_abs                  1001a2e0 f   lmathlib.obj
+ 0001:00019330       _math_sin                  1001a330 f   lmathlib.obj
+ 0001:00019380       _math_sinh                 1001a380 f   lmathlib.obj
+ 0001:000193d0       _math_cos                  1001a3d0 f   lmathlib.obj
+ 0001:00019420       _math_cosh                 1001a420 f   lmathlib.obj
+ 0001:00019470       _math_tan                  1001a470 f   lmathlib.obj
+ 0001:000194c0       _math_tanh                 1001a4c0 f   lmathlib.obj
+ 0001:00019510       _math_asin                 1001a510 f   lmathlib.obj
+ 0001:00019560       _math_acos                 1001a560 f   lmathlib.obj
+ 0001:000195b0       _math_atan                 1001a5b0 f   lmathlib.obj
+ 0001:00019600       _math_atan2                1001a600 f   lmathlib.obj
+ 0001:00019660       _math_ceil                 1001a660 f   lmathlib.obj
+ 0001:000196b0       _math_floor                1001a6b0 f   lmathlib.obj
+ 0001:00019740       _math_fmod                 1001a740 f   lmathlib.obj
+ 0001:000197a0       _math_modf                 1001a7a0 f   lmathlib.obj
+ 0001:00019810       _math_sqrt                 1001a810 f   lmathlib.obj
+ 0001:00019860       _math_pow                  1001a860 f   lmathlib.obj
+ 0001:000198c0       _math_log                  1001a8c0 f   lmathlib.obj
+ 0001:00019910       _math_log10                1001a910 f   lmathlib.obj
+ 0001:00019960       _math_exp                  1001a960 f   lmathlib.obj
+ 0001:000199b0       _math_deg                  1001a9b0 f   lmathlib.obj
+ 0001:00019a00       _math_rad                  1001aa00 f   lmathlib.obj
+ 0001:00019a50       _math_frexp                1001aa50 f   lmathlib.obj
+ 0001:00019ac0       _math_ldexp                1001aac0 f   lmathlib.obj
+ 0001:00019b20       _math_min                  1001ab20 f   lmathlib.obj
+ 0001:00019c80       _math_max                  1001ac80 f   lmathlib.obj
+ 0001:00019de0       _math_random               1001ade0 f   lmathlib.obj
+ 0001:00019fc0       _math_randomseed           1001afc0 f   lmathlib.obj
+ 0001:0001a220       _setprogdir                1001b220 f   loadlib.obj
+ 0001:0001a2d0       _pusherror                 1001b2d0 f   loadlib.obj
+ 0001:0001a350       _ll_register               1001b350 f   loadlib.obj
+ 0001:0001a4d0       _gctm                      1001b4d0 f   loadlib.obj
+ 0001:0001a500       _ll_loadfunc               1001b500 f   loadlib.obj
+ 0001:0001a570       _ll_loadlib                1001b570 f   loadlib.obj
+ 0001:0001a720       _findfile                  1001b720 f   loadlib.obj
+ 0001:0001a970       _loaderror                 1001b970 f   loadlib.obj
+ 0001:0001aa10       _loader_Lua                1001ba10 f   loadlib.obj
+ 0001:0001ab20       _mkfuncname                1001bb20 f   loadlib.obj
+ 0001:0001ab90       _loader_C                  1001bb90 f   loadlib.obj
+ 0001:0001ac70       _loader_Croot              1001bc70 f   loadlib.obj
+ 0001:0001adc0       _loader_preload            1001bdc0 f   loadlib.obj
+ 0001:0001aed0       _ll_require                1001bed0 f   loadlib.obj
+ 0001:0001b3b0       _setfenv                   1001c3b0 f   loadlib.obj
+ 0001:0001b430       _dooptions                 1001c430 f   loadlib.obj
+ 0001:0001b4a0       _modinit                   1001c4a0 f   loadlib.obj
+ 0001:0001b5c0       _ll_module                 1001c5c0 f   loadlib.obj
+ 0001:0001b750       _ll_seeall                 1001c750 f   loadlib.obj
+ 0001:0001b8a0       _setpath                   1001c8a0 f   loadlib.obj
+ 0001:0001becc       $LN16                      1001cecc     lobject.obj
+ 0001:0001bf90       _pushstr                   1001cf90 f   lobject.obj
+ 0001:0001c398       $LN108                     1001d398     lobject.obj
+ 0001:0001c3b4       $LN98                      1001d3b4     lobject.obj
+ 0001:0001c580       _os_pushresult             1001d580 f   loslib.obj
+ 0001:0001c600       _os_execute                1001d600 f   loslib.obj
+ 0001:0001c660       _os_remove                 1001d660 f   loslib.obj
+ 0001:0001c720       _os_rename                 1001d720 f   loslib.obj
+ 0001:0001c880       _os_tmpname                1001d880 f   loslib.obj
+ 0001:0001c8e0       _os_getenv                 1001d8e0 f   loslib.obj
+ 0001:0001c9c0       _os_clock                  1001d9c0 f   loslib.obj
+ 0001:0001ca00       _setboolfield              1001da00 f   loslib.obj
+ 0001:0001ca70       _getfield                  1001da70 f   loslib.obj
+ 0001:0001cb40       _os_date                   1001db40 f   loslib.obj
+ 0001:0001ce30       _os_time                   1001de30 f   loslib.obj
+ 0001:0001d010       _os_difftime               1001e010 f   loslib.obj
+ 0001:0001d0b0       _os_setlocale              1001e0b0 f   loslib.obj
+ 0001:0001d140       _os_exit                   1001e140 f   loslib.obj
+ 0001:0001d190       _error_expected            1001e190 f   lparser.obj
+ 0001:0001d200       _errorlimit                1001e200 f   lparser.obj
+ 0001:0001d260       _testnext                  1001e260 f   lparser.obj
+ 0001:0001d2a0       _check_match               1001e2a0 f   lparser.obj
+ 0001:0001d330       _str_checkname             1001e330 f   lparser.obj
+ 0001:0001d3a0       _codestring                1001e3a0 f   lparser.obj
+ 0001:0001d3f0       _registerlocalvar          1001e3f0 f   lparser.obj
+ 0001:0001d4b0       _new_localvar              1001e4b0 f   lparser.obj
+ 0001:0001d530       _indexupvalue              1001e530 f   lparser.obj
+ 0001:0001d720       _singlevaraux              1001e720 f   lparser.obj
+ 0001:0001d810       _adjust_assign             1001e810 f   lparser.obj
+ 0001:0001d8b0       _leaveblock                1001e8b0 f   lparser.obj
+ 0001:0001d940       _pushclosure               1001e940 f   lparser.obj
+ 0001:0001da60       _open_func                 1001ea60 f   lparser.obj
+ 0001:0001db50       _close_func                1001eb50 f   lparser.obj
+ 0001:0001df90       _field                     1001ef90 f   lparser.obj
+ 0001:0001e060       _yindex                    1001f060 f   lparser.obj
+ 0001:0001e180       _recfield                  1001f180 f   lparser.obj
+ 0001:0001e2f0       _lastlistfield             1001f2f0 f   lparser.obj
+ 0001:0001e3b0       _constructor               1001f3b0 f   lparser.obj
+ 0001:0001e6f0       _parlist                   1001f6f0 f   lparser.obj
+ 0001:0001e8e0       _body                      1001f8e0 f   lparser.obj
+ 0001:0001eaa0       _explist1                  1001faa0 f   lparser.obj
+ 0001:0001eb90       _funcargs                  1001fb90 f   lparser.obj
+ 0001:0001ed50       _prefixexp                 1001fd50 f   lparser.obj
+ 0001:0001ee30       _primaryexp                1001fe30 f   lparser.obj
+ 0001:0001efe8       $LN54                      1001ffe8     lparser.obj
+ 0001:0001effc       $LN50                      1001fffc     lparser.obj
+ 0001:0001f100       _simpleexp                 10020100 f   lparser.obj
+ 0001:0001f26c       $LN38                      1002026c     lparser.obj
+ 0001:0001f290       $LN33                      10020290     lparser.obj
+ 0001:0001f340       _getbinopr                 10020340 f   lparser.obj
+ 0001:0001f3b8       $LN23                      100203b8     lparser.obj
+ 0001:0001f3f8       $LN21                      100203f8     lparser.obj
+ 0001:0001f4f0       _subexpr                   100204f0 f   lparser.obj
+ 0001:0001f6ec       $LN60                      100206ec     lparser.obj
+ 0001:0001f700       $LN57                      10020700     lparser.obj
+ 0001:0001f710       _block                     10020710 f   lparser.obj
+ 0001:0001f750       _check_conflict            10020750 f   lparser.obj
+ 0001:0001f7f0       _assignment                100207f0 f   lparser.obj
+ 0001:0001f9c0       _breakstat                 100209c0 f   lparser.obj
+ 0001:0001fa60       _whilestat                 10020a60 f   lparser.obj
+ 0001:0001fc40       _repeatstat                10020c40 f   lparser.obj
+ 0001:0001fe10       _forbody                   10020e10 f   lparser.obj
+ 0001:000200c0       _fornum                    100210c0 f   lparser.obj
+ 0001:00020370       _forlist                   10021370 f   lparser.obj
+ 0001:00020670       _forstat                   10021670 f   lparser.obj
+ 0001:00020740       _test_then_block           10021740 f   lparser.obj
+ 0001:00020850       _ifstat                    10021850 f   lparser.obj
+ 0001:00020a10       _localfunc                 10021a10 f   lparser.obj
+ 0001:00020af0       _localstat                 10021af0 f   lparser.obj
+ 0001:00020d40       _funcname                  10021d40 f   lparser.obj
+ 0001:00020dd0       _funcstat                  10021dd0 f   lparser.obj
+ 0001:00020e50       _retstat                   10021e50 f   lparser.obj
+ 0001:00020f48       $LN29                      10021f48     lparser.obj
+ 0001:00020f50       $LN27                      10021f50     lparser.obj
+ 0001:00020f70       _statement                 10021f70 f   lparser.obj
+ 0001:000210c0       $LN29                      100220c0     lparser.obj
+ 0001:000210e8       $LN27                      100220e8     lparser.obj
+ 0001:00021100       _chunk                     10022100 f   lparser.obj
+ 0001:000211ac       $LN31                      100221ac     lparser.obj
+ 0001:000211b4       $LN29                      100221b4     lparser.obj
+ 0001:000211d0       _stack_init                100221d0 f   lstate.obj
+ 0001:000212a0       _f_luaopen                 100222a0 f   lstate.obj
+ 0001:00021320       _preinit_state             10022320 f   lstate.obj
+ 0001:00021390       _close_state               10022390 f   lstate.obj
+ 0001:000216b0       _callallgcTM               100226b0 f   lstate.obj
+ 0001:00021800       _newlstr                   10022800 f   lstring.obj
+ 0001:00021ad0       _str_len                   10022ad0 f   lstrlib.obj
+ 0001:00021b60       _str_sub                   10022b60 f   lstrlib.obj
+ 0001:00021c70       _str_reverse               10022c70 f   lstrlib.obj
+ 0001:00021da0       _str_lower                 10022da0 f   lstrlib.obj
+ 0001:00021f50       _str_upper                 10022f50 f   lstrlib.obj
+ 0001:00022100       _str_rep                   10023100 f   lstrlib.obj
+ 0001:00022200       _str_byte                  10023200 f   lstrlib.obj
+ 0001:00022360       _str_char                  10023360 f   lstrlib.obj
+ 0001:000224d0       _writer                    100234d0 f   lstrlib.obj
+ 0001:000224f0       _str_dump                  100234f0 f   lstrlib.obj
+ 0001:00022620       _classend                  10023620 f   lstrlib.obj
+ 0001:00022690       _match_class               10023690 f   lstrlib.obj
+ 0001:00022768       $LN20                      10023768     lstrlib.obj
+ 0001:00022794       $LN18                      10023794     lstrlib.obj
+ 0001:000227b0       _matchbracketclass         100237b0 f   lstrlib.obj
+ 0001:0002291c       $LN39                      1002391c     lstrlib.obj
+ 0001:00022948       $LN37                      10023948     lstrlib.obj
+ 0001:00022970       _matchbalance              10023970 f   lstrlib.obj
+ 0001:000229e0       _max_expand                100239e0 f   lstrlib.obj
+ 0001:00022a80       _min_expand                10023a80 f   lstrlib.obj
+ 0001:00022b10       _start_capture             10023b10 f   lstrlib.obj
+ 0001:00022b60       _end_capture               10023b60 f   lstrlib.obj
+ 0001:00022bc0       _match_capture             10023bc0 f   lstrlib.obj
+ 0001:00022c60       _match                     10023c60 f   lstrlib.obj
+ 0001:00022ee8       $LN69                      10023ee8     lstrlib.obj
+ 0001:00022f00       $LN64                      10023f00     lstrlib.obj
+ 0001:00022f2c       $LN70                      10023f2c     lstrlib.obj
+ 0001:00022f40       $LN65                      10023f40     lstrlib.obj
+ 0001:00022f60       _lmemfind                  10023f60 f   lstrlib.obj
+ 0001:00023010       _push_onecapture           10024010 f   lstrlib.obj
+ 0001:000230b0       _push_captures             100240b0 f   lstrlib.obj
+ 0001:000231a0       _str_find_aux              100241a0 f   lstrlib.obj
+ 0001:00023450       _str_find                  10024450 f   lstrlib.obj
+ 0001:00023460       _str_match                 10024460 f   lstrlib.obj
+ 0001:00023470       _gmatch_aux                10024470 f   lstrlib.obj
+ 0001:00023640       _gmatch                    10024640 f   lstrlib.obj
+ 0001:000237d0       _gfind_nodef               100247d0 f   lstrlib.obj
+ 0001:000237f0       _add_s                     100247f0 f   lstrlib.obj
+ 0001:000238d0       _add_value                 100248d0 f   lstrlib.obj
+ 0001:00023a28       $LN157                     10024a28     lstrlib.obj
+ 0001:00023a40       _str_gsub                  10024a40 f   lstrlib.obj
+ 0001:00023d60       _addquoted                 10024d60 f   lstrlib.obj
+ 0001:00023efc       $LN86                      10024efc     lstrlib.obj
+ 0001:00023f0c       $LN81                      10024f0c     lstrlib.obj
+ 0001:00023f70       _scanformat                10024f70 f   lstrlib.obj
+ 0001:00024040       _str_format                10025040 f   lstrlib.obj
+ 0001:00024400       $LN93                      10025400     lstrlib.obj
+ 0001:0002441c       $LN78                      1002541c     lstrlib.obj
+ 0001:00024450       _createmetatable           10025450 f   lstrlib.obj
+ 0001:000245c0       _hashnum                   100255c0 f   ltable.obj
+ 0001:00024610       _mainposition              10025610 f   ltable.obj
+ 0001:00024690       $LN11                      10025690     ltable.obj
+ 0001:000246a0       _findindex                 100256a0 f   ltable.obj
+ 0001:000247b8       $LN40                      100257b8     ltable.obj
+ 0001:000248c0       _computesizes              100258c0 f   ltable.obj
+ 0001:00024930       _numusearray               10025930 f   ltable.obj
+ 0001:000249b0       _numusehash                100259b0 f   ltable.obj
+ 0001:00024aa0       _setarrayvector            10025aa0 f   ltable.obj
+ 0001:00024b10       _setnodevector             10025b10 f   ltable.obj
+ 0001:00024c00       _resize                    10025c00 f   ltable.obj
+ 0001:00024e40       _rehash                    10025e40 f   ltable.obj
+ 0001:00025350       $LN48                      10026350     ltable.obj
+ 0001:00025410       _unbound_search            10026410 f   ltable.obj
+ 0001:00025590       _foreachi                  10026590 f   ltablib.obj
+ 0001:00025760       $LN230                     10026760     ltablib.obj
+ 0001:00025780       _foreach                   10026780 f   ltablib.obj
+ 0001:00025910       _maxn                      10026910 f   ltablib.obj
+ 0001:00025a50       _getn                      10026a50 f   ltablib.obj
+ 0001:00025b1c       $LN93                      10026b1c     ltablib.obj
+ 0001:00025b30       _setn                      10026b30 f   ltablib.obj
+ 0001:00025bd0       _tinsert                   10026bd0 f   ltablib.obj
+ 0001:00025d2c       $LN124                     10026d2c     ltablib.obj
+ 0001:00025d40       _tremove                   10026d40 f   ltablib.obj
+ 0001:00025ed8       $LN164                     10026ed8     ltablib.obj
+ 0001:00025ef0       _addfield                  10026ef0 f   ltablib.obj
+ 0001:00025f90       _tconcat                   10026f90 f   ltablib.obj
+ 0001:000261c0       _sort_comp                 100271c0 f   ltablib.obj
+ 0001:000262b0       _auxsort                   100272b0 f   ltablib.obj
+ 0001:00026c80       _sort                      10027c80 f   ltablib.obj
+ 0001:00026e3c       $LN201                     10027e3c     ltablib.obj
+ 0001:00027070       _error                     10028070 f   lundump.obj
+ 0001:000270e0       _LoadString                100280e0 f   lundump.obj
+ 0001:00027160       _LoadCode                  10028160 f   lundump.obj
+ 0001:00027250       _LoadConstants             10028250 f   lundump.obj
+ 0001:000277b4       $LN151                     100287b4     lundump.obj
+ 0001:000277d0       _LoadDebug                 100287d0 f   lundump.obj
+ 0001:00028360       _LoadFunction              10029360 f   lundump.obj
+ 0001:00028540       _LoadHeader                10029540 f   lundump.obj
+ 0001:000286f0       _callTMres                 100296f0 f   lvm.obj
+ 0001:000287b0       _callTM                    100297b0 f   lvm.obj
+ 0001:00028b80       _call_binTM                10029b80 f   lvm.obj
+ 0001:00028be0       _get_compTM                10029be0 f   lvm.obj
+ 0001:00028c50       _call_orderTM              10029c50 f   lvm.obj
+ 0001:00028cf8       $LN74                      10029cf8     lvm.obj
+ 0001:00028d10       _l_strcmp                  10029d10 f   lvm.obj
+ 0001:00028f34       $LN74                      10029f34     lvm.obj
+ 0001:00029534       $LN263                     1002a534     lvm.obj
+ 0001:0002abb8       $LN1071                    1002bbb8     lvm.obj
+ 0001:0002adb2       _pre_c_init                1002bdb2 f   MSVCRT:crtdll.obj
+ 0001:0002b018       ___DllMainCRTStartup       1002c018 f   MSVCRT:crtdll.obj
+ 0001:0002b4c0       $$000000                   1002c4c0     MSVCRT:sehprolg4.obj
+ 0001:0002b720       $$000000                   1002c720     MSVCRT:chkstk.obj
+ 0001:0002b750       $$000000                   1002c750     MSVCRT:ftol3.obj
+ 0001:0002bb30       $$000000                   1002cb30     MSVCRT:ftol2.obj
+ 0002:00000264       _pcinit                    1002d264     MSVCRT:crtdll.obj
+ 0002:00000268       _pinit                     1002d268     MSVCRT:atonexit.obj
+ 0002:0000026c       _pinit                     1002d26c     MSVCRT:cpu_disp.obj
+ 0002:00000284       _GS_ExceptionPointers      1002d284     MSVCRT:gs_report.obj
+ 0002:000008c0       ?opts@?1??luaB_collectgarbage@@9@9 1002d8c0     lbaselib.obj
+ 0002:000008e0       ?optsnum@?1??luaB_collectgarbage@@9@9 1002d8e0     lbaselib.obj
+ 0002:000008fc       ?hooknames@?1??hookf@@9@9  1002d8fc     ldblib.obj
+ 0002:00000910       _base_funcs                1002d910     lbaselib.obj
+ 0002:000009d8       _statnames                 1002d9d8     lbaselib.obj
+ 0002:000009e8       _co_funcs                  1002d9e8     lbaselib.obj
+ 0002:00000a28       _dblib                     1002da28     ldblib.obj
+ 0002:00000aa0       _KEY_HOOK                  1002daa0     ldblib.obj
+ 0002:00000ab0       _lualibs                   1002dab0     linit.obj
+ 0002:00000b00       _iolib                     1002db00     liolib.obj
+ 0002:00000b60       _fnames                    1002db60     liolib.obj
+ 0002:00000b68       _flib                      1002db68     liolib.obj
+ 0002:00000bb8       ?mode@?1??f_seek@@9@9      1002dbb8     liolib.obj
+ 0002:00000bc4       ?modenames@?1??f_setvbuf@@9@9 1002dbc4     liolib.obj
+ 0002:00000bd4       ?modenames@?1??f_seek@@9@9 1002dbd4     liolib.obj
+ 0002:00000be4       ?mode@?1??f_setvbuf@@9@9   1002dbe4     liolib.obj
+ 0002:00000bf0       _hints_H                   1002dbf0     ljitlib.obj
+ 0002:00000c08       _hints_FH                  1002dc08     ljitlib.obj
+ 0002:00000c10       _jitlib                    1002dc10     ljitlib.obj
+ 0002:00000c40       _regkey_comthread          1002dc40     ljitlib.obj
+ 0002:00000c44       _regkey_frontend           1002dc44     ljitlib.obj
+ 0002:00000c48       _jitutillib                1002dc48     ljitlib.obj
+ 0002:00000c90       _status_list               1002dc90     ljitlib.obj
+ 0002:00000cb4       _jit_fpucw                 1002dcb4     ljit_backend.obj
+ 0002:00000cb8       _jit_for_coerce_error      1002dcb8     ljit_backend.obj
+ 0002:00000cc4       _jit_mathfuncs_11          1002dcc4     ljit_backend.obj
+ 0002:00000ce8       _jit_actionlist            1002dce8     ljit_backend.obj
+ 0002:00002130       _mathlib                   1002f130     lmathlib.obj
+ 0002:00002218       _ll_funcs                  1002f218     loadlib.obj
+ 0002:00002230       _loaders                   1002f230     loadlib.obj
+ 0002:00002244       _sentinel_                 1002f244     loadlib.obj
+ 0002:00002248       _pk_funcs                  1002f248     loadlib.obj
+ 0002:00002270       ?log_2@?1??luaO_log2@@9@9  1002f270     lobject.obj
+ 0002:00002434       ?catnames@?1??os_setlocale@@9@9 1002f434     loslib.obj
+ 0002:00002450       _syslib                    1002f450     loslib.obj
+ 0002:000024b0       ?cat@?1??os_setlocale@@9@9 1002f4b0     loslib.obj
+ 0002:000024d0       _priority                  1002f4d0     lparser.obj
+ 0002:000024f0       _strlib                    1002f4f0     lstrlib.obj
+ 0002:00002570       _dummynode_                1002f570     ltable.obj
+ 0002:00002590       _tab_funcs                 1002f590     ltablib.obj
+ 0002:00002610       ?luaT_eventname@?1??luaT_init@@9@9 1002f610     ltm.obj
+ 0002:00004000       _Int32ToUInt32             10031000     MSVCRT:ftol3.obj
+ 0002:00004010       _MantissaMask              10031010     MSVCRT:ftol3.obj
+ 0002:00004018       _IntegerBit                10031018     MSVCRT:ftol3.obj
+ 0002:00004020       _SignBit64                 10031020     MSVCRT:ftol3.obj
+ 0002:00004028       _MinFP64                   10031028     MSVCRT:ftol3.obj
+ 0002:00004030       _MinInt64                  10031030     MSVCRT:ftol3.obj
+ 0002:00004038       _MaxInt64                  10031038     MSVCRT:ftol3.obj
+ 0002:00004040       _MaxUInt64                 10031040     MSVCRT:ftol3.obj
+ 0002:00004048       _MaxFP32                   10031048     MSVCRT:ftol3.obj
+ 0002:00004050       _MinFP32                   10031050     MSVCRT:ftol3.obj
+ 0002:00004058       _MinSubInexact             10031058     MSVCRT:ftol3.obj
+ 0002:00004060       _FpExcptTable              10031060     MSVCRT:ftol3.obj
+ 0002:00004070       _i1075                     10031070     MSVCRT:ftol3.obj
+ 0002:00004074       _i1087                     10031074     MSVCRT:ftol3.obj
+ 0002:00004078       _x0800                     10031078     MSVCRT:ftol3.obj
+ 0002:0000407c       _x17FF                     1003107c     MSVCRT:ftol3.obj
+ 0002:00004080       _CWMask                    10031080     MSVCRT:ftol3.obj
+ 0002:000040e8       __sehtable$_lua_pushlstring 100310e8     lapi.obj
+ 0002:000040f8       __sehtable$_lua_getfield   100310f8     lapi.obj
+ 0002:00004108       __sehtable$_luaG_runerror  10031108     ldebug.obj
+ 0002:00004118       __sehtable$___DllMainCRTStartup 10031118     MSVCRT:crtdll.obj
+ 0002:00004140       __sehtable$__IsNonwritableInCurrentImage 10031140     MSVCRT:pesect.obj
+ 0002:00004160       __sehtable$__onexit        10031160     MSVCRT:atonexit.obj
+ 0002:00004180       .edata                     10031180     lua5.1.exp
+ 0002:000041a8       rgpv                       100311a8     lua5.1.exp
+ 0002:000043a4       rgszName                   100313a4     lua5.1.exp
+ 0002:000045a0       rgwOrd                     100315a0     lua5.1.exp
+ 0002:0000469e       szName                     1003169e     lua5.1.exp
+ 0002:000046a9       $N00001                    100316a9     lua5.1.exp
+ 0002:000046b8       $N00002                    100316b8     lua5.1.exp
+ 0002:000046c7       $N00003                    100316c7     lua5.1.exp
+ 0002:000046dc       $N00004                    100316dc     lua5.1.exp
+ 0002:000046ec       $N00005                    100316ec     lua5.1.exp
+ 0002:000046fb       $N00006                    100316fb     lua5.1.exp
+ 0002:00004709       $N00007                    10031709     lua5.1.exp
+ 0002:00004717       $N00008                    10031717     lua5.1.exp
+ 0002:00004725       $N00009                    10031725     lua5.1.exp
+ 0002:00004733       $N00010                    10031733     lua5.1.exp
+ 0002:00004741       $N00011                    10031741     lua5.1.exp
+ 0002:00004753       $N00012                    10031753     lua5.1.exp
+ 0002:00004765       $N00013                    10031765     lua5.1.exp
+ 0002:00004776       $N00014                    10031776     lua5.1.exp
+ 0002:00004787       $N00015                    10031787     lua5.1.exp
+ 0002:00004797       $N00016                    10031797     lua5.1.exp
+ 0002:000047a6       $N00017                    100317a6     lua5.1.exp
+ 0002:000047b6       $N00018                    100317b6     lua5.1.exp
+ 0002:000047c1       $N00019                    100317c1     lua5.1.exp
+ 0002:000047d0       $N00020                    100317d0     lua5.1.exp
+ 0002:000047e2       $N00021                    100317e2     lua5.1.exp
+ 0002:000047ec       $N00022                    100317ec     lua5.1.exp
+ 0002:000047fc       $N00023                    100317fc     lua5.1.exp
+ 0002:0000480a       $N00024                    1003180a     lua5.1.exp
+ 0002:0000481a       $N00025                    1003181a     lua5.1.exp
+ 0002:0000482c       $N00026                    1003182c     lua5.1.exp
+ 0002:0000483a       $N00027                    1003183a     lua5.1.exp
+ 0002:00004847       $N00028                    10031847     lua5.1.exp
+ 0002:00004855       $N00029                    10031855     lua5.1.exp
+ 0002:00004865       $N00030                    10031865     lua5.1.exp
+ 0002:00004875       $N00031                    10031875     lua5.1.exp
+ 0002:00004884       $N00032                    10031884     lua5.1.exp
+ 0002:00004894       $N00033                    10031894     lua5.1.exp
+ 0002:000048a4       $N00034                    100318a4     lua5.1.exp
+ 0002:000048ad       $N00035                    100318ad     lua5.1.exp
+ 0002:000048bb       $N00036                    100318bb     lua5.1.exp
+ 0002:000048c9       $N00037                    100318c9     lua5.1.exp
+ 0002:000048d4       $N00038                    100318d4     lua5.1.exp
+ 0002:000048df       $N00039                    100318df     lua5.1.exp
+ 0002:000048eb       $N00040                    100318eb     lua5.1.exp
+ 0002:000048f4       $N00041                    100318f4     lua5.1.exp
+ 0002:00004903       $N00042                    10031903     lua5.1.exp
+ 0002:0000490d       $N00043                    1003190d     lua5.1.exp
+ 0002:00004918       $N00044                    10031918     lua5.1.exp
+ 0002:00004923       $N00045                    10031923     lua5.1.exp
+ 0002:00004933       $N00046                    10031933     lua5.1.exp
+ 0002:0000493c       $N00047                    1003193c     lua5.1.exp
+ 0002:00004946       $N00048                    10031946     lua5.1.exp
+ 0002:00004950       $N00049                    10031950     lua5.1.exp
+ 0002:00004957       $N00050                    10031957     lua5.1.exp
+ 0002:00004965       $N00051                    10031965     lua5.1.exp
+ 0002:00004971       $N00052                    10031971     lua5.1.exp
+ 0002:0000497e       $N00053                    1003197e     lua5.1.exp
+ 0002:0000498a       $N00054                    1003198a     lua5.1.exp
+ 0002:0000499b       $N00055                    1003199b     lua5.1.exp
+ 0002:000049ab       $N00056                    100319ab     lua5.1.exp
+ 0002:000049b7       $N00057                    100319b7     lua5.1.exp
+ 0002:000049c4       $N00058                    100319c4     lua5.1.exp
+ 0002:000049d5       $N00059                    100319d5     lua5.1.exp
+ 0002:000049e2       $N00060                    100319e2     lua5.1.exp
+ 0002:000049ef       $N00061                    100319ef     lua5.1.exp
+ 0002:000049fa       $N00062                    100319fa     lua5.1.exp
+ 0002:00004a09       $N00063                    10031a09     lua5.1.exp
+ 0002:00004a14       $N00064                    10031a14     lua5.1.exp
+ 0002:00004a24       $N00065                    10031a24     lua5.1.exp
+ 0002:00004a31       $N00066                    10031a31     lua5.1.exp
+ 0002:00004a3e       $N00067                    10031a3e     lua5.1.exp
+ 0002:00004a4d       $N00068                    10031a4d     lua5.1.exp
+ 0002:00004a5a       $N00069                    10031a5a     lua5.1.exp
+ 0002:00004a63       $N00070                    10031a63     lua5.1.exp
+ 0002:00004a72       $N00071                    10031a72     lua5.1.exp
+ 0002:00004a7f       $N00072                    10031a7f     lua5.1.exp
+ 0002:00004a8d       $N00073                    10031a8d     lua5.1.exp
+ 0002:00004a9d       $N00074                    10031a9d     lua5.1.exp
+ 0002:00004aa6       $N00075                    10031aa6     lua5.1.exp
+ 0002:00004ab1       $N00076                    10031ab1     lua5.1.exp
+ 0002:00004abb       $N00077                    10031abb     lua5.1.exp
+ 0002:00004acb       $N00078                    10031acb     lua5.1.exp
+ 0002:00004adc       $N00079                    10031adc     lua5.1.exp
+ 0002:00004aec       $N00080                    10031aec     lua5.1.exp
+ 0002:00004afc       $N00081                    10031afc     lua5.1.exp
+ 0002:00004b12       $N00082                    10031b12     lua5.1.exp
+ 0002:00004b22       $N00083                    10031b22     lua5.1.exp
+ 0002:00004b2e       $N00084                    10031b2e     lua5.1.exp
+ 0002:00004b3d       $N00085                    10031b3d     lua5.1.exp
+ 0002:00004b4c       $N00086                    10031b4c     lua5.1.exp
+ 0002:00004b5b       $N00087                    10031b5b     lua5.1.exp
+ 0002:00004b69       $N00088                    10031b69     lua5.1.exp
+ 0002:00004b7a       $N00089                    10031b7a     lua5.1.exp
+ 0002:00004b87       $N00090                    10031b87     lua5.1.exp
+ 0002:00004b92       $N00091                    10031b92     lua5.1.exp
+ 0002:00004b9e       $N00092                    10031b9e     lua5.1.exp
+ 0002:00004ba9       $N00093                    10031ba9     lua5.1.exp
+ 0002:00004bb5       $N00094                    10031bb5     lua5.1.exp
+ 0002:00004bc0       $N00095                    10031bc0     lua5.1.exp
+ 0002:00004bcc       $N00096                    10031bcc     lua5.1.exp
+ 0002:00004bd7       $N00097                    10031bd7     lua5.1.exp
+ 0002:00004be5       $N00098                    10031be5     lua5.1.exp
+ 0002:00004bf1       $N00099                    10031bf1     lua5.1.exp
+ 0002:00004bfe       $N00100                    10031bfe     lua5.1.exp
+ 0002:00004c0a       $N00101                    10031c0a     lua5.1.exp
+ 0002:00004c17       $N00102                    10031c17     lua5.1.exp
+ 0002:00004c28       $N00103                    10031c28     lua5.1.exp
+ 0002:00004c35       $N00104                    10031c35     lua5.1.exp
+ 0002:00004c40       $N00105                    10031c40     lua5.1.exp
+ 0002:00004c4f       $N00106                    10031c4f     lua5.1.exp
+ 0002:00004c5a       $N00107                    10031c5a     lua5.1.exp
+ 0002:00004c68       $N00108                    10031c68     lua5.1.exp
+ 0002:00004c78       $N00109                    10031c78     lua5.1.exp
+ 0002:00004c86       $N00110                    10031c86     lua5.1.exp
+ 0002:00004c94       $N00111                    10031c94     lua5.1.exp
+ 0002:00004ca1       $N00112                    10031ca1     lua5.1.exp
+ 0002:00004caf       $N00113                    10031caf     lua5.1.exp
+ 0002:00004cbc       $N00114                    10031cbc     lua5.1.exp
+ 0002:00004ccb       $N00115                    10031ccb     lua5.1.exp
+ 0002:00004cd4       $N00116                    10031cd4     lua5.1.exp
+ 0002:00004ce1       $N00117                    10031ce1     lua5.1.exp
+ 0002:00004ceb       $N00118                    10031ceb     lua5.1.exp
+ 0002:00004cf5       $N00119                    10031cf5     lua5.1.exp
+ 0002:00004d02       $N00120                    10031d02     lua5.1.exp
+ 0002:00004d10       $N00121                    10031d10     lua5.1.exp
+ 0002:00004d1b       $N00122                    10031d1b     lua5.1.exp
+ 0002:00004d27       $N00123                    10031d27     lua5.1.exp
+ 0002:00004d34       $N00124                    10031d34     lua5.1.exp
+ 0002:00004d3f       $N00125                    10031d3f     lua5.1.exp
+ 0002:00004d4f       $N00126                    10031d4f     lua5.1.exp
+ 0002:00004d5e       $N00127                    10031d5e     lua5.1.exp
+ 0002:00005036       .idata$6                   10032036     xrCore:xrCore.dll
+ 0002:00005122       .idata$6                   10032122     kernel32:KERNEL32.dll
+ 0002:00005480       .idata$6                   10032480     MSVCRT:MSVCR120.dll
+ 0003:0000000c       _progname                  1003300c     lua.obj
+ 0003:00000018       ___proc_attached           10033018     MSVCRT:crtdll.obj
+ 0003:00000028       _GS_ExceptionRecord        10033028     MSVCRT:gs_report.obj
+ 0003:00000078       _GS_ContextRecord          10033078     MSVCRT:gs_report.obj
+ 0003:00000344       _DebuggerWasPresent        10033344     MSVCRT:gs_report.obj
+ 0003:00000348       _defaultcstacksize         10033348     lcoco.obj
+ 0003:0000034c       ?call_check@?1??luaD_call@@9@9 1003334c     ldo.obj
+ 0003:00000354       _globalL                   10033354     lua.obj
+ 0004:00000060       $R000000                   10034060     * linker generated manifest res *
